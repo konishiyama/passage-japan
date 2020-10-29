@@ -27,17 +27,18 @@ const PostArticle = ({ data }) => {
 
   function handleSubmit(e) {
     e.preventDefault()
-    firebase.postArticle({
-      title: titleValues.title,
-      content: contentValues.content,
-      cover: imageUrl,
-      date: timeStamp,
-      articleNum: articleNumber,
-    })
-    // .then(() => navigate("/"))
-    // .catch(error => {
-    //   setErrorMessage(error.message)
-    // })
+    firebase
+      .postArticle({
+        title: titleValues.title,
+        content: contentValues.content,
+        cover: imageUrl,
+        date: timeStamp,
+        articleNum: articleNumber,
+      })
+      .then(() => navigate("/"))
+      .catch(error => {
+        setErrorMessage(error.message)
+      })
   }
 
   function handleInputTitleChange(e) {
