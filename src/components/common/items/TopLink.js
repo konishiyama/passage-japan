@@ -3,10 +3,10 @@ import styled from "styled-components"
 export const TopLink = styled.a`
   width: 35%;
   font-size: 14px;
-  color: #f4b400;
+  color: #4c9c41;
   display: block;
   text-align: center;
-  border: solid 1px #f4b400;
+  border: solid 1px #4c9c41;
   padding: 0.5em;
   line-height: 1.5;
   text-decoration: none;

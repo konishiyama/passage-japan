@@ -18,7 +18,7 @@ const TitleContainer = styled.div`
 const Cap = styled.span`
   text-align: left;
   margin: 0;
-  color: #f4b400;
+  color: #4c9c41;
   font-size: 40px;
   font-weight: bold;
   font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro",
@@ -72,7 +72,7 @@ const Activity = () => {
         <Fade right duration={1500} distance="50px">
           <ImgContainer>
             <Img
-              src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2Fcoversample5.jpg?alt=media&token=496b4690-25e6-44f2-b9e3-f56cdfb50050"
+              src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2FS__34226188.jpg?alt=media&token=e6e328f8-8ab2-4e65-be9e-bed113689548"
               alt="activity"
             ></Img>
           </ImgContainer>
@@ -93,7 +93,7 @@ const Activity = () => {
         <Fade right duration={1500} distance="50px">
           <ImgContainer>
             <Img
-              src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2Fcoversample5.jpg?alt=media&token=496b4690-25e6-44f2-b9e3-f56cdfb50050"
+              src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2FS__34226200.jpg?alt=media&token=932516ab-899a-4cd2-b32f-f43115558508"
               alt="activity"
             ></Img>
           </ImgContainer>
@@ -113,7 +113,7 @@ const Activity = () => {
         <Fade right duration={1500} distance="50px">
           <ImgContainer>
             <Img
-              src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2Fcoversample5.jpg?alt=media&token=496b4690-25e6-44f2-b9e3-f56cdfb50050"
+              src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2FS__34226180.jpg?alt=media&token=6e97386b-9c3c-45c2-9440-6fcdbd9f469d"
               alt="activity"
             ></Img>
           </ImgContainer>

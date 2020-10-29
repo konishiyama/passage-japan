@@ -59,7 +59,7 @@ const Title = styled.h3`
   text-align: left;
   letter-spacing: normal;
   &:hover{
-    color: #F4B400;
+    color: #4C9C41;
     transition: all 0.4s ease-in;
   }
 `

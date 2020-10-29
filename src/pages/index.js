@@ -10,7 +10,7 @@ import Fade from "react-reveal/Fade"
 
 const SeeMore = styled.a`
   text-decoration: none;
-  color: #f4b400;
+  color: #4c9c41;
   font-weight: bold;
   &:hover {
     opacity: 30%;
@@ -105,7 +105,7 @@ const IndexPage = ({ data }) => {
           style={{
             margin: `0 auto`,
             maxWidth: 480,
-            padding: `0rem 0.8rem 1.45rem`,
+            padding: `0rem 0.8rem 2.45rem`,
           }}
         >
           <Contact></Contact>

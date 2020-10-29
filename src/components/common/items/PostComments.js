@@ -32,7 +32,7 @@ const CommentButton = styled.button`
   cursor: pointer;
   outline: none;
   appearance: none;
-  color: #f4b400;
+  color: #4c9c41;
   margin: 0.3rem 0 0 auto;
 `
 

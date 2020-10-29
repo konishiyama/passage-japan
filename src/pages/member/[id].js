@@ -126,7 +126,7 @@ const PostTemplate = props => {
               <CreateIcon
                 style={{
                   color: `white`,
-                  backgroundColor: `#F4B400`,
+                  backgroundColor: `#4C9C41`,
                   borderRadius: `50%`,
                   padding: `0.5rem`,
                   height: `3rem`,

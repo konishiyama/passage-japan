@@ -10,7 +10,7 @@ import { FirebaseContext } from "./Firebase"
 const Container = styled.div`
   background-color: #fff;
   padding: 1rem 0 1rem;
-  box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
   a {
     color: #787c7b;
     text-decoration: none;

@@ -31,10 +31,10 @@ const P = styled.p`
 
 const A = styled.a`
   font-size: 14px;
-  color: #f4b400;
+  color: #4c9c41;
   display: block;
   text-align: center;
-  border: solid 1px #f4b400;
+  border: solid 1px #4c9c41;
   padding: 1.3em;
   line-height: 1;
   text-decoration: none;
@@ -84,7 +84,7 @@ const About = props => {
             <Fade cascade duration={2000}>
               <Pic>
                 <img
-                  src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2Fprofile_pic_height_optimized.jpg?alt=media&token=57bae787-a0e7-4735-a436-347e5f6123b4"
+                  src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2FS__34226187.jpg?alt=media&token=ba0969ec-8fcd-4e21-b83d-49af92cd320b"
                   alt="coverImg"
                 ></img>
               </Pic>
@@ -101,7 +101,7 @@ const About = props => {
             <Fade cascade duration={2000}>
               <Pic>
                 <img
-                  src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2Fprofile_pic_height_optimized.jpg?alt=media&token=57bae787-a0e7-4735-a436-347e5f6123b4"
+                  src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2FS__34226180.jpg?alt=media&token=6e97386b-9c3c-45c2-9440-6fcdbd9f469d"
                   alt="coverImg"
                 ></img>
               </Pic>

@@ -113,6 +113,7 @@ let firebaseInstance
 function getFirebaseInstance(app) {
   if (!firebaseInstance && app) {
     firebaseInstance = new Firebase(app)
+    //https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Operators/new 及びhttps://www.sejuku.net/blog/24383を参照
     return firebaseInstance
   } else if (firebaseInstance) {
     return firebaseInstance
