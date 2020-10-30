@@ -2,13 +2,13 @@ import React from "react"
 import styled from "styled-components"
 import { PageTitle } from "../../components/common"
 
-const Farm = props => {
+const Products = props => {
   return (
     <>
       <section>
         <PageTitle>
-          <span>農園概要</span>
-          <p>Profile</p>
+          <span>商品について</span>
+          <p>Products</p>
         </PageTitle>
         <div
           style={{
@@ -93,4 +93,4 @@ const P = styled.p`
   line-height: 1.5;
 `
 
-export default Farm
+export default Products
