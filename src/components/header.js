@@ -7,7 +7,7 @@ import NavbarLinks from "./NavbarLinks"
 import ExitToAppRoundedIcon from "@material-ui/icons/ExitToAppRounded"
 
 const Navigation = styled.nav`
-  height: 10vh;
+  height: 12vh;
   display: flex;
   background-color: #fff;
   position: relative;
@@ -21,7 +21,7 @@ const Navigation = styled.nav`
 
   @media (max-width: 768px) {
     position: sticky;
-    height: 6.5vh;
+    height: 8.5vh;
     top: 0;
     left: 0;
     right: 0;
@@ -30,7 +30,7 @@ const Navigation = styled.nav`
 
   @media (max-width: 1024px) {
     position: sticky;
-    height: 6.5vh;
+    height: 7.5vh;
     top: 0;
     left: 0;
     right: 0;
@@ -120,7 +120,7 @@ const Hamburger = styled.div`
 `
 
 const LOGO = styled.img`
-  height: 8vw;
+  height: 10vw;
   margin-bottom: 0;
   display: flex;
   align-items: center;
@@ -171,14 +171,14 @@ const Header = () => {
           <BG open />
         )}
 
-        {/* <LogoLink href="/">
+        <LogoLink href="/">
           {!!firebase && (
             <LOGO
-              src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2Feuglena_logo.jpg?alt=media&token=c602cec8-72f2-4845-a096-e5bf02c7b1ba"
+              src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2Flogo5.001.jpeg?alt=media&token=f8de77ca-eb7b-4c30-8da2-42e0afb0972b"
               alt="LogoImg"
             ></LOGO>
           )}
-        </LogoLink> */}
+        </LogoLink>
 
         {!!user && (
           <div>

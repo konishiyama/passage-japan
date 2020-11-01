@@ -10,7 +10,7 @@ const Write = styled.a`
   color: #808080;
   color: #808080;
   &:hover {
-    color: #4c9c41;
+    color: #800080;
     transition: all 0.4s ease-in;
   }
 `
@@ -47,7 +47,7 @@ const Member = ({ data }) => {
               <CreateIcon
                 style={{
                   color: `white`,
-                  backgroundColor: `#4C9C41`,
+                  backgroundColor: `#800080`,
                   borderRadius: `50%`,
                   padding: `0.5rem`,
                   height: `3rem`,

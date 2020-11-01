@@ -9,7 +9,17 @@ const Cover = styled.div`
   position: relative;
   margin-bottom: 1rem;
   text-align: center;
+  height: 700px;
+  background-color: #000000;
   display: inline-block;
+
+  @media (min-width: 768px) {
+    height: 500px;
+  }
+
+  @media (min-width: 1024px) {
+    height: 630px;
+  }
 
   img {
     margin: 0;
@@ -17,6 +27,7 @@ const Cover = styled.div`
     padding: 0 0 0;
     height: 700px;
     object-fit: cover;
+    opacity: 55%;
 
     @media (min-width: 768px) {
       height: 500px;
@@ -30,12 +41,12 @@ const Cover = styled.div`
 
 const CoverP1 = styled.h1`
   position: absolute;
-  top: 65%;
+  top: 30%;
   left: 50%;
   width: 80%;
-  text-align: left;
+  text-align: center;
   line-height: 1.5em;
-  font-weight: normal;
+  font-weight: bold;
   letter-spacing: 0.02em;
   width: 80%;
   font-size: 32px;
@@ -44,9 +55,9 @@ const CoverP1 = styled.h1`
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro",
-    "Hiragino Mincho Pro", "Sawarabi Mincho", "HG明朝E", "ＭＳ Ｐ明朝",
-    "MS PMincho", "MS 明朝", serif;
+  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
+    "ＭＳ Ｐ明朝", "MS PMincho", serif;
 
   @media (min-width: 768px) {
     top: 60%;
@@ -59,12 +70,12 @@ const CoverP1 = styled.h1`
 
 const CoverP2 = styled.h1`
   position: absolute;
-  top: 71%;
+  top: 40%;
   left: 50%;
   width: 80%;
-  text-align: left;
+  text-align: center;
   line-height: 1.5em;
-  font-weight: normal;
+  font-weight: bold;
   letter-spacing: 0.02em;
   width: 80%;
   font-size: 32px;
@@ -73,64 +84,93 @@ const CoverP2 = styled.h1`
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  font-family: "Cormorant Infant", serif;
+  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
+    "ＭＳ Ｐ明朝", "MS PMincho", serif;
 
   @media (min-width: 768px) {
-    top: 70%;
+    top: 60%;
   }
 
   @media (min-width: 1024px) {
-    top: 67%;
     font-size: 38px;
   }
 `
-const CoverP3 = styled.p`
+const CoverP3 = styled.h1`
   position: absolute;
-  top: 77%;
+  top: 50%;
   left: 50%;
   width: 80%;
-  text-align: left;
+  text-align: center;
   line-height: 1.5em;
-  font-weight: normal;
+  font-weight: bold;
   letter-spacing: 0.02em;
   width: 80%;
-  font-size: 16px;
+  font-size: 32px;
   color: #fff;
   margin: 0;
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  font-family: "Cormorant Infant", serif;
+  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
+    "ＭＳ Ｐ明朝", "MS PMincho", serif;
 
   @media (min-width: 768px) {
-    top: 78%;
+    top: 60%;
   }
 
   @media (min-width: 1024px) {
-    font-size: 20px;
-    top: 75%;
+    font-size: 38px;
   }
 `
+// const CoverP3 = styled.p`
+//   position: absolute;
+//   top: 77%;
+//   left: 50%;
+//   width: 80%;
+//   text-align: left;
+//   line-height: 1.5em;
+//   font-weight: normal;
+//   letter-spacing: 0.02em;
+//   width: 80%;
+//   font-size: 16px;
+//   color: #fff;
+//   margin: 0;
+//   -ms-transform: translate(-50%, -50%);
+//   -webkit-transform: translate(-50%, -50%);
+//   transform: translate(-50%, -50%);
+//   font-family: "Cormorant Infant", serif;
+
+//   @media (min-width: 768px) {
+//     top: 78%;
+//   }
+
+//   @media (min-width: 1024px) {
+//     font-size: 20px;
+//     top: 75%;
+//   }
+// `
 
 const A = styled.a`
   position: absolute;
-  top: 80%;
-  left: 10%;
-  width: 35%;
+  top: 65%;
+  left: 32%;
+  width: 36%;
   font-size: 14px;
   color: #fff;
-  background-color: #4c9c41;
+  background-color: #800080;
   display: block;
   text-align: center;
-  border: solid 1px #4c9c41;
+  border: solid 1px #800080;
   padding: 0.5em;
   line-height: 1.5;
   text-decoration: none;
   margin-top: 1em;
   &:hover {
-    color: #4c9c41;
+    color: #800080;
     background-color: #fff;
-    border: solid 1px #4c9c41;
+    border: solid 1px #fff;
     transition: all 0.2s ease-in;
   }
 
@@ -154,12 +194,13 @@ const TopCover = () => {
             src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2FS__34226182.jpg?alt=media&token=b787c6a9-377d-4748-ab8e-ebba40509953"
             alt="cover"
           />
-          <CoverP1>特定非営利法人</CoverP1>
-          <CoverP2>Imolution</CoverP2>
-          <CoverP3>Official Website</CoverP3>
+          <CoverP1>栃木県日光市</CoverP1>
+          <CoverP2>むらさき芋栽培の</CoverP2>
+          <CoverP3>やまぐち農園</CoverP3>
           <Link href="/about">
             <A>農園概要 →</A>
           </Link>
+          {/* <CoverP3></CoverP3> */}
           {!!firebase && (
             <KeyboardArrowDownIcon
               style={{

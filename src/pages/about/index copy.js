@@ -31,10 +31,10 @@ const P = styled.p`
 
 const A = styled.a`
   font-size: 14px;
-  color: #4c9c41;
+  color: #800080;
   display: block;
   text-align: center;
-  border: solid 1px #4c9c41;
+  border: solid 1px #800080;
   padding: 1.3em;
   line-height: 1;
   text-decoration: none;

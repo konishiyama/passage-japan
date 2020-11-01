@@ -25,7 +25,7 @@ export const PageTitle = styled.div`
     height: 1.8px;
     width: 65px;
     margin: 0.8rem auto 0;
-    background-color: #4c9c41;
+    background-color: #800080;
 
     @media (min-width: 768px) {
       width: 75px;

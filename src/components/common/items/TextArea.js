@@ -12,6 +12,6 @@ export const TextArea = styled.textarea`
   outline: none;
 
   &: focus, &:active{
-    border: 1px solid #4C9C41;
+    border: 1px solid #800080;
   }
 `

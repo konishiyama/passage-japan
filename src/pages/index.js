@@ -57,20 +57,21 @@ const IndexPage = ({ data }) => {
           >
             <Fade bottom duration={1500}>
               <a
+                // className="theme_color"
                 style={{
                   padding: `0 1.5rem 0`,
                   textDecoration: `none`,
                   width: `35%`,
                   fontSize: `14px`,
                   color: `#fff`,
-                  backgroundColor: `#4c9c41`,
+                  backgroundColor: `#800080`,
                   display: `block`,
                   textAlign: `center`,
-                  border: `solid 1px #4c9c41`,
+                  border: `solid 1px #800080`,
                   padding: `0.5em`,
                   lineHeight: `1.5`,
                   margin: `1em auto 0`,
-                  hover: { color: `#4c9c41`, backgroundColor: `#fff` },
+                  hover: { color: `#800080`, backgroundColor: `#fff` },
                 }}
                 href="/products"
               >
@@ -110,16 +111,16 @@ const IndexPage = ({ data }) => {
                       width: `35%`,
                       fontSize: `14px`,
                       color: `#fff`,
-                      backgroundColor: `#4c9c41`,
+                      backgroundColor: `#800080`,
                       display: `block`,
                       textAlign: `center`,
-                      border: `solid 1px #4c9c41`,
+                      border: `solid 1px #800080`,
                       padding: `0.5em`,
                       lineHeight: `1.5`,
                       margin: `1em auto 0`,
-                      hover: { color: `#4c9c41`, backgroundColor: `#fff` },
+                      hover: { color: `#800080`, backgroundColor: `#fff` },
                     }}
-                    href="/products"
+                    href="/memeber"
                   >
                     投稿一覧
                   </a>
@@ -157,16 +158,16 @@ const IndexPage = ({ data }) => {
                   width: `35%`,
                   fontSize: `14px`,
                   color: `#fff`,
-                  backgroundColor: `#4c9c41`,
+                  backgroundColor: `#800080`,
                   display: `block`,
                   textAlign: `center`,
-                  border: `solid 1px #4c9c41`,
+                  border: `solid 1px #800080`,
                   padding: `0.5em`,
                   lineHeight: `1.5`,
                   margin: `1em auto 0`,
-                  hover: { color: `#4c9c41`, backgroundColor: `#fff` },
+                  hover: { color: `#800080`, backgroundColor: `#fff` },
                 }}
-                href="/products"
+                href="/product"
               >
                 ブログ一覧
               </a>
@@ -194,7 +195,7 @@ const IndexPage = ({ data }) => {
 
 // const SeeMore = styled.a`
 //   text-decoration: none;
-//   color: #4c9c41;
+//   color: #800080;
 //   font-weight: bold;
 //   p {
 //     text-decoration: none important!;
@@ -209,18 +210,18 @@ const IndexPage = ({ data }) => {
 //   width: 35%;
 //   font-size: 14px;
 //   color: #fff;
-//   background-color: #4c9c41;
+//   background-color: #800080;
 //   display: block;
 //   text-align: center;
-//   border: solid 1px #4c9c41;
+//   border: solid 1px #800080;
 //   padding: 0.5em;
 //   line-height: 1.5;
 //   text-decoration: none;
 //   margin-top: 1em;
 //   &:hover {
-//     color: #4c9c41;
+//     color: #800080;
 //     background-color: #fff;
-//     border: solid 1px #4c9c41;
+//     border: solid 1px #800080;
 //     transition: all 0.2s ease-in;
 //   }
 

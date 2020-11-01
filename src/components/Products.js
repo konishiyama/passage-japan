@@ -14,7 +14,16 @@ const Products = () => {
                 alt="activity"
               ></Img>
               <TitleContainer>
-                <Title>ふくむらさき</Title>
+                <Title
+                  style={{
+                    fontFamily: `"Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+                  "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
+                  "ＭＳ Ｐ明朝", "MS PMincho", serif`,
+                    fontWeight: `bold`,
+                  }}
+                >
+                  ふくむらさき
+                </Title>
               </TitleContainer>
             </BoxContainer1>
           </LI>
@@ -25,7 +34,16 @@ const Products = () => {
                 alt="activity"
               ></Img>
               <TitleContainer>
-                <Title>パープルスイートロード</Title>
+                <Title
+                  style={{
+                    fontFamily: `"Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+                  "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
+                  "ＭＳ Ｐ明朝", "MS PMincho", serif`,
+                    fontWeight: `bold`,
+                  }}
+                >
+                  パープルスイートロード
+                </Title>
               </TitleContainer>
             </BoxContainer2>
           </LI>
@@ -36,7 +54,16 @@ const Products = () => {
                 alt="activity"
               ></Img>
               <TitleContainer>
-                <Title>べにはるか</Title>
+                <Title
+                  style={{
+                    fontFamily: `"Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+                  "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
+                  "ＭＳ Ｐ明朝", "MS PMincho", serif`,
+                    fontWeight: `bold`,
+                  }}
+                >
+                  べにはるか
+                </Title>
               </TitleContainer>
             </BoxContainer1>
           </LI>
@@ -47,7 +74,16 @@ const Products = () => {
                 alt="activity"
               ></Img>
               <TitleContainer>
-                <Title>シルクスイート</Title>
+                <Title
+                  style={{
+                    fontFamily: `"Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+                  "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
+                  "ＭＳ Ｐ明朝", "MS PMincho", serif`,
+                    fontWeight: `bold`,
+                  }}
+                >
+                  シルクスイート
+                </Title>
               </TitleContainer>
             </BoxContainer2>
           </LI>
@@ -98,7 +134,9 @@ const Title = styled.p`
   color: #808080;
   font-size: 14pt;
   font-weight: bold;
-  font-family: Basic Commercial Soft Rounded",sans-serif;
+  // font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+  //   "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
+  //   "ＭＳ Ｐ明朝", "MS PMincho", serif;
 `
 
 export default Products
