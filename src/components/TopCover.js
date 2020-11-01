@@ -158,7 +158,7 @@ const TopCover = () => {
           <CoverP2>Imolution</CoverP2>
           <CoverP3>Official Website</CoverP3>
           <Link href="/about">
-            <A>団体概要 →</A>
+            <A>農園概要 →</A>
           </Link>
           {!!firebase && (
             <KeyboardArrowDownIcon
