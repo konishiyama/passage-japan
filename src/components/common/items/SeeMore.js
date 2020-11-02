@@ -1,14 +1,29 @@
 import styled from "styled-components"
 
-export const SeeMore = styled.a`
+export const SeeMore = styled.div`
+  width: 35%;
+  font-size: 14px;
+  color: #fff;
+  background-color: #800080;
+  display: block;
+  text-align: center;
+  border: solid 1px #800080;
+  padding: 0.5em;
+  line-height: 1.5;
   text-decoration: none;
-  color: #800080;
-  font-weight: bold;
-  p {
-    text-decoration: none important!;
-  }
+  margin: 1em auto 0;
   &:hover {
-    opacity: 30%;
-    // transition: all 0.4s ease-in;
+    color: #800080;
+    background-color: #fff;
+    border: solid 1px #800080;
+    // transition: all 0.2s ease-in;
+  }
+
+  @media (min-width: 768px) {
+    width: 20%;
+  }
+
+  @media (min-width: 1024px) {
+    width: 15%;
   }
 `

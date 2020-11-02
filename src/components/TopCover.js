@@ -9,17 +9,8 @@ const Cover = styled.div`
   position: relative;
   margin-bottom: 1rem;
   text-align: center;
-  height: 700px;
   background-color: #000000;
   display: inline-block;
-
-  @media (min-width: 768px) {
-    height: 500px;
-  }
-
-  @media (min-width: 1024px) {
-    height: 630px;
-  }
 
   img {
     margin: 0;
@@ -55,9 +46,7 @@ const CoverP1 = styled.h1`
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
-    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
-    "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  font-family: "Kinari";
 
   @media (min-width: 768px) {
     top: 60%;
@@ -84,9 +73,9 @@ const CoverP2 = styled.h1`
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
-    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
-    "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro",
+    "Hiragino Mincho Pro", "Sawarabi Mincho", "HG明朝E", "ＭＳ Ｐ明朝",
+    "MS PMincho", "MS 明朝", serif;
 
   @media (min-width: 768px) {
     top: 60%;
@@ -112,9 +101,9 @@ const CoverP3 = styled.h1`
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
-    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
-    "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro",
+    "Hiragino Mincho Pro", "Sawarabi Mincho", "HG明朝E", "ＭＳ Ｐ明朝",
+    "MS PMincho", "MS 明朝", serif;
 
   @media (min-width: 768px) {
     top: 60%;
@@ -170,7 +159,7 @@ const A = styled.a`
   &:hover {
     color: #800080;
     background-color: #fff;
-    border: solid 1px #fff;
+    border: solid 1px #800080;
     transition: all 0.2s ease-in;
   }
 
@@ -197,10 +186,10 @@ const TopCover = () => {
           <CoverP1>栃木県日光市</CoverP1>
           <CoverP2>むらさき芋栽培の</CoverP2>
           <CoverP3>やまぐち農園</CoverP3>
+          {/* <CoverP3></CoverP3> */}
           <Link href="/about">
             <A>農園概要 →</A>
           </Link>
-          {/* <CoverP3></CoverP3> */}
           {!!firebase && (
             <KeyboardArrowDownIcon
               style={{

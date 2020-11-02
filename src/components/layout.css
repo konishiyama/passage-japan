@@ -625,3 +625,10 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+@font-face {
+  font-family: "Kinari";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/kinari-gothic-mini.otf) format("otf");
+}

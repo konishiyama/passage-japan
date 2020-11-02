@@ -1,5 +1,6 @@
 import React, { useContext } from "react"
 import styled from "styled-components"
+import Link from "next/link"
 import TopCover from "../components/TopCover"
 import Declaration from "../components/Declaration"
 import Activity from "../components/Activity"
@@ -28,7 +29,6 @@ const IndexPage = ({ data }) => {
             padding: `0rem 1.5rem 0rem`,
           }}
         >
-          {/* <Declaration></Declaration> */}
           <Fade bottom duration={1500}>
             <SubTitle>
               <span>活動内容</span>
@@ -56,27 +56,9 @@ const IndexPage = ({ data }) => {
             }}
           >
             <Fade bottom duration={1500}>
-              <a
-                // className="theme_color"
-                style={{
-                  padding: `0 1.5rem 0`,
-                  textDecoration: `none`,
-                  width: `35%`,
-                  fontSize: `14px`,
-                  color: `#fff`,
-                  backgroundColor: `#800080`,
-                  display: `block`,
-                  textAlign: `center`,
-                  border: `solid 1px #800080`,
-                  padding: `0.5em`,
-                  lineHeight: `1.5`,
-                  margin: `1em auto 0`,
-                  hover: { color: `#800080`, backgroundColor: `#fff` },
-                }}
-                href="/products"
-              >
-                商品一覧
-              </a>
+              <Link href="/products">
+                <SeeMore>商品一覧</SeeMore>
+              </Link>
             </Fade>
           </div>
         </div>
@@ -104,26 +86,9 @@ const IndexPage = ({ data }) => {
                 }}
               >
                 <Fade bottom duration={1500}>
-                  <a
-                    style={{
-                      padding: `0 1.5rem 0`,
-                      textDecoration: `none`,
-                      width: `35%`,
-                      fontSize: `14px`,
-                      color: `#fff`,
-                      backgroundColor: `#800080`,
-                      display: `block`,
-                      textAlign: `center`,
-                      border: `solid 1px #800080`,
-                      padding: `0.5em`,
-                      lineHeight: `1.5`,
-                      margin: `1em auto 0`,
-                      hover: { color: `#800080`, backgroundColor: `#fff` },
-                    }}
-                    href="/member"
-                  >
-                    投稿一覧
-                  </a>
+                  <Link href="/member">
+                    <SeeMore>投稿一覧</SeeMore>
+                  </Link>
                 </Fade>
               </div>
             </div>
@@ -151,26 +116,9 @@ const IndexPage = ({ data }) => {
             }}
           >
             <Fade bottom duration={1500}>
-              <a
-                style={{
-                  padding: `0 1.5rem 0`,
-                  textDecoration: `none`,
-                  width: `35%`,
-                  fontSize: `14px`,
-                  color: `#fff`,
-                  backgroundColor: `#800080`,
-                  display: `block`,
-                  textAlign: `center`,
-                  border: `solid 1px #800080`,
-                  padding: `0.5em`,
-                  lineHeight: `1.5`,
-                  margin: `1em auto 0`,
-                  hover: { color: `#800080`, backgroundColor: `#fff` },
-                }}
-                href="/blog"
-              >
-                ブログ一覧
-              </a>
+              <Link href="/blog">
+                <SeeMore>ブログ一覧</SeeMore>
+              </Link>
             </Fade>
           </div>
         </div>
@@ -192,46 +140,5 @@ const IndexPage = ({ data }) => {
     </>
   )
 }
-
-// const SeeMore = styled.a`
-//   text-decoration: none;
-//   color: #800080;
-//   font-weight: bold;
-//   p {
-//     text-decoration: none important!;
-//   }
-//   &:hover {
-//     opacity: 30%;
-//     // transition: all 0.4s ease-in;
-//   }
-// `
-
-// const SeeMore = styled.a`
-//   width: 35%;
-//   font-size: 14px;
-//   color: #fff;
-//   background-color: #800080;
-//   display: block;
-//   text-align: center;
-//   border: solid 1px #800080;
-//   padding: 0.5em;
-//   line-height: 1.5;
-//   text-decoration: none;
-//   margin-top: 1em;
-//   &:hover {
-//     color: #800080;
-//     background-color: #fff;
-//     border: solid 1px #800080;
-//     transition: all 0.2s ease-in;
-//   }
-
-//   @media (min-width: 768px) {
-//     width: 20%;
-//   }
-
-//   @media (min-width: 1024px) {
-//     width: 15%;
-//   }
-// `
 
 export default IndexPage

@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { Button, Form, Input, PageCover, SubIndex } from "./common"
+import Link from "next/link"
 
 const Products = () => {
   return (
@@ -9,81 +9,61 @@ const Products = () => {
         <UL>
           <LI>
             <BoxContainer1>
-              <Img
-                src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2FS__34226182.jpg?alt=media&token=b787c6a9-377d-4748-ab8e-ebba40509953"
-                alt="activity"
-              ></Img>
+              <Link href="/products#fuku">
+                <Img
+                  src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2FS__34226182.jpg?alt=media&token=b787c6a9-377d-4748-ab8e-ebba40509953"
+                  alt="activity"
+                ></Img>
+              </Link>
               <TitleContainer>
-                <Title
-                  style={{
-                    fontFamily: `"Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
-                  "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
-                  "ＭＳ Ｐ明朝", "MS PMincho", serif`,
-                    fontWeight: `bold`,
-                  }}
-                >
-                  ふくむらさき
-                </Title>
+                <Link href="/products#fuku">
+                  <Title>ふくむらさき</Title>
+                </Link>
               </TitleContainer>
             </BoxContainer1>
           </LI>
           <LI>
             <BoxContainer2>
-              <Img
-                src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2FS__34226182.jpg?alt=media&token=b787c6a9-377d-4748-ab8e-ebba40509953"
-                alt="activity"
-              ></Img>
+              <Link href="/products#purple">
+                <Img
+                  src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2FS__34226182.jpg?alt=media&token=b787c6a9-377d-4748-ab8e-ebba40509953"
+                  alt="activity"
+                ></Img>
+              </Link>
               <TitleContainer>
-                <Title
-                  style={{
-                    fontFamily: `"Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
-                  "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
-                  "ＭＳ Ｐ明朝", "MS PMincho", serif`,
-                    fontWeight: `bold`,
-                  }}
-                >
-                  パープルスイートロード
-                </Title>
+                <Link href="/products#purple">
+                  <Title>パープルスイートロード</Title>
+                </Link>
               </TitleContainer>
             </BoxContainer2>
           </LI>
           <LI>
             <BoxContainer1>
-              <Img
-                src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2FS__34226182.jpg?alt=media&token=b787c6a9-377d-4748-ab8e-ebba40509953"
-                alt="activity"
-              ></Img>
+              <Link href="/products#beni">
+                <Img
+                  src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2FS__34226182.jpg?alt=media&token=b787c6a9-377d-4748-ab8e-ebba40509953"
+                  alt="activity"
+                ></Img>
+              </Link>
               <TitleContainer>
-                <Title
-                  style={{
-                    fontFamily: `"Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
-                  "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
-                  "ＭＳ Ｐ明朝", "MS PMincho", serif`,
-                    fontWeight: `bold`,
-                  }}
-                >
-                  べにはるか
-                </Title>
+                <Link href="/products#beni">
+                  <Title>べにはるか</Title>
+                </Link>
               </TitleContainer>
             </BoxContainer1>
           </LI>
           <LI>
             <BoxContainer2>
-              <Img
-                src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2FS__34226182.jpg?alt=media&token=b787c6a9-377d-4748-ab8e-ebba40509953"
-                alt="activity"
-              ></Img>
+              <Link href="/products#silk">
+                <Img
+                  src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2FS__34226182.jpg?alt=media&token=b787c6a9-377d-4748-ab8e-ebba40509953"
+                  alt="activity"
+                ></Img>
+              </Link>
               <TitleContainer>
-                <Title
-                  style={{
-                    fontFamily: `"Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
-                  "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
-                  "ＭＳ Ｐ明朝", "MS PMincho", serif`,
-                    fontWeight: `bold`,
-                  }}
-                >
-                  シルクスイート
-                </Title>
+                <Link href="/products#silk">
+                  <Title>シルクスイート</Title>
+                </Link>
               </TitleContainer>
             </BoxContainer2>
           </LI>
@@ -122,6 +102,9 @@ const Img = styled.img`
   height: 9rem;
   object-fit: cover;
   margin: 0 0;
+  &:hover {
+    opacity: 55%;
+  }
 `
 const TitleContainer = styled.div`
   // align-items: baseline;
@@ -131,12 +114,16 @@ const TitleContainer = styled.div`
 const Title = styled.p`
   text-align: left;
   margin: 0 auto;
-  color: #808080;
+  color: #444444;
   font-size: 14pt;
   font-weight: bold;
-  // font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
-  //   "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
-  //   "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
+    "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  &:hover {
+    color: #800080;
+    transition: all 0.2s ease-in;
+  }
 `
 
 export default Products

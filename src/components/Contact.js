@@ -7,10 +7,10 @@ import { Button, Form, Input, PageCover, SubIndex } from "../components/common"
 const TEXTAREA1 = styled.textarea`
   display: block;
   width: 100%;
-  height: 8rem;
+  height: 4rem;
   padding: 8px;
   font-size: 14px;
-  margin-bottom: 18px;
+  margin-bottom: 12px;
   border-radius: 4px;
   border: 1px solid #ddd;
   box-shadow: none;
@@ -20,8 +20,8 @@ const TEXTAREA2 = styled.textarea`
   width: 100%;
   height: 8rem;
   padding: 8px;
-  font-size: 14px;
-  margin-bottom: 18px;
+  font-size: 12px;
+  margin-bottom: 14px;
   border-radius: 4px;
   border: 1px solid #ddd;
   box-shadow: none;
@@ -50,38 +50,9 @@ const Contact = () => {
         <SubIndex>メールアドレス</SubIndex>
         <Input required placeholder="Email" type="email" name="email" />
         <SubIndex>注文品種・分量</SubIndex>
-        <textarea
-          style={{
-            display: `block`,
-            width: `100%`,
-            height: `4rem`,
-            padding: `8px`,
-            fontSize: `14px`,
-            marginBottom: `12px`,
-            borderRadius: `4px`,
-            border: `1px solid #ddd`,
-            boxShadow: `none`,
-          }}
-          required
-          placeholder="Order"
-          name="order"
-        />
+        <TEXTAREA1></TEXTAREA1>
         <SubIndex>お問合せ内容</SubIndex>
-        <textarea
-          style={{
-            display: `block`,
-            width: `100%`,
-            height: `6rem`,
-            padding: `8px`,
-            fontSize: `14px`,
-            borderRadius: `4px`,
-            border: `1px solid #ddd`,
-            boxShadow: `none`,
-          }}
-          required
-          placeholder="Inquiry"
-          name="inquiry"
-        />
+        <TEXTAREA2></TEXTAREA2>
         <br></br>
         <Button type="submit" block>
           送信

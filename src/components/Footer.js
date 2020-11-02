@@ -147,19 +147,19 @@ const Footer = () => {
           </ImgContainer>
         )}
 
-        <Paragraph2>
+        {/* <Paragraph2>
           <Line>
             <Link href="/about">
               <a>農園概要</a>
             </Link>
           </Line>
-          {/* <Span></Span> */}
+          <Span></Span>
           <Line>
             <Link href="/privacy_policy">
               <a>プライバシーポリシー</a>
             </Link>
           </Line>
-        </Paragraph2>
+        </Paragraph2> */}
         <CopyRight>
           Copyright © 2020 Shohei Yamaguchi All Rights Reserved.
         </CopyRight>
