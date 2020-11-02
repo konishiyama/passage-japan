@@ -9,6 +9,7 @@ const Cover = styled.div`
   position: relative;
   margin-bottom: 1rem;
   text-align: center;
+  height: 700px;
   background-color: #000000;
   display: inline-block;
 
@@ -46,7 +47,7 @@ const CoverP1 = styled.h1`
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  font-family: "Kinari";
+  font-family: "Tegaki";
 
   @media (min-width: 768px) {
     top: 60%;
@@ -59,7 +60,7 @@ const CoverP1 = styled.h1`
 
 const CoverP2 = styled.h1`
   position: absolute;
-  top: 40%;
+  top: 35%;
   left: 50%;
   width: 80%;
   text-align: center;
@@ -67,15 +68,13 @@ const CoverP2 = styled.h1`
   font-weight: bold;
   letter-spacing: 0.02em;
   width: 80%;
-  font-size: 32px;
+  font-size: 24px;
   color: #fff;
   margin: 0;
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro",
-    "Hiragino Mincho Pro", "Sawarabi Mincho", "HG明朝E", "ＭＳ Ｐ明朝",
-    "MS PMincho", "MS 明朝", serif;
+  font-family: "Tegaki";
 
   @media (min-width: 768px) {
     top: 60%;
@@ -87,7 +86,7 @@ const CoverP2 = styled.h1`
 `
 const CoverP3 = styled.h1`
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   width: 80%;
   text-align: center;
@@ -95,15 +94,13 @@ const CoverP3 = styled.h1`
   font-weight: bold;
   letter-spacing: 0.02em;
   width: 80%;
-  font-size: 32px;
+  font-size: 48px;
   color: #fff;
   margin: 0;
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro",
-    "Hiragino Mincho Pro", "Sawarabi Mincho", "HG明朝E", "ＭＳ Ｐ明朝",
-    "MS PMincho", "MS 明朝", serif;
+  font-family: "Tegaki";
 
   @media (min-width: 768px) {
     top: 60%;
@@ -156,6 +153,7 @@ const A = styled.a`
   line-height: 1.5;
   text-decoration: none;
   margin-top: 1em;
+  font-family: "Tegaki";
   &:hover {
     color: #800080;
     background-color: #fff;
@@ -183,8 +181,8 @@ const TopCover = () => {
             src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2FS__34226182.jpg?alt=media&token=b787c6a9-377d-4748-ab8e-ebba40509953"
             alt="cover"
           />
-          <CoverP1>栃木県日光市</CoverP1>
-          <CoverP2>むらさき芋栽培の</CoverP2>
+          {/* <CoverP1>栃木県日光市</CoverP1> */}
+          <CoverP2>むらさきいもの</CoverP2>
           <CoverP3>やまぐち農園</CoverP3>
           {/* <CoverP3></CoverP3> */}
           <Link href="/about">

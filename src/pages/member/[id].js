@@ -23,7 +23,7 @@ const PostTemplate = props => {
   const Container = styled.div`
     width: 100%;
     text-align: center;
-    margin: 0 auto;
+    margin: 1rem auto 0;
     border-bottom: 1px solid #f4f4f4;
   `
 

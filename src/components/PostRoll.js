@@ -11,7 +11,7 @@ const EachPost = styled.div`
   overflow-x: hidden;
   &:hover {
     cursor: pointer;
-    background-color: #f4f9ef;
+    background-color: #f3f2f4;
     transition: all 0.2s ease-in;
     p {
       text-decoration: underline;

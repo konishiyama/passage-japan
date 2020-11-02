@@ -630,5 +630,19 @@ pre tt:after {
   font-family: "Kinari";
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/kinari-gothic-mini.otf) format("otf");
+  src: url(../../public/fonts/kinari-gothic-mini.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Maru";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../../public//fonts/KosugiMaru-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Tegaki";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/851tegaki_zatsu_normal_0883.ttf);
 }

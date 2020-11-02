@@ -63,7 +63,7 @@ const Navbox = styled.div`
     padding-top: 10vh;
     background-color: #fff;
     transition: all 0.3s ease-in;
-    top: 6.5vh;
+    top: 7.4vh;
     left: ${props => (props.open ? "-100%" : "0")};
   }
 `
@@ -77,7 +77,7 @@ const BG = styled.div`
   opacity: 0;
   cursor: pointer;
   transition: all 0.3s ease-in;
-  top: 6.5vh;
+  top: 7.5vh;
   right: 0;
 
   @media (max-width: 768px) {
@@ -171,14 +171,14 @@ const Header = () => {
           <BG open />
         )}
 
-        <LogoLink href="/">
+        {/* <LogoLink href="/">
           {!!firebase && (
             <LOGO
               src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2Flogo5.001.jpeg?alt=media&token=f8de77ca-eb7b-4c30-8da2-42e0afb0972b"
               alt="LogoImg"
             ></LOGO>
           )}
-        </LogoLink>
+        </LogoLink> */}
 
         {!!user && (
           <div>
