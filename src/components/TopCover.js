@@ -19,7 +19,7 @@ const Cover = styled.div`
     padding: 0 0 0;
     height: 700px;
     object-fit: cover;
-    opacity: 55%;
+    opacity: 65%;
 
     @media (min-width: 768px) {
       height: 500px;
@@ -47,7 +47,9 @@ const CoverP1 = styled.h1`
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  font-family: "TegakiP";
+  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
+    "ＭＳ Ｐ明朝", "MS PMincho", serif;
 
   @media (min-width: 768px) {
     top: 60%;
@@ -60,7 +62,7 @@ const CoverP1 = styled.h1`
 
 const CoverP2 = styled.h1`
   position: absolute;
-  top: 35%;
+  top: 40%;
   left: 50%;
   width: 80%;
   text-align: center;
@@ -68,13 +70,15 @@ const CoverP2 = styled.h1`
   font-weight: bold;
   letter-spacing: 0.02em;
   width: 80%;
-  font-size: 24px;
+  font-size: 32px;
   color: #fff;
   margin: 0;
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  font-family: "TegakiP";
+  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
+    "ＭＳ Ｐ明朝", "MS PMincho", serif;
 
   @media (min-width: 768px) {
     top: 60%;
@@ -86,7 +90,7 @@ const CoverP2 = styled.h1`
 `
 const CoverP3 = styled.h1`
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 50%;
   width: 80%;
   text-align: center;
@@ -94,13 +98,15 @@ const CoverP3 = styled.h1`
   font-weight: bold;
   letter-spacing: 0.02em;
   width: 80%;
-  font-size: 48px;
+  font-size: 32px;
   color: #fff;
   margin: 0;
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  font-family: "TegakiP";
+  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
+    "ＭＳ Ｐ明朝", "MS PMincho", serif;
 
   @media (min-width: 768px) {
     top: 60%;
@@ -108,54 +114,6 @@ const CoverP3 = styled.h1`
 
   @media (min-width: 1024px) {
     font-size: 38px;
-  }
-`
-// const CoverP3 = styled.p`
-//   position: absolute;
-//   top: 77%;
-//   left: 50%;
-//   width: 80%;
-//   text-align: left;
-//   line-height: 1.5em;
-//   font-weight: normal;
-//   letter-spacing: 0.02em;
-//   width: 80%;
-//   font-size: 16px;
-//   color: #fff;
-//   margin: 0;
-//   -ms-transform: translate(-50%, -50%);
-//   -webkit-transform: translate(-50%, -50%);
-//   transform: translate(-50%, -50%);
-//   font-family: "Cormorant Infant", serif;
-
-//   @media (min-width: 768px) {
-//     top: 78%;
-//   }
-
-//   @media (min-width: 1024px) {
-//     font-size: 20px;
-//     top: 75%;
-//   }
-// `
-
-const TopLogo = styled.img`
-  position: absolute;
-  top: 40%;
-  left: 10%;
-  width: 20%;
-  &:hover {
-    color: #800080;
-    background-color: #fff;
-    border: solid 1px #800080;
-    transition: all 0.2s ease-in;
-  }
-
-  @media (min-width: 768px) {
-    width: 20%;
-  }
-
-  @media (min-width: 1024px) {
-    width: 15%;
   }
 `
 
@@ -174,7 +132,9 @@ const A = styled.a`
   line-height: 1.5;
   text-decoration: none;
   margin-top: 1em;
-  font-family: "Tegaki";
+  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
+    "ＭＳ Ｐ明朝", "MS PMincho", serif;
   &:hover {
     color: #800080;
     background-color: #fff;
@@ -202,7 +162,7 @@ const TopCover = () => {
             src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2FS__34226182.jpg?alt=media&token=b787c6a9-377d-4748-ab8e-ebba40509953"
             alt="cover"
           />
-          {/* <CoverP1>栃木県日光市</CoverP1> */}
+          <CoverP1>栃木県日光市</CoverP1>
           <CoverP2>むらさきいもの</CoverP2>
           <CoverP3>やまぐち農園</CoverP3>
           {/* <CoverP3></CoverP3> */}

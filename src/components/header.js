@@ -171,14 +171,14 @@ const Header = () => {
           <BG open />
         )}
 
-        {/* <LogoLink href="/">
+        <LogoLink href="/">
           {!!firebase && (
             <LOGO
               src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2Flogo5.001.jpeg?alt=media&token=f8de77ca-eb7b-4c30-8da2-42e0afb0972b"
               alt="LogoImg"
             ></LOGO>
           )}
-        </LogoLink> */}
+        </LogoLink>
 
         {!!user && (
           <div>
