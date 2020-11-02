@@ -120,7 +120,7 @@ const IndexPage = ({ data }) => {
                       margin: `1em auto 0`,
                       hover: { color: `#800080`, backgroundColor: `#fff` },
                     }}
-                    href="/memeber"
+                    href="/member"
                   >
                     投稿一覧
                   </a>
@@ -167,7 +167,7 @@ const IndexPage = ({ data }) => {
                   margin: `1em auto 0`,
                   hover: { color: `#800080`, backgroundColor: `#fff` },
                 }}
-                href="/product"
+                href="/blog"
               >
                 ブログ一覧
               </a>

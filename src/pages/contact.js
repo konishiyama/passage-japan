@@ -16,6 +16,18 @@ const TEXTAREA = styled.textarea`
   box-shadow: none;
 `
 
+const TEXTAREA2 = styled.textarea`
+  display: block;
+  width: 100%;
+  height: 4rem;
+  padding: 8px;
+  font-size: 14px;
+  margin-bottom: 12px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  box-shadow: none;
+`
+
 const Contact = () => {
   return (
     <>
@@ -32,19 +44,21 @@ const Contact = () => {
           data-netlify-honeypot="bot-field"
         >
           <br></br>
-          <p>下記フォームに必要事項をご記入の上、お問合わせください。</p>
+          <p>下記フォームに必要事項をご記入の上、「送信」を押してください。</p>
           <p>
-            通常、４営業日以内にご返答いたします。メールアドレスの入力はお間違いのないようにご記入ください。
+            お問い合わせ・注文内容を確認させていただき、お支払い・配送について当方からご連絡差し上げます。
           </p>
           <br></br>
           <input type="hidden" name="form-name" value="contact" />
-          <SubIndex>NAME</SubIndex>
+          <SubIndex>お名前</SubIndex>
           <Input required placeholder="Name" type="text" name="name" />
-          <SubIndex>TITLE</SubIndex>
-          <Input required placeholder="Title" type="text" name="subject" />
-          <SubIndex>EMAIL</SubIndex>
+          <SubIndex>ご住所</SubIndex>
+          <Input required placeholder="Address" type="text" name="address" />
+          <SubIndex>メールアドレス</SubIndex>
           <Input required placeholder="Email" type="email" name="email" />
-          <SubIndex>INQUIRY</SubIndex>
+          <SubIndex>注文品種・分量</SubIndex>
+          <TEXTAREA2 required placeholder="Order" name="order" />
+          <SubIndex>お問合せ内容</SubIndex>
           <TEXTAREA required placeholder="Inquiry" name="inquiry" />
           <Button type="submit" block>
             Send
