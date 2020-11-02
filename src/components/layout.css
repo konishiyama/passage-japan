@@ -646,3 +646,10 @@ pre tt:after {
   font-weight: 400;
   src: url(../fonts/851tegaki_zatsu_normal_0883.ttf);
 }
+
+@font-face {
+  font-family: "TegakiP";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../../public/fonts/851tegaki_zatsu_normal_0883.ttf);
+}

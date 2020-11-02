@@ -47,7 +47,7 @@ const CoverP1 = styled.h1`
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  font-family: "Tegaki";
+  font-family: "TegakiP";
 
   @media (min-width: 768px) {
     top: 60%;
@@ -74,7 +74,7 @@ const CoverP2 = styled.h1`
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  font-family: "Tegaki";
+  font-family: "TegakiP";
 
   @media (min-width: 768px) {
     top: 60%;
@@ -100,7 +100,7 @@ const CoverP3 = styled.h1`
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  font-family: "Tegaki";
+  font-family: "TegakiP";
 
   @media (min-width: 768px) {
     top: 60%;
@@ -137,6 +137,27 @@ const CoverP3 = styled.h1`
 //     top: 75%;
 //   }
 // `
+
+const TopLogo = styled.img`
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  width: 20%;
+  &:hover {
+    color: #800080;
+    background-color: #fff;
+    border: solid 1px #800080;
+    transition: all 0.2s ease-in;
+  }
+
+  @media (min-width: 768px) {
+    width: 20%;
+  }
+
+  @media (min-width: 1024px) {
+    width: 15%;
+  }
+`
 
 const A = styled.a`
   position: absolute;
@@ -185,6 +206,7 @@ const TopCover = () => {
           <CoverP2>むらさきいもの</CoverP2>
           <CoverP3>やまぐち農園</CoverP3>
           {/* <CoverP3></CoverP3> */}
+          {/* <TopLogo src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2Ftopimage.001.png?alt=media&token=20df2b70-f586-4f18-8793-deff7ee816f1"></TopLogo> */}
           <Link href="/about">
             <A>農園概要 →</A>
           </Link>

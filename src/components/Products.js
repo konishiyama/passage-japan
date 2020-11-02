@@ -24,21 +24,6 @@ const Products = () => {
           </LI>
           <LI>
             <BoxContainer2>
-              <Link href="/products#purple">
-                <Img
-                  src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2FS__34226182.jpg?alt=media&token=b787c6a9-377d-4748-ab8e-ebba40509953"
-                  alt="activity"
-                ></Img>
-              </Link>
-              <TitleContainer>
-                <Link href="/products#purple">
-                  <Title>パープルスイートロード</Title>
-                </Link>
-              </TitleContainer>
-            </BoxContainer2>
-          </LI>
-          <LI>
-            <BoxContainer1>
               <Link href="/products#beni">
                 <Img
                   src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2FS__34226182.jpg?alt=media&token=b787c6a9-377d-4748-ab8e-ebba40509953"
@@ -48,21 +33,6 @@ const Products = () => {
               <TitleContainer>
                 <Link href="/products#beni">
                   <Title>べにはるか</Title>
-                </Link>
-              </TitleContainer>
-            </BoxContainer1>
-          </LI>
-          <LI>
-            <BoxContainer2>
-              <Link href="/products#silk">
-                <Img
-                  src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2FS__34226182.jpg?alt=media&token=b787c6a9-377d-4748-ab8e-ebba40509953"
-                  alt="activity"
-                ></Img>
-              </Link>
-              <TitleContainer>
-                <Link href="/products#silk">
-                  <Title>シルクスイート</Title>
                 </Link>
               </TitleContainer>
             </BoxContainer2>

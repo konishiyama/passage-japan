@@ -37,7 +37,7 @@ const Products = props => {
           <P>
             ２０１８年に開発され、２０１９年から市場に出回るようになったふくむらさき。焼き芋にすると、これまでの紫芋の概念を覆す、ねっとりとした食感で糖度は「べにはるか」並に高くなるのが特徴。
           </P>
-          <P id="purple">
+          <P id="beni">
             【参照URL】
             https://www.naro.affrc.go.jp/publicity_report/press/files/KARC_press_2018_11_15a.pdf
           </P>
@@ -52,39 +52,9 @@ const Products = props => {
           </Pic>
           <br></br>
           <br></br>
-          <Index>パープルスイートロード</Index>
-          <P id="beni">
-            糖度は低いがアントシアニンたっぷりで栄養価が高く、濃い紫が特徴なパープルスイートロード。
-          </P>
-          <br></br>
-          <br></br>
-          <br></br>
-          <Pic>
-            <img
-              src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2FS__34226180.jpg?alt=media&token=6e97386b-9c3c-45c2-9440-6fcdbd9f469d"
-              alt="coverImg"
-            ></img>
-          </Pic>
-          <br></br>
-          <br></br>
           <Index>べにはるか</Index>
-          <P id="silk">
-            国内・海外で大人気のべにはるか。焼き芋にすると、ねっとりとした食感とたまらない甘さが特徴。干し芋やプリン、スイートポテトへの利用も◎。
-          </P>
-          <br></br>
-          <br></br>
-          <br></br>
-          <Pic>
-            <img
-              src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2FS__34226180.jpg?alt=media&token=6e97386b-9c3c-45c2-9440-6fcdbd9f469d"
-              alt="coverImg"
-            ></img>
-          </Pic>
-          <br></br>
-          <br></br>
-          <Index>シルクスイート</Index>
           <P>
-            滑らかな舌触りでほんのり後口に残らない上品な甘さが特徴なシルクスイート。
+            国内・海外で大人気のべにはるか。焼き芋にすると、ねっとりとした食感とたまらない甘さが特徴。干し芋やプリン、スイートポテトへの利用も◎。
           </P>
           <br></br>
           <br></br>

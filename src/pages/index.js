@@ -57,7 +57,7 @@ const IndexPage = ({ data }) => {
           >
             <Fade bottom duration={1500}>
               <Link href="/products">
-                <SeeMore>商品一覧</SeeMore>
+                <SeeMore>商品詳細</SeeMore>
               </Link>
             </Fade>
           </div>
