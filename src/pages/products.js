@@ -27,7 +27,7 @@ const Products = props => {
           <br></br>
           <Pic>
             <img
-              src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2FS__34226180.jpg?alt=media&token=6e97386b-9c3c-45c2-9440-6fcdbd9f469d"
+              src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2Ffukumurasaki2.jpg?alt=media&token=0b238408-8fa4-4219-9779-c208c3485e9f"
               alt="coverImg"
             ></img>
           </Pic>
@@ -46,15 +46,44 @@ const Products = props => {
           <br></br>
           <Pic>
             <img
-              src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2FS__34226180.jpg?alt=media&token=6e97386b-9c3c-45c2-9440-6fcdbd9f469d"
+              src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2Fbeniharuka2.jpg?alt=media&token=6010891a-a638-4eae-ba20-6e526b94ea9f"
               alt="coverImg"
             ></img>
           </Pic>
           <br></br>
           <br></br>
           <Index>べにはるか</Index>
-          <P>
+          <P id="purple">
             国内・海外で大人気のべにはるか。焼き芋にすると、ねっとりとした食感とたまらない甘さが特徴。干し芋やプリン、スイートポテトへの利用も◎。
+          </P>
+          <br></br>
+          <br></br>
+          <Pic>
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2FS__34226180.jpg?alt=media&token=6e97386b-9c3c-45c2-9440-6fcdbd9f469d"
+              alt="coverImg"
+            ></img>
+          </Pic>
+          <br></br>
+          <br></br>
+          <Index>パープルスイートロード</Index>
+          <P id="silk">
+            糖度は低いがアントシアニンたっぷりで栄養価が高く、濃い紫が特徴なパープルスイートロード。
+          </P>
+          <br></br>
+          <br></br>
+          <br></br>
+          <Pic>
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2FS__34226180.jpg?alt=media&token=6e97386b-9c3c-45c2-9440-6fcdbd9f469d"
+              alt="coverImg"
+            ></img>
+          </Pic>
+          <br></br>
+          <br></br>
+          <Index>シルクスイート</Index>
+          <P>
+            滑らかな舌触りでほんのり後口に残らない上品な甘さが特徴なシルクスイート。
           </P>
           <br></br>
           <br></br>

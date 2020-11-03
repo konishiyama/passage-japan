@@ -7,36 +7,61 @@ const Products = () => {
     <>
       <Container>
         <UL>
-          <LI>
-            <BoxContainer1>
-              <Link href="/products#fuku">
+          <Link href="/products#fuku">
+            <LI>
+              <BoxContainer1>
                 <Img
-                  src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2FS__34226182.jpg?alt=media&token=b787c6a9-377d-4748-ab8e-ebba40509953"
+                  src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2Ffukumurasaki2.jpg?alt=media&token=0b238408-8fa4-4219-9779-c208c3485e9f"
                   alt="activity"
                 ></Img>
-              </Link>
-              <TitleContainer>
-                <Link href="/products#fuku">
+
+                <TitleContainer>
                   <Title>ふくむらさき</Title>
-                </Link>
-              </TitleContainer>
-            </BoxContainer1>
-          </LI>
-          <LI>
-            <BoxContainer2>
-              <Link href="/products#beni">
+                </TitleContainer>
+              </BoxContainer1>
+            </LI>
+          </Link>
+          <Link href="/products#beni">
+            <LI>
+              <BoxContainer2>
+                <Img
+                  src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2Fbeniharuka2.jpg?alt=media&token=6010891a-a638-4eae-ba20-6e526b94ea9f"
+                  alt="activity"
+                ></Img>
+
+                <TitleContainer>
+                  <Title>べにはるか</Title>
+                </TitleContainer>
+              </BoxContainer2>
+            </LI>
+          </Link>
+          <Link href="/products#purple">
+            <LI>
+              <BoxContainer1>
                 <Img
                   src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2FS__34226182.jpg?alt=media&token=b787c6a9-377d-4748-ab8e-ebba40509953"
                   alt="activity"
                 ></Img>
-              </Link>
-              <TitleContainer>
-                <Link href="/products#beni">
-                  <Title>べにはるか</Title>
-                </Link>
-              </TitleContainer>
-            </BoxContainer2>
-          </LI>
+
+                <TitleContainer>
+                  <Title>パープルスイートロード</Title>
+                </TitleContainer>
+              </BoxContainer1>
+            </LI>
+          </Link>
+          <Link href="/products#silk">
+            <LI>
+              <BoxContainer2>
+                <Img
+                  src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2FS__34226182.jpg?alt=media&token=b787c6a9-377d-4748-ab8e-ebba40509953"
+                  alt="activity"
+                ></Img>
+                <TitleContainer>
+                  <Title>シルクスイート</Title>
+                </TitleContainer>
+              </BoxContainer2>
+            </LI>
+          </Link>
         </UL>
       </Container>
     </>
@@ -56,6 +81,18 @@ const UL = styled.ul`
 
 const LI = styled.li`
   width: 50%;
+  margin-bottom: 2rem;
+  &:hover {
+    cursor: pointer;
+    img {
+      opacity: 55%;
+      transition: all 0.2s ease-in;
+    }
+    p {
+      color: #800080;
+      transition: all 0.2s ease-in;
+    }
+  }
 `
 
 const BoxContainer1 = styled.div`
@@ -73,6 +110,7 @@ const Img = styled.img`
   object-fit: cover;
   margin: 0 0;
   &:hover {
+    cursor: pointer;
     opacity: 55%;
   }
 `
@@ -93,6 +131,7 @@ const Title = styled.p`
   &:hover {
     color: #800080;
     transition: all 0.2s ease-in;
+    cursor: pointer;
   }
 `
 

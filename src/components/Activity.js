@@ -19,7 +19,7 @@ const Activity = () => {
         {/* <Fade right duration={1500} distance="50px"> */}
         <ImgContainer>
           <Img
-            src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2FS__34226188.jpg?alt=media&token=e6e328f8-8ab2-4e65-be9e-bed113689548"
+            src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2FS__34308262.jpg?alt=media&token=93f4afce-ebc0-40fe-a52e-ecf5fe77dde3"
             alt="activity"
           ></Img>
         </ImgContainer>

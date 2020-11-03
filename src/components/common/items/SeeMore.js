@@ -16,7 +16,8 @@ export const SeeMore = styled.div`
     color: #000000;
     background-color: #fff;
     border: solid 1px #000000;
-    // transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
   }
 
   @media (min-width: 768px) {
