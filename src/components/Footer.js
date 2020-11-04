@@ -87,7 +87,7 @@ const CopyRight = styled.p`
     "MS PMincho", serif;
   color: #808080;
   text-align: center;
-  margin: 10px auto;
+  margin: 40px auto;
 `
 
 const Footer = () => {

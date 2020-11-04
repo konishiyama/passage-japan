@@ -4,6 +4,7 @@ import Link from "next/link"
 import TopCover from "../components/TopCover"
 import Declaration from "../components/Declaration"
 import Activity from "../components/Activity"
+import About from "../components/About"
 import Products from "../components/Products"
 import Contact from "../components/Contact"
 import {
@@ -39,10 +40,32 @@ const IndexPage = ({ data }) => {
         >
           <Fade bottom duration={2000}>
             <SubTitle>
-              <span>- 活動内容 -</span>
+              <span>農園について</span>
             </SubTitle>
           </Fade>
-          <Activity></Activity>
+          <Fade duration={2000}>
+            <About />
+          </Fade>
+          <div
+            style={{
+              margin: `0 auto`,
+              maxWidth: 960,
+              padding: `0 1.5rem 0`,
+            }}
+          >
+            <div
+              style={{
+                margin: `2.5rem auto 0 `,
+                textAlign: `center`,
+              }}
+            >
+              <Fade bottom duration={2000}>
+                <Link href="/about">
+                  <SeeMore>農園概要</SeeMore>
+                </Link>
+              </Fade>
+            </div>
+          </div>
           <Fade bottom duration={2000}>
             <SubTitle>
               <span>商品について</span>
@@ -141,7 +164,7 @@ const IndexPage = ({ data }) => {
           style={{
             margin: `0 auto`,
             maxWidth: 480,
-            padding: `0rem 0.8rem 2.45rem`,
+            padding: `0rem 0.8rem`,
           }}
         >
           <Fade duration={2000}>

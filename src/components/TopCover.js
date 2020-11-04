@@ -62,6 +62,7 @@ const Scroll = styled.p`
 `
 
 const fadeProperties = {
+  delay: 2000,
   duration: 3000,
   transitionDuration: 2500,
   infinite: true,
@@ -74,13 +75,13 @@ const TopCover = () => {
 
   return (
     <>
-      {!!firebase && (
-        <Fade {...fadeProperties}>
-          <CoverPic src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2Ftopcover%2Flouis-hansel-shotsoflouis-geYw6L4-WU8-unsplash.jpg?alt=media&token=d927bd8e-7bc4-408c-b4f2-cf862b0acdba" />
-          <CoverPic src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2Ftopcover%2Flouis-hansel-shotsoflouis-x1EjnCuwHDI-unsplash.jpg?alt=media&token=193386e5-7190-4a5b-8f4a-a60ae77623a6" />
-          <CoverPic src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2FS__34308262.jpg?alt=media&token=93f4afce-ebc0-40fe-a52e-ecf5fe77dde3" />
-        </Fade>
-      )}
+      {/* {!!firebase && ( */}
+      <Fade {...fadeProperties}>
+        <CoverPic src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2Ftopcover%2Fcover1.jpg?alt=media&token=57febd65-0051-4583-84ab-1dc63c60cf5c" />
+        <CoverPic src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2Ftopcover%2Fcover2.jpg?alt=media&token=4422cd9f-c55e-43e7-889b-527812f363a8" />
+        <CoverPic src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2Ftopcover%2Fcover3.jpg?alt=media&token=a1e08059-5c28-4246-baf7-e0ddccf81d6a" />
+      </Fade>
+      {/* )} */}
       {/* <Scroll>SCROLL</Scroll>
       <Flash duration={3500} forever>
         {!!firebase && (
