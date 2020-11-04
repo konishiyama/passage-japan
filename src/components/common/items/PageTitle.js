@@ -1,7 +1,8 @@
 import styled from "styled-components"
 
 export const PageTitle = styled.div`
-  margin: 4rem auto 2rem;
+  margin: 0rem auto 2rem;
+  padding-top: 4rem;
   text-align: center;
   display: block;
   span {

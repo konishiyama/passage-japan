@@ -28,7 +28,7 @@ const A = styled.a`
 
 const Scroll = styled.p`
   position: absolute;
-  top: 94%;
+  top: 93%;
   left: 50%;
   width: 80%;
   text-align: center;
@@ -36,7 +36,7 @@ const Scroll = styled.p`
   font-weight: bold;
   letter-spacing: 0.02em;
   width: 80%;
-  font-size: 8px;
+  font-size: 12px;
   color: #fff;
   margin: 0;
   -ms-transform: translate(-50%, -50%);
@@ -91,20 +91,22 @@ const TopCover2 = () => {
         {/* {!!firebase && ( */}
         <Scroll>SCROLL</Scroll>
         <Flash duration={3500} forever>
-          <KeyboardArrowDownIcon
-            style={{
-              color: `#fff`,
-              margin: `0 auto`,
-              position: `absolute`,
-              fontSize: `25px`,
-              fontWeight: `bold`,
-              top: `97%`,
-              left: `50%`,
-              msTransform: `translate(-50%, -50%)`,
-              WebkitTransform: `translate(-50%, -50%)`,
-              transform: `translate(-50%, -50%)`,
-            }}
-          ></KeyboardArrowDownIcon>
+          {!!firebase && (
+            <KeyboardArrowDownIcon
+              style={{
+                color: `#fff`,
+                margin: `0 auto`,
+                position: `absolute`,
+                fontSize: `35px`,
+                fontWeight: `bold`,
+                top: `96%`,
+                left: `50%`,
+                msTransform: `translate(-50%, -50%)`,
+                WebkitTransform: `translate(-50%, -50%)`,
+                transform: `translate(-50%, -50%)`,
+              }}
+            ></KeyboardArrowDownIcon>
+          )}
         </Flash>
         {/* )} */}
       </Cover>

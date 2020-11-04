@@ -42,7 +42,7 @@ const ArticleTemplate = props => {
         style={{
           margin: `0 auto`,
           maxWidth: 960,
-          padding: `1.5rem 1.5rem 1.45rem`,
+          padding: `4rem 1.5rem 1.45rem`,
         }}
       >
         <ArticleItem>

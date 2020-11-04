@@ -58,24 +58,24 @@ const Navbox = styled.nav`
   height: 100%;
   justify-content: flex-end;
   align-items: center;
-  z-index: 2;
+  z-index: ${props => (props.open ? "-1" : "2")};
 
   @media (max-width: 768px) {
     flex-direction: column;
     position: fixed;
-    width: 80%;
+    width: 100%;
+    // top: 0;
     justify-content: flex-start;
-    // padding-top: 10vh;
+    padding-top: 64px;
     background-color: #fff;
     transition: all 0.4s;
-    left: ${props => (props.open ? "-100%" : "0")};
-    // opacity: ${props => (props.open ? "0" : "100%")};  
-    // display: ${props => (props.open ? "none" : "")};
+    opacity: ${props => (props.open ? "0" : "100%")};
   }
 `
 
 const Hamburger = styled.div`
-  background-color: ${props => (props.open ? "#111" : "#fff")};
+  // background-color: ${props => (props.open ? "#111" : "#fff")};
+  background-color: #111;
   width: 25px;
   height: 1.5px;
   transition: all 0.3s linear;
@@ -87,7 +87,8 @@ const Hamburger = styled.div`
   ::after {
     width: 24px;
     height: 1.5px;
-    background-color: ${props => (props.open ? "#111" : "#fff")};
+    // background-color: ${props => (props.open ? "#111" : "#fff")};
+    background-color: #111;
     content: "";
     position: absolute;
     transition: all 0.3s linear;
@@ -117,23 +118,6 @@ const LogIn = styled.div`
   cursor: pointer;
 `
 
-const BG = styled.div`
-  height: 100%;
-  position: fixed;
-  width: 100%;
-  z-index: 1;
-  background-color: #000;
-  opacity: 0;
-  cursor: pointer;
-  transition: all 0.2s ease-in;
-  top: 8vh;
-  right: 0;
-
-  @media (max-width: 768px) {
-    opacity: ${props => (props.open ? "0" : "60%")};
-  }
-`
-
 const Header2 = () => {
   const [navbarOpen, setNavbarOpen] = useState(false)
   const { user, firebase } = useContext(FirebaseContext)
@@ -147,18 +131,9 @@ const Header2 = () => {
         {navbarOpen ? <Hamburger open /> : <Hamburger />}
       </Toggle>
       {navbarOpen ? (
-        <Navbox>
-          <NavbarLinks />
-        </Navbox>
+        <Navbox>{!!firebase && <NavbarLinks />}</Navbox>
       ) : (
-        <Navbox open>
-          <NavbarLinks />
-        </Navbox>
-      )}
-      {navbarOpen ? (
-        <BG onClick={() => setNavbarOpen(!navbarOpen)} />
-      ) : (
-        <BG open />
+        <Navbox open>{!!firebase && <NavbarLinks />}</Navbox>
       )}
       {/* {!!user && (
         <LogIn>

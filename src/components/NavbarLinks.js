@@ -162,19 +162,19 @@ const NavbarLinks = () => {
 
   return (
     <>
-      <Link href="/">
+      <a href="/">
         <NavItemHome>HOME</NavItemHome>
-      </Link>
-      <Link href="/about">
+      </a>
+      <a href="/about">
         <NavItem>農園について</NavItem>
-      </Link>
-      <Link href="/blog">
+      </a>
+      <a href="/blog">
         <NavItem>ブログ</NavItem>
-      </Link>
+      </a>
       {!user && (
-        <Link href="/login">
+        <a href="/login">
           <NavItem>ログイン</NavItem>
-        </Link>
+        </a>
       )}
       {/* {!!user && !!user.admin && (
         <a href="/postarticle">
@@ -182,9 +182,9 @@ const NavbarLinks = () => {
         </a>
       )} */}
       {!!user && (
-        <Link href="/member">
+        <a href="/member">
           <NavItem>会員掲示板</NavItem>
-        </Link>
+        </a>
       )}
       {!!user && <Logout onClick={handleLogOutClick}>Logout</Logout>}
     </>

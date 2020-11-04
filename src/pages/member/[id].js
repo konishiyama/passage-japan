@@ -86,7 +86,7 @@ const PostTemplate = props => {
         style={{
           margin: `0 auto`,
           maxWidth: 960,
-          padding: `0 1.5rem 1.45rem`,
+          padding: `3rem 1.5rem 1.45rem`,
         }}
       >
         <PostItem>
