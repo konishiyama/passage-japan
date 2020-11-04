@@ -11,7 +11,7 @@ const Cover = styled.div`
   top: 0%;
   display: flex;
   width: 100%;
-  height: 750px;
+  height: 100vh;
   background-size: cover;
   background-position: top;
   align-items: center;
@@ -62,7 +62,7 @@ const TopCover = () => {
               width: `80%`,
             }}
           ></img> */}
-          <p
+          {/* <p
             style={{
               color: `#fff`,
               margin: `0 auto`,
@@ -75,7 +75,7 @@ const TopCover = () => {
             `,
               fontWeight: `normal`,
               top: `60%`,
-              left: `15%`,
+              left: `7%`,
               textDecoration: `none`,
             }}
           >
@@ -94,7 +94,7 @@ const TopCover = () => {
             `,
               fontWeight: `normal`,
               top: `66%`,
-              left: `15%`,
+              left: `7%`,
               textDecoration: `none`,
             }}
           >
@@ -119,12 +119,12 @@ const TopCover = () => {
             `,
               fontWeight: `normal`,
               top: `73%`,
-              left: `15%`,
+              left: `7%`,
               textDecoration: `none`,
             }}
           >
             農園概要 →
-          </a>
+          </a> */}
         </Fade>
         {/* {!!firebase && ( */}
         <Scroll>SCROLL</Scroll>
