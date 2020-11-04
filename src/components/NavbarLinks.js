@@ -168,6 +168,9 @@ const NavbarLinks = () => {
       <a href="/about">
         <NavItem>農園について</NavItem>
       </a>
+      <a href="/products">
+        <NavItem>製品情報</NavItem>
+      </a>
       <a href="/blog">
         <NavItem>ブログ</NavItem>
       </a>
@@ -186,7 +189,7 @@ const NavbarLinks = () => {
           <NavItem>会員掲示板</NavItem>
         </a>
       )}
-      {!!user && <Logout onClick={handleLogOutClick}>Logout</Logout>}
+      {!!user && <Logout onClick={handleLogOutClick}>ログアウト</Logout>}
     </>
   )
 }

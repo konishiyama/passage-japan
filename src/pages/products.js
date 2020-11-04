@@ -87,7 +87,7 @@ const Products = props => {
           </P>
           <br></br>
           <br></br>
-          <Link href="/contacts">
+          <Link href="/contact">
             <SeeMore
               style={{
                 width: `40%`,
