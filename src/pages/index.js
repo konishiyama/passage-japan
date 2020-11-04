@@ -2,8 +2,6 @@ import React, { useContext } from "react"
 import styled from "styled-components"
 import Link from "next/link"
 import TopCover from "../components/TopCover"
-import Declaration from "../components/Declaration"
-import Activity from "../components/Activity"
 import About from "../components/About"
 import Products from "../components/Products"
 import Contact from "../components/Contact"
@@ -11,7 +9,6 @@ import {
   IndexArticles,
   IndexMemberPosts,
   SubTitle,
-  SubTitleWithImage,
   SeeMore,
 } from "../components/common"
 import { FirebaseContext } from "../components/Firebase"

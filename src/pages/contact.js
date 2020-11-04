@@ -4,14 +4,13 @@ import { Button, Form, Input, PageTitle, SubIndex } from "../components/common"
 // import { FirebaseContext} from '../components/Firebase'
 // import { Editor } from '@tinymce/tinymce-react';
 
-const TEXTAREA = styled.textarea`
+const TEXTAREA1 = styled.textarea`
   display: block;
   width: 100%;
-  height: 8rem;
+  height: 4rem;
   padding: 8px;
   font-size: 14px;
-  margin-bottom: 18px;
-  border-radius: 4px;
+  margin-bottom: 12px;
   border: 1px solid #ddd;
   box-shadow: none;
 `
@@ -19,11 +18,10 @@ const TEXTAREA = styled.textarea`
 const TEXTAREA2 = styled.textarea`
   display: block;
   width: 100%;
-  height: 4rem;
+  height: 8rem;
   padding: 8px;
   font-size: 14px;
-  margin-bottom: 12px;
-  border-radius: 4px;
+  margin-bottom: 24px;
   border: 1px solid #ddd;
   box-shadow: none;
 `
@@ -57,16 +55,18 @@ const Contact = () => {
           <SubIndex>メールアドレス</SubIndex>
           <Input required placeholder="Email" type="email" name="email" />
           <SubIndex>注文品種・分量</SubIndex>
-          <TEXTAREA2 required placeholder="Order" type="text" name="order" />
+          <TEXTAREA1 required placeholder="Order" type="text" name="order" />
           <SubIndex>お問合せ内容</SubIndex>
-          <TEXTAREA required placeholder="Inquiry" type="text" name="inquiry" />
+          <TEXTAREA2
+            required
+            placeholder="Inquiry"
+            type="text"
+            name="inquiry"
+          />
           <Button type="submit" block>
             Send
           </Button>
         </Form>
-        <br />
-        <br />
-        <br></br>
       </section>
     </>
   )

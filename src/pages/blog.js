@@ -1,6 +1,11 @@
 import Link from "next/link"
 import React, { useContext } from "react"
-import { BlogPageArticles, PageCover, BottomBar } from "../components/common"
+import {
+  BlogPageArticles,
+  PageCover,
+  BottomBar,
+  PageTitle,
+} from "../components/common"
 import CreateIcon from "@material-ui/icons/Create"
 import { FirebaseContext } from "../components/Firebase"
 
@@ -10,20 +15,15 @@ const Blog = () => {
   return (
     <>
       <section>
-        <PageCover>
-          <img
-            src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2FS__34226184.jpg?alt=media&token=3beb0ba8-d387-485e-874c-d0ae95c5b843"
-            alt="coverImg"
-          ></img>
-          <p>
-            <span>BLOG</span>
-          </p>
-        </PageCover>
+        <PageTitle>
+          <span>ブログ</span>
+          <p>Blog</p>
+        </PageTitle>
         <div
           style={{
             margin: `0 auto`,
             maxWidth: 960,
-            padding: `0 0.8rem 1.45rem`,
+            padding: `0 0.8rem`,
           }}
         >
           {!!firebase && <BlogPageArticles firebase={firebase} />}

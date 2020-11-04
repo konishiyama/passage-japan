@@ -1,7 +1,12 @@
 import Link from "next/link"
 import React, { useEffect, useContext, useState } from "react"
 import styled from "styled-components"
-import { PageCover, BottomBar, MemberPosts } from "../components/common"
+import {
+  PageCover,
+  BottomBar,
+  MemberPosts,
+  PageTitle,
+} from "../components/common"
 import { FirebaseContext } from "../components/Firebase"
 import CreateIcon from "@material-ui/icons/Create"
 
@@ -24,15 +29,10 @@ const Member = ({ data }) => {
 
   return (
     <section>
-      <PageCover>
-        <img
-          src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2FS__34226184.jpg?alt=media&token=3beb0ba8-d387-485e-874c-d0ae95c5b843"
-          alt="coverImg"
-        ></img>
-        <p>
-          <span>COMMUNITY</span>
-        </p>
-      </PageCover>
+      <PageTitle>
+        <span>会員掲示板</span>
+        <p>Community</p>
+      </PageTitle>
       <div
         style={{
           margin: `0 auto`,

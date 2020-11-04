@@ -5,6 +5,7 @@ export const PageCover = styled.div`
   background-color: white;
   position: relative;
   margin-bottom: 1rem;
+  // padding-top: 64px;
 
   p {
     position: absolute;
