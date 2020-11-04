@@ -54,79 +54,76 @@ const Login = () => {
 
   return (
     <section>
-      <br></br>
-      <br></br>
-      <FormContainer>
-        <Title>ログイン</Title>
-        <Form onSubmit={handleSubmit}>
-          <SubIndex>EMAIL</SubIndex>
-          <Input
-            required
-            placeholder="email"
-            value={formValues.email}
-            name="email"
-            type="email"
-            onChange={handleInputChange}
-          />
-          <SubIndex>パスワード</SubIndex>
-          <Input
-            required
-            placeholder="password"
-            value={formValues.password}
-            name="password"
-            type="password"
-            onChange={handleInputChange}
-          />
-          {!!errorMessage && (
-            <ErrorMessage>
-              パスワードまたはメールアドレスが間違っています
-            </ErrorMessage>
-          )}
-          <div
-            style={{
-              display: `flex`,
-              marginBottom: `10px`,
-              marginTop: `20px`,
-            }}
-          >
-            {/* <CheckBox type="checkbox" />
-            <span
+      <div
+        style={{
+          margin: `0 auto`,
+          // maxWidth: 960,
+          padding: `8rem 0rem 1.45rem`,
+        }}
+      >
+        <FormContainer>
+          <Title>ログイン</Title>
+          <Form onSubmit={handleSubmit}>
+            <SubIndex>EMAIL</SubIndex>
+            <Input
+              required
+              placeholder="email"
+              value={formValues.email}
+              name="email"
+              type="email"
+              onChange={handleInputChange}
+            />
+            <SubIndex>パスワード</SubIndex>
+            <Input
+              required
+              placeholder="password"
+              value={formValues.password}
+              name="password"
+              type="password"
+              onChange={handleInputChange}
+            />
+            {!!errorMessage && (
+              <ErrorMessage>
+                パスワードまたはメールアドレスが間違っています
+              </ErrorMessage>
+            )}
+            <div
               style={{
-                paddingLeft: `4px`,
+                display: `flex`,
+                marginBottom: `10px`,
+                marginTop: `20px`,
               }}
-            >
-              Remember Password
-            </span> */}
-          </div>
-          <Button type="submit" block>
-            Login
-          </Button>
-        </Form>
-        <br />
-        <SmallP>
-          <p>
-            <Link href="/register">
-              <A>パスワード</A>
-            </Link>
-            をお忘れですか？
-          </p>
-        </SmallP>
-        <SmallP>
-          <p>
-            会員登録は
-            <Link href="/register">
-              <A>こちら</A>
-            </Link>
-          </p>
-        </SmallP>
-        <br />
-      </FormContainer>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
+            ></div>
+            <Button type="submit" block>
+              Login
+            </Button>
+          </Form>
+          <br />
+          <SmallP>
+            <p>
+              <Link href="/register">
+                <A>パスワード</A>
+              </Link>
+              をお忘れですか？
+            </p>
+          </SmallP>
+          <SmallP>
+            <p>
+              会員登録は
+              <Link href="/register">
+                <A>こちら</A>
+              </Link>
+            </p>
+          </SmallP>
+          <br />
+        </FormContainer>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+      </div>
     </section>
   )
 }

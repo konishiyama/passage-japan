@@ -3,14 +3,13 @@ import React from "react"
 import { FirebaseContext, useAuth } from "./Firebase"
 import Footer from "./Footer"
 import Header from "./header"
-import Header2 from "./header2"
 
 const Layout = ({ children }) => {
   const { user, firebase, loading } = useAuth()
 
   return (
     <FirebaseContext.Provider value={{ user, firebase, loading }}>
-      <Header2 />
+      <Header />
       <main>{children}</main>
       <Footer />
     </FirebaseContext.Provider>

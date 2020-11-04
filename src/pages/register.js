@@ -103,103 +103,111 @@ const Register = () => {
 
   return (
     <section>
-      <br></br>
-      <br></br>
-      <FormContainer>
-        <Title>会員登録</Title>
-        <br></br>
-        <Form required onSubmit={onSubmitFile}>
-          <SubIndex>プロフィール画像</SubIndex>
-          <input
-            type="file"
-            onChange={handleImage}
-            style={{
-              marginBottom: `1vw`,
-            }}
-          />
+      <div
+        style={{
+          margin: `0 auto`,
+          // maxWidth: 960,
+          padding: `4rem 0rem 1.45rem`,
+        }}
+      >
+        <FormContainer>
+          <Title>会員登録</Title>
           <br></br>
-          <UploadButton>送信</UploadButton>
-          {!!fileUploaded && <Message>イメージの送信に成功しました！</Message>}
-          {!!fileErrorMessage && (
-            <ErrorMessage>
-              イメージを選択した後、送信を押してください！
-            </ErrorMessage>
-          )}
-        </Form>
-        <br></br>
-        <Form onSubmit={handleSubmit}>
-          <SubIndex>ユーザー名</SubIndex>
-          <Input
-            onChange={handleInputChange}
-            value={formValues.username}
-            placeholder="username"
-            type="text"
-            required
-            name="username"
-          />
-          <SubIndex>EMAIL</SubIndex>
-          <Input
-            onChange={handleInputChange}
-            value={formValues.email}
-            placeholder="email"
-            type="email"
-            required
-            name="email"
-          />
-          <SubIndex>パスワード</SubIndex>
-          <Input
-            onChange={handleInputChange}
-            value={formValues.password}
-            placeholder="password"
-            type="password"
-            required
-            minLength={6}
-            name="password"
-          />
-          <SubIndex>確認用パスワード</SubIndex>
-          <Input
-            onChange={handleInputChange}
-            value={formValues.confirmPassword}
-            placeholder="confirm password"
-            type="password"
-            required
-            minLength={6}
-            name="confirmPassword"
-          />
-          {!!errorMessage && <ErrorMessage>{errorMessage}</ErrorMessage>}
+          <Form required onSubmit={onSubmitFile}>
+            <SubIndex>プロフィール画像</SubIndex>
+            <input
+              type="file"
+              onChange={handleImage}
+              style={{
+                marginBottom: `1vw`,
+              }}
+            />
+            <br></br>
+            <UploadButton>送信</UploadButton>
+            {!!fileUploaded && (
+              <Message>イメージの送信に成功しました！</Message>
+            )}
+            {!!fileErrorMessage && (
+              <ErrorMessage>
+                イメージを選択した後、送信を押してください！
+              </ErrorMessage>
+            )}
+          </Form>
           <br></br>
-          <Button
-            type="submit"
-            block
-            style={{
-              fontSize: `14px`,
-            }}
-          >
-            利用規約に同意して会員登録
-          </Button>
-        </Form>
+          <Form onSubmit={handleSubmit}>
+            <SubIndex>ユーザー名</SubIndex>
+            <Input
+              onChange={handleInputChange}
+              value={formValues.username}
+              placeholder="username"
+              type="text"
+              required
+              name="username"
+            />
+            <SubIndex>EMAIL</SubIndex>
+            <Input
+              onChange={handleInputChange}
+              value={formValues.email}
+              placeholder="email"
+              type="email"
+              required
+              name="email"
+            />
+            <SubIndex>パスワード</SubIndex>
+            <Input
+              onChange={handleInputChange}
+              value={formValues.password}
+              placeholder="password"
+              type="password"
+              required
+              minLength={6}
+              name="password"
+            />
+            <SubIndex>確認用パスワード</SubIndex>
+            <Input
+              onChange={handleInputChange}
+              value={formValues.confirmPassword}
+              placeholder="confirm password"
+              type="password"
+              required
+              minLength={6}
+              name="confirmPassword"
+            />
+            {!!errorMessage && <ErrorMessage>{errorMessage}</ErrorMessage>}
+            <br></br>
+            <Button
+              type="submit"
+              block
+              style={{
+                fontSize: `14px`,
+              }}
+            >
+              利用規約に同意して会員登録
+            </Button>
+          </Form>
+          <br></br>
+          <SmallP>
+            <p>
+              サイト利用規約は
+              <A href="/terms" target="_blank">
+                {" "}
+                こちら
+              </A>
+            </p>
+          </SmallP>
+          <SmallP>
+            <p>
+              会員登録がお済みの場合は
+              <A to="/">ログイン</A>
+            </p>
+          </SmallP>
+          <br />
+        </FormContainer>
         <br></br>
-        <SmallP>
-          <p>
-            サイト利用規約は
-            <A href="/terms" target="_blank">
-              {" "}
-              こちら
-            </A>
-          </p>
-        </SmallP>
-        <SmallP>
-          <p>
-            会員登録がお済みの場合は
-            <A to="/">ログイン</A>
-          </p>
-        </SmallP>
-        <br />
-      </FormContainer>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+      </div>
     </section>
   )
 }

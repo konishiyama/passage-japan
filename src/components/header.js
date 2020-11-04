@@ -1,7 +1,7 @@
 import Link from "next/link"
 import React, { useContext, useState } from "react"
 import styled from "styled-components"
-import { LoginImage, ProfileImage } from "../components/common"
+import { LoginImage, ProfileImage } from "./common"
 import { FirebaseContext } from "./Firebase"
 import NavbarLinks from "./NavbarLinks"
 import ExitToAppRoundedIcon from "@material-ui/icons/ExitToAppRounded"
@@ -9,7 +9,7 @@ import ExitToAppRoundedIcon from "@material-ui/icons/ExitToAppRounded"
 const Navigation = styled.nav`
   height: 6vh;
   display: flex;
-  background: rgba(0, 0, 0, 0);
+  background-color: #fff;
   position: relative;
   justify-content: space-between;
   text-transform: uppercase;
@@ -17,6 +17,7 @@ const Navigation = styled.nav`
   padding: 0 5vw;
   z-index: 2;
   align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 
   @media (max-width: 769px) {
     position: sticky;
@@ -38,55 +39,42 @@ const Navigation = styled.nav`
 `
 
 const Toggle = styled.div`
-  display: none;
-  height: 100%;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 64px;
+  height: 64px;
+  padding: 20px;
   cursor: pointer;
-  padding: 0;
 
   @media (max-width: 768px) {
     display: flex;
   }
 `
 
-const Navbox = styled.div`
+const Navbox = styled.nav`
   display: flex;
   height: 100%;
   justify-content: flex-end;
   align-items: center;
+  z-index: ${props => (props.open ? "-1" : "2")};
 
   @media (max-width: 768px) {
     flex-direction: column;
     position: fixed;
-    width: 70%;
+    width: 100%;
+    // top: 0;
     justify-content: flex-start;
-    padding-top: 10vh;
+    padding-top: 64px;
     background-color: #fff;
-    transition: all 0.3s ease-in;
-    top: 7.4vh;
-    left: ${props => (props.open ? "-100%" : "0")};
-  }
-`
-
-const BG = styled.div`
-  height: 100%;
-  position: fixed;
-  width: 30%;
-  z-index: 500;
-  background-color: #000;
-  opacity: 0;
-  cursor: pointer;
-  transition: all 0.3s ease-in;
-  top: 7.5vh;
-  right: 0;
-
-  @media (max-width: 768px) {
-    right: ${props => (props.open ? "-100%" : "0")};
-    // visibility: ${props => (props.open ? "hidden" : "visible")};
-    opacity: ${props => (props.open ? "0" : "60%")};
+    transition: all 0.4s;
+    opacity: ${props => (props.open ? "0" : "100%")};
   }
 `
 
 const Hamburger = styled.div`
+  // background-color: ${props => (props.open ? "#111" : "#fff")};
   background-color: #111;
   width: 25px;
   height: 1.5px;
@@ -97,8 +85,9 @@ const Hamburger = styled.div`
 
   ::before,
   ::after {
-    width: 25px;
+    width: 24px;
     height: 1.5px;
+    // background-color: ${props => (props.open ? "#111" : "#fff")};
     background-color: #111;
     content: "";
     position: absolute;
@@ -118,112 +107,85 @@ const Hamburger = styled.div`
   }
 `
 
-const LOGO = styled.img`
-  height: 10vw;
-  margin-bottom: 0;
-  display: flex;
-  align-items: center;
-
-  @media (min-width: 768px) {
-    height: 5vw;
-  }
-
-  @media (min-width: 1024px) {
-    visibility: hidden;
-  }
+const LogIn = styled.div`
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  width: 64px;
+  height: 64px;
+  padding: 20px;
+  cursor: pointer;
 `
 
-const LogoLink = styled.a`
-  @media (min-width: 600px) {
-    visibility: hidden;
-  }
-`
-
-const Header = () => {
+const Header2 = () => {
   const [navbarOpen, setNavbarOpen] = useState(false)
   const { user, firebase } = useContext(FirebaseContext)
 
   return (
     <>
-      <Navigation>
-        <Toggle
-          navbarOpen={navbarOpen}
-          onClick={() => setNavbarOpen(!navbarOpen)}
-        >
-          {navbarOpen ? <Hamburger open /> : <Hamburger />}
-        </Toggle>
-        {navbarOpen ? (
-          <Navbox>
-            {!!firebase && (
-              <NavbarLinks
-                navbarOpen={navbarOpen}
-                onClick={() => setNavbarOpen(!navbarOpen)}
-              />
-            )}
-          </Navbox>
-        ) : (
-          <Navbox open>{!!firebase && <NavbarLinks />}</Navbox>
-        )}
-        {navbarOpen ? (
-          <BG onClick={() => setNavbarOpen(!navbarOpen)} />
-        ) : (
-          <BG open />
-        )}
-        {/* {!!user && (
-          <div>
-            <Link href="/profile">
-              <a
+      <Toggle
+        navbarOpen={navbarOpen}
+        onClick={() => setNavbarOpen(!navbarOpen)}
+      >
+        {navbarOpen ? <Hamburger open /> : <Hamburger />}
+      </Toggle>
+      {navbarOpen ? (
+        <Navbox>{!!firebase && <NavbarLinks />}</Navbox>
+      ) : (
+        <Navbox open>{!!firebase && <NavbarLinks />}</Navbox>
+      )}
+      {/* {!!user && (
+        <LogIn>
+          <Link href="/profile">
+            <a
+              style={{
+                display: `flex`,
+                alignItems: `center`,
+              }}
+            >
+              <ProfileImage src={user.photoURL} alt="profilepic"></ProfileImage>
+            </a>
+          </Link>
+        </LogIn>
+      )}
+      {!!user && !user.photoURL && (
+        <LogIn>
+          <Link href="/profile">
+            <a
+              style={{
+                display: `flex`,
+                alignItems: `center`,
+              }}
+            >
+              <ProfileImage
+                src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2FuserDefaultPic.png?alt=media&token=2e1c678f-910a-4332-a6c5-6d3161aa16e6"
+                alt="profilepic"
+              ></ProfileImage>
+            </a>
+          </Link>
+        </LogIn>
+      )}
+      {!user && (
+        <LogIn>
+          <Link href="/login">
+            <a
+              style={{
+                display: `flex`,
+                alignItems: `center`,
+              }}
+            >
+              <ExitToAppRoundedIcon
                 style={{
-                  display: `flex`,
-                  alignItems: `center`,
+                  color: `#02102e`,
                 }}
-              >
-                <ProfileImage
-                  src={user.photoURL}
-                  alt="profilepic"
-                ></ProfileImage>
-              </a>
-            </Link>
-          </div>
-        )}
-        {!!user && !user.photoURL && (
-          <div>
-            <Link href="/profile">
-              <a
-                style={{
-                  display: `flex`,
-                  alignItems: `center`,
-                }}
-              >
-                <ProfileImage
-                  src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2FuserDefaultPic.png?alt=media&token=2e1c678f-910a-4332-a6c5-6d3161aa16e6"
-                  alt="profilepic"
-                ></ProfileImage>
-              </a>
-            </Link>
-          </div>
-        )}
-        {!user && (
-          <div>
-            <Link href="/login">
-              <a
-                style={{
-                  display: `flex`,
-                  alignItems: `center`,
-                }}
-              >
-                <ExitToAppRoundedIcon
-                  style={{
-                    color: `#02102e`,
-                  }}
-                ></ExitToAppRoundedIcon>
-              </a>
-            </Link>
-          </div>
-        )} */}
-      </Navigation>
+              ></ExitToAppRoundedIcon>
+            </a>
+          </Link>
+        </LogIn>
+      )} */}
     </>
   )
 }
 
-export default Header
+export default Header2
