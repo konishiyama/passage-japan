@@ -2,6 +2,7 @@ import React, { useContext } from "react"
 import styled from "styled-components"
 import Link from "next/link"
 import TopCover from "../components/TopCover"
+import TopCover2 from "../components/TopCover2"
 import Declaration from "../components/Declaration"
 import Activity from "../components/Activity"
 import Products from "../components/Products"
@@ -21,7 +22,7 @@ const IndexPage = ({ data }) => {
   return (
     <>
       <section>
-        <TopCover></TopCover>
+        <TopCover2></TopCover2>
         <div
           style={{
             margin: `0 auto`,

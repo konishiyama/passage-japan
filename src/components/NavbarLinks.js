@@ -8,8 +8,9 @@ const NavItemHome = styled.a`
   color: #111;
   font-size: 1rem;
   font-weight: bold;
-  font-family: "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro",
-    "Noto Sans JP", "游ゴシック体", "Yu Gothic", YuGothic, serif;
+  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
+    "ＭＳ Ｐ明朝", "MS PMincho", serif;
   padding: 20px 0;
   z-index: 6;
   display: inline-block;
@@ -56,8 +57,9 @@ const NavItemHome = styled.a`
 const NavItem = styled.a`
   color: #111;
   font-size: 1rem;
-  font-family: "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro",
-    "Noto Sans JP", "游ゴシック体", "Yu Gothic", YuGothic, serif;
+  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
+    "ＭＳ Ｐ明朝", "MS PMincho", serif;
   padding: 20px 0;
   z-index: 6;
   display: inline-block;
@@ -106,8 +108,9 @@ const Logout = styled.span`
   color: #111;
   padding: 20px 0;
   font-size: 1rem;
-  font-family: "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro",
-    "Noto Sans JP", "游ゴシック体", "Yu Gothic", YuGothic, serif;
+  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
+    "ＭＳ Ｐ明朝", "MS PMincho", serif;
   z-index: 6;
   display: inline-block;
   white-space: nowrap;

@@ -7,9 +7,9 @@ import NavbarLinks from "./NavbarLinks"
 import ExitToAppRoundedIcon from "@material-ui/icons/ExitToAppRounded"
 
 const Navigation = styled.nav`
-  height: 12vh;
+  height: 6vh;
   display: flex;
-  background-color: #fff;
+  background: rgba(0, 0, 0, 0);
   position: relative;
   justify-content: space-between;
   text-transform: uppercase;
@@ -17,11 +17,10 @@ const Navigation = styled.nav`
   padding: 0 5vw;
   z-index: 2;
   align-items: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 
-  @media (max-width: 768px) {
+  @media (max-width: 769px) {
     position: sticky;
-    height: 8.5vh;
+    height: 2.5vh;
     top: 0;
     left: 0;
     right: 0;
@@ -30,7 +29,7 @@ const Navigation = styled.nav`
 
   @media (max-width: 1024px) {
     position: sticky;
-    height: 7.5vh;
+    height: 6.5vh;
     top: 0;
     left: 0;
     right: 0;
@@ -135,7 +134,7 @@ const LOGO = styled.img`
 `
 
 const LogoLink = styled.a`
-  @media (min-width: 1024px) {
+  @media (min-width: 600px) {
     visibility: hidden;
   }
 `
@@ -170,17 +169,7 @@ const Header = () => {
         ) : (
           <BG open />
         )}
-
-        <LogoLink href="/">
-          {!!firebase && (
-            <LOGO
-              src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2Flogo5.001.jpeg?alt=media&token=f8de77ca-eb7b-4c30-8da2-42e0afb0972b"
-              alt="LogoImg"
-            ></LOGO>
-          )}
-        </LogoLink>
-
-        {!!user && (
+        {/* {!!user && (
           <div>
             <Link href="/profile">
               <a
@@ -231,7 +220,7 @@ const Header = () => {
               </a>
             </Link>
           </div>
-        )}
+        )} */}
       </Navigation>
     </>
   )
