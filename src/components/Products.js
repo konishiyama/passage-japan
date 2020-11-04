@@ -115,19 +115,18 @@ const Img = styled.img`
   }
 `
 const TitleContainer = styled.div`
-  // align-items: baseline;
-  // margin-bottom: 1.5rem;
   padding-top: 0.3rem;
 `
 const Title = styled.p`
   text-align: left;
   margin: 0 auto;
-  color: #444444;
-  font-size: 14pt;
-  font-weight: bold;
-  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
-    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
-    "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  color: #222;
+  font-size: 15px;
+  // font-weight: bold;
+  font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
+    "Roboto Slab", Garamond, "Times New Roman", "HGS明朝E", "ＭＳ Ｐ明朝",
+    "MS PMincho", serif;
   &:hover {
     color: #800080;
     transition: all 0.2s ease-in;

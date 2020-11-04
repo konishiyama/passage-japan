@@ -107,7 +107,7 @@ const MemberWrite = ({ data }) => {
       </Form>
       <br />
       <br />
-      <br></br>
+      <br />
     </section>
   )
 }

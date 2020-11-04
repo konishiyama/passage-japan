@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const SeeMore = styled.div`
   width: 35%;
-  font-size: 14px;
+  font-size: 15px;
   color: #fff;
   background-color: #000000;
   display: block;
@@ -12,6 +12,10 @@ export const SeeMore = styled.div`
   line-height: 1.5;
   text-decoration: none;
   margin: 1em auto 0;
+  font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
+    "Roboto Slab", Garamond, "Times New Roman", "HGS明朝E", "ＭＳ Ｐ明朝",
+    "MS PMincho", serif;
   &:hover {
     color: #000000;
     background-color: #fff;

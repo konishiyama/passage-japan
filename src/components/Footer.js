@@ -10,7 +10,6 @@ import { FirebaseContext } from "./Firebase"
 const Container = styled.div`
   background-color: #fff;
   padding: 1rem 0 1rem;
-  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
   a {
     color: #787c7b;
     text-decoration: none;
@@ -32,7 +31,6 @@ const LogIn = styled.div`
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  font-weight: bold;
   a {
     color: #787c7b;
     text-decoration: none;
@@ -73,34 +71,20 @@ const Paragraph1 = styled.div`
   width: 60%;
   margin: 10px auto 1.5rem;
   display: flex;
-`
-
-const Paragraph2 = styled.div`
-  width: 80%;
-  margin: 0 auto;
-  display: flex;
-`
-
-const Line = styled.p`
-  vertical-align: middle;
-  margin: 0 auto;
-  text-align: center;
-  font-size: 14px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #787c7b;
-  a {
-    color: #787c7b;
-    text-decoration: none;
-    &:hover {
-      color: #787c7b;
-      transition: all 0.4s ease-in;
-    }
-  }
+  color: #222;
+  font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
+    "Roboto Slab", Garamond, "Times New Roman", "HGS明朝E", "ＭＳ Ｐ明朝",
+    "MS PMincho", serif;
+  font-size: 15px;
 `
 
 const CopyRight = styled.p`
   font-size: 8px;
+  font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
+    "Roboto Slab", Garamond, "Times New Roman", "HGS明朝E", "ＭＳ Ｐ明朝",
+    "MS PMincho", serif;
   color: #808080;
   text-align: center;
   margin: 10px auto;
@@ -118,7 +102,7 @@ const Footer = () => {
   return (
     <>
       <Container>
-        <Paragraph1>
+        {/* <Paragraph1>
           <Home>
             <Link href="/">
               <a>HOME</a>
@@ -132,8 +116,8 @@ const Footer = () => {
             </LogIn>
           )}
           {!!user && <LogOut onClick={handleLogOutClick}>ログアウト</LogOut>}
-        </Paragraph1>
-        {!!firebase && (
+        </Paragraph1> */}
+        {/* {!!firebase && (
           <ImgContainer>
             <SNSLink href="" target="_blank">
               <FacebookIcon alt="Facebook" style={{}}></FacebookIcon>
@@ -145,23 +129,9 @@ const Footer = () => {
               <TwitterIcon alt="Twitter"></TwitterIcon>
             </SNSLink>
           </ImgContainer>
-        )}
-
-        {/* <Paragraph2>
-          <Line>
-            <Link href="/about">
-              <a>農園概要</a>
-            </Link>
-          </Line>
-          <Span></Span>
-          <Line>
-            <Link href="/privacy_policy">
-              <a>プライバシーポリシー</a>
-            </Link>
-          </Line>
-        </Paragraph2> */}
+        )} */}
         <CopyRight>
-          Copyright © 2020 Shohei Yamaguchi All Rights Reserved.
+          Copyright © 2020 Yamaguchi's Farm All Rights Reserved.
         </CopyRight>
       </Container>
     </>

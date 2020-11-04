@@ -57,9 +57,9 @@ const Contact = () => {
           <SubIndex>メールアドレス</SubIndex>
           <Input required placeholder="Email" type="email" name="email" />
           <SubIndex>注文品種・分量</SubIndex>
-          <TEXTAREA2 required placeholder="Order" name="order" />
+          <TEXTAREA2 required placeholder="Order" type="text" name="order" />
           <SubIndex>お問合せ内容</SubIndex>
-          <TEXTAREA required placeholder="Inquiry" name="inquiry" />
+          <TEXTAREA required placeholder="Inquiry" type="text" name="inquiry" />
           <Button type="submit" block>
             Send
           </Button>

@@ -46,8 +46,11 @@ const Title = styled.h3`
   width: 100%;
   text-decoration: none;
   font-size: 18px;
-  font-weight: 800;
-  color: #02102e;
+  font-family:  "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+  "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
+  "Roboto Slab", Garamond, "Times New Roman", "HGS明朝E", "ＭＳ Ｐ明朝",
+  "MS PMincho", serif;
+  color: #222;
   text-align: left;
   letter-spacing: normal;
   &:hover{
@@ -58,6 +61,11 @@ const Title = styled.h3`
 
 const Date = styled.p`
   width: 100%;
+  font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
+    "Roboto Slab", Garamond, "Times New Roman", "HGS明朝E", "ＭＳ Ｐ明朝",
+    "MS PMincho", serif;
+  font-size: 15px;
   text-decoration: none;
   letter-spacing: normal;
   padding-bottom: 0.7rem;

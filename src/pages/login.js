@@ -4,7 +4,6 @@ import React, { useContext, useState } from "react"
 import styled from "styled-components"
 import {
   Button,
-  CheckBox,
   ErrorMessage,
   Form,
   FormContainer,
@@ -57,7 +56,6 @@ const Login = () => {
       <div
         style={{
           margin: `0 auto`,
-          // maxWidth: 960,
           padding: `8rem 0rem 1.45rem`,
         }}
       >

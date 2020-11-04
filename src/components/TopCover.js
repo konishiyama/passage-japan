@@ -19,33 +19,6 @@ const Cover = styled.div`
   background-image: url("../../images/louis-hansel-shotsoflouis-geYw6L4-WU8-unsplash.jpg");
 `
 
-const CoverP1 = styled.p`
-  position: absolute;
-  top: 92%;
-  left: 50%;
-  width: 80%;
-  text-align: center;
-  line-height: 1.5em;
-  font-weight: bold;
-  letter-spacing: 0.02em;
-  width: 80%;
-  font-size: 12px;
-  color: #fff;
-  margin: 0;
-  -ms-transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  font-family: "Roboto", sans-serif;
-
-  @media (min-width: 768px) {
-    top: 60%;
-  }
-
-  @media (min-width: 1024px) {
-    font-size: 38px;
-  }
-`
-
 const Scroll = styled.p`
   position: absolute;
   top: 92%;
@@ -95,9 +68,10 @@ const TopCover = () => {
               margin: `0 auto`,
               position: `absolute`,
               fontSize: `28px`,
-              fontFamily: `"Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
-              "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
-              "ＭＳ Ｐ明朝", "MS PMincho", serif;
+              fontFamily: ` "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+              "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
+              "Roboto Slab", Garamond, "Times New Roman", "HGS明朝E", "ＭＳ Ｐ明朝",
+              "MS PMincho", serif;
             `,
               fontWeight: `normal`,
               top: `60%`,
@@ -113,9 +87,10 @@ const TopCover = () => {
               margin: `0 auto`,
               position: `absolute`,
               fontSize: `18px`,
-              fontFamily: `"Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
-              "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
-              "ＭＳ Ｐ明朝", "MS PMincho", serif;
+              fontFamily: ` "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+              "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
+              "Roboto Slab", Garamond, "Times New Roman", "HGS明朝E", "ＭＳ Ｐ明朝",
+              "MS PMincho", serif;
             `,
               fontWeight: `normal`,
               top: `66%`,
@@ -137,9 +112,10 @@ const TopCover = () => {
               position: `absolute`,
               fontSize: `14px`,
               textAlign: `center`,
-              fontFamily: `"Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
-              "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
-              "ＭＳ Ｐ明朝", "MS PMincho", serif;
+              fontFamily: ` "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+              "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
+              "Roboto Slab", Garamond, "Times New Roman", "HGS明朝E", "ＭＳ Ｐ明朝",
+              "MS PMincho", serif;
             `,
               fontWeight: `normal`,
               top: `73%`,

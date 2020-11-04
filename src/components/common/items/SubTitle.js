@@ -5,13 +5,13 @@ export const SubTitle = styled.div`
   text-align: center;
 
   span {
-    font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体",
-      "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
-      "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
-    font-weight: bold;
+    font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+      "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
+      "Roboto Slab", Garamond, "Times New Roman", "HGS明朝E", "ＭＳ Ｐ明朝",
+      "MS PMincho", serif;
     letter-spacing: 0.03em;
     font-size: 20px;
-    color: #444444;
+    color: #222;
     margin: 0 auto;
   }
   span:after {

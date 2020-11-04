@@ -5,12 +5,13 @@ import styled from "styled-components"
 import { FirebaseContext } from "./Firebase"
 
 const NavItemHome = styled.a`
-  color: #111;
+  color: #222;
   font-size: 1rem;
   font-weight: bold;
-  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
-    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
-    "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
+    "Roboto Slab", Garamond, "Times New Roman", "HGS明朝E", "ＭＳ Ｐ明朝",
+    "MS PMincho", serif;
   padding: 20px 0;
   z-index: 6;
   display: inline-block;
@@ -28,7 +29,7 @@ const NavItemHome = styled.a`
     width: 0%;
     content: ".";
     color: transparent;
-    background: #4c9c41;
+    background: #800080;
     height: 1px;
     transition: all 0.4s ease-in;
   }
@@ -36,7 +37,7 @@ const NavItemHome = styled.a`
   :hover {
     cursor: pointer;
     text-decoration: none;
-    color: #4c9c41;
+    color: #800080;
     ::after {
       width: 100%;
     }
@@ -55,11 +56,12 @@ const NavItemHome = styled.a`
   }
 `
 const NavItem = styled.a`
-  color: #111;
+  color: #222;
   font-size: 1rem;
-  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
-    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
-    "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
+    "Roboto Slab", Garamond, "Times New Roman", "HGS明朝E", "ＭＳ Ｐ明朝",
+    "MS PMincho", serif;
   padding: 20px 0;
   z-index: 6;
   display: inline-block;
@@ -76,7 +78,7 @@ const NavItem = styled.a`
     width: 0%;
     content: ".";
     color: transparent;
-    background: #4c9c41;
+    background: #800080;
     height: 1px;
     transition: all 0.4s ease-in;
   }
@@ -84,7 +86,7 @@ const NavItem = styled.a`
   :hover {
     cursor: pointer;
     text-decoration: none;
-    color: #4c9c41;
+    color: #800080;
     ::after {
       width: 100%;
     }
@@ -105,12 +107,13 @@ const NavItem = styled.a`
 
 const Logout = styled.span`
   text-decoration: none;
-  color: #111;
+  color: #222;
   padding: 20px 0;
   font-size: 1rem;
-  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
-    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
-    "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
+    "Roboto Slab", Garamond, "Times New Roman", "HGS明朝E", "ＭＳ Ｐ明朝",
+    "MS PMincho", serif;
   z-index: 6;
   display: inline-block;
   white-space: nowrap;
