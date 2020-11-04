@@ -10,10 +10,18 @@ import {
   IndexArticles,
   IndexMemberPosts,
   SubTitle,
+  SubTitleWithImage,
   SeeMore,
 } from "../components/common"
 import { FirebaseContext } from "../components/Firebase"
 import Fade from "react-reveal/Fade"
+
+const IMG = styled.img`
+  width: 40%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+`
 
 const IndexPage = ({ data }) => {
   const { user, firebase } = useContext(FirebaseContext)
@@ -29,18 +37,20 @@ const IndexPage = ({ data }) => {
             padding: `0rem 1.5rem 0rem`,
           }}
         >
-          <Fade bottom duration={1500}>
+          <Fade bottom duration={2000}>
             <SubTitle>
-              <span>活動内容</span>
+              <span>- 活動内容 -</span>
             </SubTitle>
           </Fade>
           <Activity></Activity>
-          <Fade bottom duration={1500}>
+          <Fade bottom duration={2000}>
             <SubTitle>
               <span>商品について</span>
             </SubTitle>
           </Fade>
-          <Products></Products>
+          <Fade duration={2000}>
+            <Products></Products>
+          </Fade>
         </div>
         <div
           style={{
@@ -55,7 +65,7 @@ const IndexPage = ({ data }) => {
               textAlign: `center`,
             }}
           >
-            <Fade bottom duration={1500}>
+            <Fade bottom duration={2000}>
               <Link href="/products">
                 <SeeMore>商品詳細</SeeMore>
               </Link>
@@ -71,7 +81,7 @@ const IndexPage = ({ data }) => {
         >
           {!!user && (
             <div>
-              <Fade bottom duration={1500}>
+              <Fade bottom duration={2000}>
                 <SubTitle>
                   <span>コミュニティー</span>
                 </SubTitle>
@@ -85,7 +95,7 @@ const IndexPage = ({ data }) => {
                   textAlign: `center`,
                 }}
               >
-                <Fade bottom duration={1500}>
+                <Fade bottom duration={2000}>
                   <Link href="/member">
                     <SeeMore>投稿一覧</SeeMore>
                   </Link>
@@ -94,12 +104,12 @@ const IndexPage = ({ data }) => {
             </div>
           )}
         </div>
-        <Fade bottom duration={1500}>
+        <Fade bottom duration={2000}>
           <SubTitle>
             <span>ブログ</span>
           </SubTitle>
         </Fade>
-        <Fade duration={1500}>
+        <Fade duration={2000}>
           {!!firebase && <IndexArticles firebase={firebase} />}
         </Fade>
         <div
@@ -115,14 +125,14 @@ const IndexPage = ({ data }) => {
               textAlign: `center`,
             }}
           >
-            <Fade bottom duration={1500}>
+            <Fade bottom duration={2000}>
               <Link href="/blog">
                 <SeeMore>ブログ一覧</SeeMore>
               </Link>
             </Fade>
           </div>
         </div>
-        <Fade bottom duration={1500}>
+        <Fade bottom duration={2000}>
           <SubTitle>
             <span>お問合せ</span>
           </SubTitle>
@@ -134,7 +144,9 @@ const IndexPage = ({ data }) => {
             padding: `0rem 0.8rem 2.45rem`,
           }}
         >
-          <Contact></Contact>
+          <Fade duration={2000}>
+            <Contact></Contact>
+          </Fade>
         </div>
       </section>
     </>

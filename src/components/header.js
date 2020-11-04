@@ -118,7 +118,22 @@ const LogIn = styled.div`
   cursor: pointer;
 `
 
-const Header2 = () => {
+const Logo = styled.img`
+  position: fixed;
+  z-index: 10;
+  top: 21px;
+  right: 20px;
+  height: 24px;
+  object-fit: cover;
+  cursor: pointer;
+  margin: 0;
+
+  @media (max-width: 768px) {
+    display: flex;
+  }
+`
+
+const Header = () => {
   const [navbarOpen, setNavbarOpen] = useState(false)
   const { user, firebase } = useContext(FirebaseContext)
 
@@ -135,21 +150,12 @@ const Header2 = () => {
       ) : (
         <Navbox open>{!!firebase && <NavbarLinks />}</Navbox>
       )}
-      {/* {!!user && (
-        <LogIn>
-          <Link href="/profile">
-            <a
-              style={{
-                display: `flex`,
-                alignItems: `center`,
-              }}
-            >
-              <ProfileImage src={user.photoURL} alt="profilepic"></ProfileImage>
-            </a>
-          </Link>
-        </LogIn>
+      {!!firebase && (
+        <a href="/">
+          <Logo src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2Flogo2.001.png?alt=media&token=8fbe65fa-44fd-473c-a04e-948283067192"></Logo>
+        </a>
       )}
-      {!!user && !user.photoURL && (
+      {/* {!!user && !user.photoURL && (
         <LogIn>
           <Link href="/profile">
             <a
@@ -188,4 +194,4 @@ const Header2 = () => {
   )
 }
 
-export default Header2
+export default Header

@@ -6,65 +6,62 @@ const Activity = () => {
   return (
     <>
       <Container>
-        {/* <Fade right duration={1500} distance="50px"> */}
-        <TitleContainer>
-          <Cap>農</Cap>
-          <Big>作物の生産</Big>
-        </TitleContainer>
-        {/* </Fade> */}
-        {/* <Fade right duration={1500} distance="50px"> */}
-        <Small>サツマイモを中心とした</Small>
-        <Small>露地栽培作物を生産します</Small>
-        {/* </Fade> */}
-        {/* <Fade right duration={1500} distance="50px"> */}
-        <ImgContainer>
-          <Img
-            src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2FS__34308262.jpg?alt=media&token=93f4afce-ebc0-40fe-a52e-ecf5fe77dde3"
-            alt="activity"
-          ></Img>
-        </ImgContainer>
-        {/* </Fade> */}
+        <Fade bottom duration={2000}>
+          <TitleContainer>
+            <Cap>農</Cap>
+            <Big>作物の生産</Big>
+          </TitleContainer>
+        </Fade>
+        <Fade bottom duration={2000}>
+          <Small>サツマイモを中心とした</Small>
+          <Small>露地栽培作物を生産します</Small>
+        </Fade>
+        <Fade bottom duration={2000}>
+          <ImgContainer>
+            <Img
+              src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2FS__34308262.jpg?alt=media&token=93f4afce-ebc0-40fe-a52e-ecf5fe77dde3"
+              alt="activity"
+            ></Img>
+          </ImgContainer>
+        </Fade>
       </Container>
-
       <Container>
-        {/* <Fade right duration={1500} distance="50px"> */}
-        <TitleContainer>
-          <Cap>生</Cap>
-          <Big>産物の販売</Big>
-        </TitleContainer>
-        {/* </Fade> */}
-        {/* <Fade right duration={1500} distance="50px"> */}
+        <Fade bottom duration={2000}>
+          <TitleContainer>
+            <Cap>生</Cap>
+            <Big>産物の販売</Big>
+          </TitleContainer>
+        </Fade>
         <Small>生産した農作物を</Small>
         <Small>ECサイト等を通じて、一般販売します</Small>
-        {/* </Fade> */}
-        {/* <Fade right duration={1500} distance="50px"> */}
-        <ImgContainer>
-          <Img
-            src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2FS__34308397.jpg?alt=media&token=46de6936-fff3-424e-9b0b-d1f9f8523a6a"
-            alt="activity"
-          ></Img>
-        </ImgContainer>
-        {/* </Fade> */}
+        <Fade bottom duration={2000}>
+          <ImgContainer>
+            <Img
+              src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2FS__34308397.jpg?alt=media&token=46de6936-fff3-424e-9b0b-d1f9f8523a6a"
+              alt="activity"
+            ></Img>
+          </ImgContainer>
+        </Fade>
       </Container>
       <Container>
-        {/* <Fade right duration={1500} distance="50px"> */}
-        <TitleContainer>
-          <Cap>情</Cap>
-          <Big>報発信</Big>
-        </TitleContainer>
-        {/* </Fade> */}
-        {/* <Fade right duration={1500} distance="50px"> */}
-        <Small>農作物栽培に関するブログを作成し、</Small>
-        <Small>定期的に発信します</Small>
-        {/* </Fade> */}
-        {/* <Fade right duration={1500} distance="50px"> */}
-        <ImgContainer>
-          <Img
-            src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2FS__34226180.jpg?alt=media&token=6e97386b-9c3c-45c2-9440-6fcdbd9f469d"
-            alt="activity"
-          ></Img>
-        </ImgContainer>
-        {/* </Fade> */}
+        <Fade bottom duration={2000}>
+          <TitleContainer>
+            <Cap>情</Cap>
+            <Big>報発信</Big>
+          </TitleContainer>
+        </Fade>
+        <Fade bottom duration={2000}>
+          <Small>農作物栽培に関するブログを作成し、</Small>
+          <Small>定期的に発信します</Small>
+        </Fade>
+        <Fade bottom duration={2000}>
+          <ImgContainer>
+            <Img
+              src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2FS__34226180.jpg?alt=media&token=6e97386b-9c3c-45c2-9440-6fcdbd9f469d"
+              alt="activity"
+            ></Img>
+          </ImgContainer>
+        </Fade>
       </Container>
     </>
   )

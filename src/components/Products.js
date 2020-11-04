@@ -14,7 +14,6 @@ const Products = () => {
                   src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2Ffukumurasaki2.jpg?alt=media&token=0b238408-8fa4-4219-9779-c208c3485e9f"
                   alt="activity"
                 ></Img>
-
                 <TitleContainer>
                   <Title>ふくむらさき</Title>
                 </TitleContainer>
