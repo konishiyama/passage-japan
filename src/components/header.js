@@ -20,7 +20,7 @@ const Toggle = styled.div`
     display: flex;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 769px) {
     display: none;
   }
 `
@@ -103,7 +103,7 @@ const Logo = styled.img`
   }
 
   @media (min-width: 769px) {
-    left: 20px;
+    left: 1.5vw;
   }
 `
 

@@ -16,7 +16,7 @@ const NavItemHome = styled.a`
   z-index: 6;
   display: inline-block;
   white-space: nowrap;
-  margin: 0 1vw;
+  margin: 0 1.5vw;
   transition: all 200ms ease-in;
   position: relative;
   text-decoration: underline;
@@ -66,7 +66,7 @@ const NavItem = styled.a`
   z-index: 6;
   display: inline-block;
   white-space: nowrap;
-  margin: 0 1vw;
+  margin: 0 1.5vw;
   transition: all 200ms ease-in;
   position: relative;
 
@@ -117,7 +117,7 @@ const Logout = styled.span`
   z-index: 6;
   display: inline-block;
   white-space: nowrap;
-  margin: 0 1vw;
+  margin: 0 1.5vw;
   transition: all 200ms ease-in;
   position: relative;
   cursor: pointer;

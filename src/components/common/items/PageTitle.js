@@ -2,9 +2,12 @@ import styled from "styled-components"
 
 export const PageTitle = styled.div`
   margin: 0rem auto 2rem;
-  padding-top: 4rem;
+  padding-top: 6rem;
   text-align: center;
   display: block;
+  @media (min-width: 1024px) {
+    padding-top: 3rem;
+  }
   span {
     display: inline-block;
     font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
