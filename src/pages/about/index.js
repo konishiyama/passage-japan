@@ -14,7 +14,7 @@ const Farm = props => {
         <div
           style={{
             margin: `0 auto`,
-            maxWidth: 960,
+            maxWidth: 650,
             padding: `0em 2rem`,
           }}
         >
@@ -80,6 +80,9 @@ const Pic = styled.div`
     height: 12rem;
     object-fit: cover;
     display: block;
+    @media (min-width: 768px) {
+      height: 20rem;
+    }
   }
 `
 

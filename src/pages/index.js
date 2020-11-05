@@ -10,6 +10,7 @@ import {
   IndexMemberPosts,
   SubTitle,
   SeeMore,
+  SeeMore2,
 } from "../components/common"
 import { FirebaseContext } from "../components/Firebase"
 import Fade from "react-reveal/Fade"
@@ -71,31 +72,32 @@ const IndexPage = ({ data }) => {
           <Fade duration={2000}>
             <Products></Products>
           </Fade>
-        </div>
-        <div
-          style={{
-            margin: `0 auto`,
-            maxWidth: 960,
-            padding: `0 1.5rem 0`,
-          }}
-        >
+
           <div
             style={{
-              margin: `2.5rem auto 0 `,
-              textAlign: `center`,
+              margin: `0 auto`,
+              maxWidth: 960,
+              padding: `0 1.5rem 0`,
             }}
           >
-            <Fade bottom duration={2000}>
-              <Link href="/products">
-                <SeeMore>商品詳細</SeeMore>
-              </Link>
-            </Fade>
+            <div
+              style={{
+                margin: `2.5rem auto 0 `,
+                textAlign: `center`,
+              }}
+            >
+              <Fade bottom duration={2000}>
+                <Link href="/products">
+                  <SeeMore>商品詳細</SeeMore>
+                </Link>
+              </Fade>
+            </div>
           </div>
         </div>
         <div
           style={{
             margin: `0 auto`,
-            maxWidth: 480,
+            maxWidth: 650,
             padding: `0rem 0.8rem 0`,
           }}
         >
@@ -147,7 +149,7 @@ const IndexPage = ({ data }) => {
           >
             <Fade bottom duration={2000}>
               <Link href="/blog">
-                <SeeMore>ブログ一覧</SeeMore>
+                <SeeMore2>ブログ一覧</SeeMore2>
               </Link>
             </Fade>
           </div>

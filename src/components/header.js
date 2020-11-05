@@ -6,38 +6,6 @@ import { FirebaseContext } from "./Firebase"
 import NavbarLinks from "./NavbarLinks"
 import ExitToAppRoundedIcon from "@material-ui/icons/ExitToAppRounded"
 
-const Navigation = styled.nav`
-  height: 6vh;
-  display: flex;
-  background-color: #fff;
-  position: relative;
-  justify-content: space-between;
-  text-transform: uppercase;
-  margin: 0 auto;
-  padding: 0 5vw;
-  z-index: 2;
-  align-items: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-
-  @media (max-width: 769px) {
-    position: sticky;
-    height: 2.5vh;
-    top: 0;
-    left: 0;
-    right: 0;
-    left: 0;
-  }
-
-  @media (max-width: 1024px) {
-    position: sticky;
-    height: 6.5vh;
-    top: 0;
-    left: 0;
-    right: 0;
-    left: 0;
-  }
-`
-
 const Toggle = styled.div`
   position: fixed;
   z-index: 10;
@@ -50,6 +18,10 @@ const Toggle = styled.div`
 
   @media (max-width: 768px) {
     display: flex;
+  }
+
+  @media (min-width: 1024px) {
+    display: none;
   }
 `
 
@@ -64,7 +36,6 @@ const Navbox = styled.nav`
     flex-direction: column;
     position: fixed;
     width: 100%;
-    // top: 0;
     justify-content: flex-start;
     padding-top: 64px;
     background-color: #fff;
@@ -74,7 +45,6 @@ const Navbox = styled.nav`
 `
 
 const Hamburger = styled.div`
-  // background-color: ${props => (props.open ? "#111" : "#fff")};
   background-color: #111;
   width: 25px;
   height: 1.5px;
@@ -131,6 +101,10 @@ const Logo = styled.img`
   @media (max-width: 768px) {
     display: flex;
   }
+
+  @media (min-width: 769px) {
+    left: 20px;
+  }
 `
 
 const Header = () => {
@@ -152,7 +126,7 @@ const Header = () => {
       )}
       {!!firebase && (
         <a href="/">
-          <Logo src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2Flogo2.001.png?alt=media&token=8fbe65fa-44fd-473c-a04e-948283067192"></Logo>
+          <Logo src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2Flogo6.001.png?alt=media&token=31e40854-d873-4c8f-8cb0-aec4853c0651"></Logo>
         </a>
       )}
       {/* {!!user && !user.photoURL && (

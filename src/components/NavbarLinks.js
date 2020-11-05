@@ -23,7 +23,7 @@ const NavItemHome = styled.a`
 
   :after {
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     left: 0;
     right: 0;
     width: 0%;
@@ -72,7 +72,7 @@ const NavItem = styled.a`
 
   :after {
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     left: 0;
     right: 0;
     width: 0%;
@@ -124,19 +124,19 @@ const Logout = styled.span`
 
   :after {
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     left: 0;
     right: 0;
     width: 0%;
     content: ".";
     color: transparent;
-    background: #4c9c41;
+    background: #800080;
     height: 1px;
     transition: all 0.4s ease-in;
   }
 
   :hover {
-    color: #4c9c41;
+    color: #800080;
     ::after {
       width: 100%;
     }

@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export const SeeMore = styled.div`
+export const SeeMore2 = styled.div`
   width: 35%;
   font-size: 15px;
   color: #fff;
@@ -25,10 +25,10 @@ export const SeeMore = styled.div`
   }
 
   @media (min-width: 768px) {
-    width: 20%;
+    width: 16%;
   }
 
   @media (min-width: 1024px) {
-    width: 20%;
+    width: 12%;
   }
 `

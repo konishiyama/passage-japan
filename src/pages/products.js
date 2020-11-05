@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import Link from "next/link"
-import { PageTitle, SeeMore } from "../components/common"
+import { PageTitle, SeeMore3 } from "../components/common"
 import Fade from "react-reveal/Fade"
 
 const Products = props => {
@@ -15,7 +15,7 @@ const Products = props => {
         <div
           style={{
             margin: `0 auto`,
-            maxWidth: 960,
+            maxWidth: 650,
             padding: `0em 2rem`,
           }}
         >
@@ -84,13 +84,7 @@ const Products = props => {
           </Fade>
           <Fade bottom duration={2000}>
             <Link href="/contact">
-              <SeeMore
-                style={{
-                  width: `40%`,
-                }}
-              >
-                ご注文はこちら
-              </SeeMore>
+              <SeeMore3>ご注文はこちら</SeeMore3>
             </Link>
           </Fade>
         </div>
@@ -112,6 +106,9 @@ const Pic = styled.div`
     height: 12rem;
     object-fit: cover;
     display: block;
+    @media (min-width: 768px) {
+      height: 20rem;
+    }
   }
 `
 

@@ -6,11 +6,13 @@ const About = () => {
   return (
     <>
       <Container>
-        <Title>紫芋の山口農園です。</Title>
-        <Para1>
-          自然豊かな栃木県日光市にて、紫芋を中心とした有機農業を営んでいます。
-          家族経営のこじんまりとした農園ですが、その分、一つ一つの作物を緻密に研究し、大切に育て、少しでも安全で美味しい野菜をお客様に直接お届けしたいと考えております。
-        </Para1>
+        <Fade duration={2000}>
+          <Title>紫芋の山口農園です。</Title>
+          <Para1>
+            自然豊かな栃木県日光市にて、紫芋を中心とした有機農業を営んでいます。
+            家族経営のこじんまりとした農園ですが、その分、一つ一つの作物を緻密に研究し、大切に育て、少しでも安全で美味しい野菜をお客様に直接お届けしたいと考えております。
+          </Para1>
+        </Fade>
         <Fade duration={2000}>
           <ImgContainer>
             <Img
@@ -71,6 +73,10 @@ const Img = styled.img`
   object-fit: cover;
   margin: 0 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+
+  @media (min-width: 768px) {
+    height: 20rem;
+  }
 `
 
 export default About
