@@ -8,7 +8,7 @@ import ExitToAppRoundedIcon from "@material-ui/icons/ExitToAppRounded"
 
 const Toggle = styled.div`
   position: fixed;
-  z-index: 10;
+  z-index: 12;
   top: 0;
   left: 0;
   width: 64px;
@@ -30,7 +30,7 @@ const Navbox = styled.nav`
   height: 100%;
   justify-content: flex-end;
   align-items: center;
-  z-index: ${props => (props.open ? "-1" : "2")};
+  z-index: ${props => (props.open ? "-1" : "11")};
 
   @media (max-width: 768px) {
     flex-direction: column;
