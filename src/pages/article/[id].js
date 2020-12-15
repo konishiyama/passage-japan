@@ -1,4 +1,3 @@
-import Link from "next/link"
 import { useRouter } from "next/router"
 import React, { useContext } from "react"
 import { useDocumentDataOnce } from "react-firebase-hooks/firestore"
@@ -11,15 +10,15 @@ import {
   TwitterIcon,
   TwitterShareButton,
 } from "react-share"
-import CreateIcon from "@material-ui/icons/Create"
+// import CreateIcon from "@material-ui/icons/Create"
 import styled from "styled-components"
 import { BottomBar } from "../../components/common"
 import { FirebaseContext } from "../../components/Firebase"
 
-const ArticleTemplate = props => {
+const ArticleTemplate = () => {
   const router = useRouter()
 
-  const { user, firebase } = useContext(FirebaseContext)
+  const { firebase } = useContext(FirebaseContext)
 
   const [pageContext = null] = useDocumentDataOnce(
     router.query.id && firebase
@@ -64,7 +63,7 @@ const ArticleTemplate = props => {
         ></div>
         <BottomBar>
           <FacebookShareButton
-            url={`https://competent-babbage-50b994.netlify.app/article/${pageContext.articleNum}`}
+            url={`https://yamaguchi-farms/article/${pageContext.articleNum}`}
             size={`2.3rem`}
             style={{
               display: `flex`,
@@ -78,7 +77,7 @@ const ArticleTemplate = props => {
             <FacebookIcon size={`2.3rem`} round style={{}} />
           </FacebookShareButton>
           <TwitterShareButton
-            url={`https://competent-babbage-50b994.netlify.app/article/${pageContext.articleNum}`}
+            url={`https://yamaguchi-farms/article/${pageContext.articleNum}`}
             style={{
               display: `flex`,
               alignItems: `center`,
@@ -93,7 +92,7 @@ const ArticleTemplate = props => {
             />
           </TwitterShareButton>
           <LineShareButton
-            url={`https://competent-babbage-50b994.netlify.app/article/${pageContext.articleNum}`}
+            url={`https://yamaguchi-farms/article/${pageContext.articleNum}`}
             style={{
               display: `flex`,
               alignItems: `center`,

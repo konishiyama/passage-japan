@@ -1,5 +1,4 @@
 import React, { useContext } from "react"
-import styled from "styled-components"
 import Link from "next/link"
 import TopCover from "../components/TopCover"
 import About from "../components/About"
@@ -7,7 +6,7 @@ import Products from "../components/Products"
 import Contact from "../components/Contact"
 import {
   IndexArticles,
-  IndexMemberPosts,
+  // IndexMemberPosts,
   SubTitle,
   SeeMore,
   SeeMore2,
@@ -15,15 +14,8 @@ import {
 import { FirebaseContext } from "../components/Firebase"
 import Fade from "react-reveal/Fade"
 
-// const IMG = styled.img`
-//   width: 40%;
-//   margin: 0 auto;
-//   align-items: center;
-//   justify-content: center;
-// `
-
 const IndexPage = () => {
-  const { user, firebase } = useContext(FirebaseContext)
+  const { firebase } = useContext(FirebaseContext)
 
   return (
     <>
@@ -94,7 +86,7 @@ const IndexPage = () => {
             </div>
           </div>
         </div>
-        <div
+        {/* <div
           style={{
             margin: `0 auto`,
             maxWidth: 650,
@@ -125,7 +117,7 @@ const IndexPage = () => {
               </div>
             </div>
           )}
-        </div>
+        </div> */}
         <Fade bottom duration={2000}>
           <SubTitle>
             <span>ブログ</span>
@@ -156,7 +148,7 @@ const IndexPage = () => {
         </div>
         <Fade bottom duration={2000}>
           <SubTitle>
-            <span>お問合せ</span>
+            <span>お問合せ・ご注文</span>
           </SubTitle>
         </Fade>
         <div

@@ -187,11 +187,11 @@ const NavbarLinks = () => {
           <NavItem>記事投稿</NavItem>
         </a>
       )} */}
-      {!!user && (
+      {/* {!!user && (
         <a href="/member">
           <NavItem>会員掲示板</NavItem>
         </a>
-      )}
+      )} */}
       {!!user && <Logout onClick={handleLogOutClick}>ログアウト</Logout>}
     </>
   )
