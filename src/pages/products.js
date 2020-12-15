@@ -21,12 +21,12 @@ const Products = () => {
         >
           <Price id="fuku">
             ※価格：1kg : 1000円,　2kg : 1800円,　5kg : 4000円,　10kg :
-            7000円（税別/全商品同一／送料別）
+            7000円（税込/全商品同一／送料別）
           </Price>
           <Fade duration={2000}>
             <Pic>
               <img
-                src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2Ffukumurasaki2.jpg?alt=media&token=0b238408-8fa4-4219-9779-c208c3485e9f"
+                src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2Ffukumurasaki_nama.jpg?alt=media&token=19f7e7e7-f1b3-4470-8c79-d221dbfafa15"
                 alt="coverImg"
               ></img>
             </Pic>
@@ -36,6 +36,9 @@ const Products = () => {
             <P1>
               ２０１８年に開発され、２０１９年から市場に出回るようになったふくむらさき。焼き芋にすると、これまでのふくむらさきの概念を覆す、ねっとりとした食感で糖度は「べにはるか」並に高くなるのが特徴。
             </P1>
+            <P2>
+              ※白い斑点はヤラピンという、整腸を促す作用のある良質の物質であり、健康に害はございません。
+            </P2>
             <P id="beni">
               【参照URL】
               <a
@@ -52,7 +55,7 @@ const Products = () => {
           <Fade duration={2000}>
             <Pic>
               <img
-                src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2Fbeniharuka2.jpg?alt=media&token=6010891a-a638-4eae-ba20-6e526b94ea9f"
+                src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2Fbeniharuka_nama.jpg?alt=media&token=e862813b-3a05-43af-aead-713a41300556"
                 alt="coverImg"
               ></img>
             </Pic>
@@ -155,6 +158,16 @@ const P = styled.p`
 
 const P1 = styled.p`
   font-size: 15px;
+  line-height: 1.5;
+  color: #222;
+  font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
+    "Roboto Slab", Garamond, "Times New Roman", "HGS明朝E", "ＭＳ Ｐ明朝",
+    "MS PMincho", serif;
+`
+
+const P2 = styled.p`
+  font-size: 13px;
   line-height: 1.5;
   color: #222;
   font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho",

@@ -11,7 +11,7 @@ const Products = () => {
             <LI>
               <BoxContainer1>
                 <Img
-                  src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2Ffukumurasaki2.jpg?alt=media&token=0b238408-8fa4-4219-9779-c208c3485e9f"
+                  src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2Ffukumurasaki_nama.jpg?alt=media&token=19f7e7e7-f1b3-4470-8c79-d221dbfafa15"
                   alt="activity"
                 ></Img>
                 <TitleContainer>
@@ -24,7 +24,7 @@ const Products = () => {
             <LI>
               <BoxContainer2>
                 <Img
-                  src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2Fbeniharuka2.jpg?alt=media&token=6010891a-a638-4eae-ba20-6e526b94ea9f"
+                  src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2Fbeniharuka_nama.jpg?alt=media&token=e862813b-3a05-43af-aead-713a41300556https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2Fbeniharuka_nama.jpg?alt=media&token=e862813b-3a05-43af-aead-713a41300556"
                   alt="activity"
                 ></Img>
 
@@ -43,7 +43,7 @@ const Products = () => {
                 ></Img>
 
                 <TitleContainer>
-                  <Title>パープルスイートロード</Title>
+                  <Title2>パープルスイートロード</Title2>
                 </TitleContainer>
               </BoxContainer1>
             </LI>
@@ -121,6 +121,22 @@ const Title = styled.p`
   margin: 0 auto;
   color: #222;
   font-size: 15px;
+  font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
+    "Roboto Slab", Garamond, "Times New Roman", "HGS明朝E", "ＭＳ Ｐ明朝",
+    "MS PMincho", serif;
+  &:hover {
+    color: #800080;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+  }
+`
+
+const Title2 = styled.p`
+  text-align: left;
+  margin: 0 auto;
+  color: #222;
+  font-size: 14px;
   font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
     "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
     "Roboto Slab", Garamond, "Times New Roman", "HGS明朝E", "ＭＳ Ｐ明朝",

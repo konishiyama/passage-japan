@@ -172,7 +172,7 @@ const NavbarLinks = () => {
         <NavItem>農園について</NavItem>
       </a>
       <a href="/products">
-        <NavItem>製品情報</NavItem>
+        <NavItem>商品情報</NavItem>
       </a>
       <a href="/blog">
         <NavItem>ブログ</NavItem>
