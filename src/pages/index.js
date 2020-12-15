@@ -8,6 +8,7 @@ import {
   IndexArticles,
   // IndexMemberPosts,
   SubTitle,
+  SubTitleContact,
   SeeMore,
   SeeMore2,
 } from "../components/common"
@@ -147,9 +148,9 @@ const IndexPage = () => {
           </div>
         </div>
         <Fade bottom duration={2000}>
-          <SubTitle>
+          <SubTitleContact>
             <span>お問合せ・ご注文</span>
-          </SubTitle>
+          </SubTitleContact>
         </Fade>
         <div
           style={{

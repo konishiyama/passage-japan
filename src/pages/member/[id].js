@@ -4,11 +4,11 @@ import React, { useContext } from "react"
 import { useDocumentDataOnce } from "react-firebase-hooks/firestore"
 import renderHTML from "react-render-html"
 import styled from "styled-components"
-import { PostComments, PageCover, BottomBar } from "../../components/common"
+import { PostComments, BottomBar } from "../../components/common"
 import { FirebaseContext } from "../../components/Firebase"
 import CreateIcon from "@material-ui/icons/Create"
 
-const PostTemplate = props => {
+const PostTemplate = () => {
   const router = useRouter()
 
   const { user, firebase } = useContext(FirebaseContext)

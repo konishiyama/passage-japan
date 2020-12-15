@@ -42,8 +42,10 @@ const Contact = () => {
           // hidden
         >
           <br></br>
-          <p>下記フォームに必要事項をご記入の上、「送信」を押してください。</p>
-          <p>
+          <p style={{ fontSize: "15px" }}>
+            下記フォームに必要事項をご記入の上、「送信」を押してください。
+          </p>
+          <p style={{ fontSize: "15px" }}>
             お問い合わせ・注文内容を確認させていただき、お支払い・配送について当方からご連絡差し上げます。
           </p>
           <br></br>
@@ -51,13 +53,13 @@ const Contact = () => {
           <SubIndex>お名前</SubIndex>
           <Input required placeholder="Name" type="text" name="name" />
           <SubIndex>ご住所</SubIndex>
-          <Input required placeholder="Address" type="text" name="address" />
+          <Input placeholder="Address" type="text" name="address" />
           <SubIndex>メールアドレス</SubIndex>
           <Input required placeholder="Email" type="email" name="email" />
           <SubIndex>電話番号</SubIndex>
           <Input required placeholder="Phone" type="tel" name="tel" />
           <SubIndex>注文品種・分量</SubIndex>
-          <TEXTAREA1 required placeholder="Order" type="text" name="order" />
+          <TEXTAREA1 placeholder="Order" type="text" name="order" />
           <SubIndex>お問合せ内容</SubIndex>
           <TEXTAREA2
             required

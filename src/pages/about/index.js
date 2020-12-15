@@ -112,7 +112,7 @@ const Index = styled.p`
 `
 
 const P = styled.p`
-  font-size: 14px;
+  font-size: 15px;
   color: #222;
   font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
     "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
@@ -123,7 +123,7 @@ const P = styled.p`
 `
 
 const P1 = styled.p`
-  font-size: 14px;
+  font-size: 15px;
   color: #222;
   font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
     "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
@@ -134,7 +134,7 @@ const P1 = styled.p`
 `
 
 const P2 = styled.p`
-  font-size: 14px;
+  font-size: 15px;
   color: #222;
   font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
     "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
@@ -146,7 +146,7 @@ const P2 = styled.p`
 `
 
 const P3 = styled.p`
-  font-size: 14px;
+  font-size: 15px;
   color: #222;
   font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
     "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",

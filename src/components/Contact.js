@@ -10,6 +10,7 @@ const P = styled.p`
     "Roboto Slab", Garamond, "Times New Roman", "HGS明朝E", "ＭＳ Ｐ明朝",
     "MS PMincho", serif;
   color: #222;
+  font-size: 15px;
 `
 
 const TEXTAREA1 = styled.textarea`
@@ -52,18 +53,13 @@ const Contact = () => {
         <SubIndex>お名前</SubIndex>
         <Input required placeholder="Name" type="text" name="name" />
         <SubIndex>ご住所</SubIndex>
-        <Input required placeholder="Address" type="text" name="address" />
+        <Input placeholder="Address" type="text" name="address" />
         <SubIndex>メールアドレス</SubIndex>
         <Input required placeholder="Email" type="email" name="email" />
         <SubIndex>電話番号</SubIndex>
         <Input required placeholder="Phone" type="tel" name="tel" />
         <SubIndex>注文品種・分量</SubIndex>
-        <TEXTAREA1
-          required
-          placeholder="Order"
-          type="text"
-          name="order"
-        ></TEXTAREA1>
+        <TEXTAREA1 placeholder="Order" type="text" name="order"></TEXTAREA1>
         <SubIndex>お問合せ内容</SubIndex>
         <TEXTAREA2
           required

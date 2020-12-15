@@ -38,7 +38,15 @@ const Products = () => {
             </P1>
             <P id="beni">
               【参照URL】
-              https://www.naro.affrc.go.jp/publicity_report/press/files/KARC_press_2018_11_15a.pdf
+              <a
+                href="https://www.naro.affrc.go.jp/publicity_report/press/files/KARC_press_2018_11_15a.pdf"
+                style={{
+                  textDecoration: "none",
+                }}
+                target="/blank"
+              >
+                https://www.naro.affrc.go.jp/publicity_report/press/files/KARC_press_2018_11_15a.pdf
+              </a>
             </P>
           </Fade>
           <Fade duration={2000}>
@@ -124,7 +132,7 @@ const Index = styled.p`
 `
 
 const Price = styled.p`
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.5;
   color: #222;
   font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
@@ -135,7 +143,7 @@ const Price = styled.p`
 `
 
 const P = styled.p`
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.5;
   color: #222;
   font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
@@ -146,7 +154,7 @@ const P = styled.p`
 `
 
 const P1 = styled.p`
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.5;
   color: #222;
   font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho",

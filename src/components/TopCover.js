@@ -1,25 +1,8 @@
-import Link from "next/link"
-import React, { useContext } from "react"
+import React from "react"
 import styled from "styled-components"
 // import Fade from "react-reveal/Fade"
 import { Fade } from "react-slideshow-image"
 import "react-slideshow-image/dist/styles.css"
-import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown"
-import Flash from "react-reveal/Flash"
-import { FirebaseContext } from "./Firebase"
-
-// const Cover = styled.div`
-//   position: relative;
-//   top: 0%;
-//   display: flex;
-//   width: 100%;
-//   height: 100vh;
-//   background-size: cover;
-//   background-position: top;
-//   align-items: center;
-//   justify-content: center;
-//   // background-image: url("../../images/louis-hansel-shotsoflouis-geYw6L4-WU8-unsplash.jpg");
-// `
 
 const CoverPic = styled.img`
   position: relative;
@@ -34,33 +17,6 @@ const CoverPic = styled.img`
   object-fit: cover;
 `
 
-const Scroll = styled.p`
-  position: absolute;
-  top: 92%;
-  left: 50%;
-  width: 80%;
-  text-align: center;
-  line-height: 1.5em;
-  font-weight: bold;
-  letter-spacing: 0.02em;
-  width: 80%;
-  font-size: 12px;
-  color: #fff;
-  margin: 0;
-  -ms-transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  font-family: "Roboto", sans-serif;
-
-  @media (min-width: 768px) {
-    top: 60%;
-  }
-
-  @media (min-width: 1024px) {
-    font-size: 38px;
-  }
-`
-
 const fadeProperties = {
   delay: 2000,
   duration: 3000,
@@ -71,7 +27,7 @@ const fadeProperties = {
 }
 
 const TopCover = () => {
-  const { user, firebase } = useContext(FirebaseContext)
+  // const { user, firebase } = useContext(FirebaseContext)
 
   return (
     <>
