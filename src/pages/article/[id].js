@@ -63,7 +63,7 @@ const ArticleTemplate = () => {
         ></div>
         <BottomBar>
           <FacebookShareButton
-            url={`https://yamaguchi-farms/article/${pageContext.articleNum}`}
+            url={`https://yamaguchi-farms.com/article/${pageContext.articleNum}`}
             size={`2.3rem`}
             style={{
               display: `flex`,
@@ -77,7 +77,7 @@ const ArticleTemplate = () => {
             <FacebookIcon size={`2.3rem`} round style={{}} />
           </FacebookShareButton>
           <TwitterShareButton
-            url={`https://yamaguchi-farms/article/${pageContext.articleNum}`}
+            url={`https://yamaguchi-farms.com/article/${pageContext.articleNum}`}
             style={{
               display: `flex`,
               alignItems: `center`,
@@ -92,7 +92,7 @@ const ArticleTemplate = () => {
             />
           </TwitterShareButton>
           <LineShareButton
-            url={`https://yamaguchi-farms/article/${pageContext.articleNum}`}
+            url={`https://yamaguchi-farms.com/article/${pageContext.articleNum}`}
             style={{
               display: `flex`,
               alignItems: `center`,
