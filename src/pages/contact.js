@@ -1,8 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 import { Button, Form, Input, PageTitle, SubIndex } from "../components/common"
-// import { FirebaseContext} from '../components/Firebase'
-// import { Editor } from '@tinymce/tinymce-react';
 
 const TEXTAREA1 = styled.textarea`
   display: block;
@@ -31,7 +29,7 @@ const Contact = () => {
     <>
       <section>
         <PageTitle>
-          <span>お問合せ</span>
+          <span>お問合せ・ご注文</span>
           <p>Contact</p>
         </PageTitle>
         <Form
@@ -39,7 +37,9 @@ const Contact = () => {
           method="post"
           action="/contact_success"
           data-netlify="true"
-          data-netlify-honeypot="bot-field"
+          netlify
+          netlify-honeypot="bot-field"
+          // hidden
         >
           <br></br>
           <p>下記フォームに必要事項をご記入の上、「送信」を押してください。</p>
@@ -54,6 +54,8 @@ const Contact = () => {
           <Input required placeholder="Address" type="text" name="address" />
           <SubIndex>メールアドレス</SubIndex>
           <Input required placeholder="Email" type="email" name="email" />
+          <SubIndex>電話番号</SubIndex>
+          <Input required placeholder="Phone" type="tel" name="tel" />
           <SubIndex>注文品種・分量</SubIndex>
           <TEXTAREA1 required placeholder="Order" type="text" name="order" />
           <SubIndex>お問合せ内容</SubIndex>

@@ -4,7 +4,7 @@ import Link from "next/link"
 import { PageTitle, SeeMore3 } from "../components/common"
 import Fade from "react-reveal/Fade"
 
-const Products = props => {
+const Products = () => {
   return (
     <>
       <section>
@@ -20,8 +20,8 @@ const Products = props => {
           }}
         >
           <Price id="fuku">
-            ※価格：1kg : 500円,　2kg : 1000円,　5kg : 2000円,　10kg :
-            3500円（税別/全商品同一）
+            ※価格：1kg : 1000円,　2kg : 1800円,　5kg : 4000円,　10kg :
+            7000円（税別/全商品同一／送料別）
           </Price>
           <Fade duration={2000}>
             <Pic>
@@ -34,7 +34,7 @@ const Products = props => {
           <Fade duration={2000}>
             <Index>ふくむらさき（おすすめ）</Index>
             <P1>
-              ２０１８年に開発され、２０１９年から市場に出回るようになったふくむらさき。焼き芋にすると、これまでの紫芋の概念を覆す、ねっとりとした食感で糖度は「べにはるか」並に高くなるのが特徴。
+              ２０１８年に開発され、２０１９年から市場に出回るようになったふくむらさき。焼き芋にすると、これまでのふくむらさきの概念を覆す、ねっとりとした食感で糖度は「べにはるか」並に高くなるのが特徴。
             </P1>
             <P id="beni">
               【参照URL】
@@ -58,7 +58,7 @@ const Products = props => {
           <Fade duration={2000}></Fade>
           <Pic>
             <img
-              src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2FS__34226180.jpg?alt=media&token=6e97386b-9c3c-45c2-9440-6fcdbd9f469d"
+              src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2Fpurplesweet.jpg?alt=media&token=1170dbf8-0b54-4a66-9c1a-9292350d66d2"
               alt="coverImg"
             ></img>
           </Pic>
@@ -71,7 +71,7 @@ const Products = props => {
           <Fade duration={2000}>
             <Pic>
               <img
-                src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2FS__34226180.jpg?alt=media&token=6e97386b-9c3c-45c2-9440-6fcdbd9f469d"
+                src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2Fsilksweet.jpg?alt=media&token=e9fe43a7-7f68-43bb-a5dc-7495f6f67a9e"
                 alt="coverImg"
               ></img>
             </Pic>
@@ -125,7 +125,6 @@ const Index = styled.p`
 
 const Price = styled.p`
   font-size: 14px;
-  // font-weight: bold;
   line-height: 1.5;
   color: #222;
   font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho",

@@ -15,14 +15,14 @@ import {
 import { FirebaseContext } from "../components/Firebase"
 import Fade from "react-reveal/Fade"
 
-const IMG = styled.img`
-  width: 40%;
-  margin: 0 auto;
-  align-items: center;
-  justify-content: center;
-`
+// const IMG = styled.img`
+//   width: 40%;
+//   margin: 0 auto;
+//   align-items: center;
+//   justify-content: center;
+// `
 
-const IndexPage = ({ data }) => {
+const IndexPage = () => {
   const { user, firebase } = useContext(FirebaseContext)
 
   return (

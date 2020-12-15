@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { PageTitle } from "../../components/common"
 import Fade from "react-reveal/Fade"
 
-const Farm = props => {
+const Farm = () => {
   return (
     <>
       <section>
@@ -31,7 +31,7 @@ const Farm = props => {
           </Fade>
           <Fade duration={2000}>
             <P>
-              自然豊かな栃木県日光市にて紫芋を中心とした有機農業を営んでいます。
+              自然豊かな栃木県日光市にてふくむらさきを中心とした有機農業を営んでいます。
               家族経営のこじんまりとした農園ですが、その分、一つ一つの作物を緻密に研究し、大切に育て、少しでも安全で美味しい野菜をお客様に直接お届けしたいと考えています。
             </P>
           </Fade>
@@ -59,7 +59,7 @@ const Farm = props => {
           <Fade duration={2000}>
             <Pic>
               <img
-                src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2Fyamaguchi.jpg?alt=media&token=77a966c9-1ca6-4ec6-a5c9-4162aa6c334b"
+                src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2Fpresident.jpg?alt=media&token=d6ae53e1-14ea-4430-8b2d-37be8bda81ea"
                 alt="coverImg"
               ></img>
             </Pic>

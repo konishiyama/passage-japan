@@ -34,7 +34,7 @@ function useAuth() {
             })
             .then(r => {
               //ここで持ってきているrはuserIdが一致するpublicProfilesの中のdocument
-              console.log(r)
+              // console.log(r)
               if (r.size === 0) {
                 return {
                   ...user,

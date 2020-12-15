@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { Button, Form, Input, PageCover, SubIndex } from "../components/common"
+import { Button, Form, Input, SubIndex } from "../components/common"
 // import { FirebaseContext} from '../components/Firebase'
 // import { Editor } from '@tinymce/tinymce-react';
 
@@ -55,6 +55,8 @@ const Contact = () => {
         <Input required placeholder="Address" type="text" name="address" />
         <SubIndex>メールアドレス</SubIndex>
         <Input required placeholder="Email" type="email" name="email" />
+        <SubIndex>電話番号</SubIndex>
+        <Input required placeholder="Phone" type="tel" name="tel" />
         <SubIndex>注文品種・分量</SubIndex>
         <TEXTAREA1
           required

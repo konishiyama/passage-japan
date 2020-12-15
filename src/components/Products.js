@@ -38,7 +38,7 @@ const Products = () => {
             <LI>
               <BoxContainer1>
                 <Img
-                  src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2FS__34226182.jpg?alt=media&token=b787c6a9-377d-4748-ab8e-ebba40509953"
+                  src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2Fpurplesweet.jpg?alt=media&token=1170dbf8-0b54-4a66-9c1a-9292350d66d2"
                   alt="activity"
                 ></Img>
 
@@ -52,7 +52,7 @@ const Products = () => {
             <LI>
               <BoxContainer2>
                 <Img
-                  src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2FS__34226182.jpg?alt=media&token=b787c6a9-377d-4748-ab8e-ebba40509953"
+                  src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2Fsilksweet.jpg?alt=media&token=e9fe43a7-7f68-43bb-a5dc-7495f6f67a9e"
                   alt="activity"
                 ></Img>
                 <TitleContainer>
@@ -121,7 +121,6 @@ const Title = styled.p`
   margin: 0 auto;
   color: #222;
   font-size: 15px;
-  // font-weight: bold;
   font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
     "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
     "Roboto Slab", Garamond, "Times New Roman", "HGS明朝E", "ＭＳ Ｐ明朝",

@@ -1,5 +1,5 @@
 import { Editor } from "@tinymce/tinymce-react"
-// import { navigate } from "gatsby"
+import { useRouter } from "next/router"
 import React, { useContext, useState } from "react"
 import {
   Button,
@@ -13,10 +13,10 @@ import {
 } from "../components/common"
 import { FirebaseContext } from "../components/Firebase"
 
-const PostArticle = ({ data }) => {
+const PostArticle = () => {
   const [titleValues, setTitleValues] = useState({ title: "" })
   const [contentValues, setContentValues] = useState({ content: "" })
-  const { user, firebase } = useContext(FirebaseContext)
+  const { firebase } = useContext(FirebaseContext)
   const [errorMessage, setErrorMessage] = useState("")
   const [fileErrorMessage, setFileErrorMessage] = useState("")
   const [fileUploaded, setFileUploaded] = useState("")
@@ -24,6 +24,7 @@ const PostArticle = ({ data }) => {
   const [imageUrl, setImageUrl] = useState("")
   const [timeStamp, setTimeStamp] = useState("")
   const [articleNumber, setArticleNumber] = useState("")
+  const router = useRouter()
 
   function handleSubmit(e) {
     e.preventDefault()
@@ -35,7 +36,7 @@ const PostArticle = ({ data }) => {
         date: timeStamp,
         articleNum: articleNumber,
       })
-      .then(() => navigate("/"))
+      .then(() => router.push("/"))
       .catch(error => {
         setErrorMessage(error.message)
       })

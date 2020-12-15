@@ -7,9 +7,9 @@ const About = () => {
     <>
       <Container>
         <Fade duration={2000}>
-          <Title>紫芋の山口農園です。</Title>
+          <Title>ふくむらさきの山口農園です。</Title>
           <Para1>
-            自然豊かな栃木県日光市にて、紫芋を中心とした有機農業を営んでいます。
+            自然豊かな栃木県日光市にて、ふくむらさきの栽培を中心とした有機農業を営んでいます。
             家族経営のこじんまりとした農園ですが、その分、一つ一つの作物を緻密に研究し、大切に育て、少しでも安全で美味しい野菜をお客様に直接お届けしたいと考えております。
           </Para1>
         </Fade>
@@ -43,7 +43,7 @@ const Title = styled.p`
   text-align: left;
   margin: 0;
   color: #222;
-  font-size: 25px;
+  font-size: 22px;
   font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
     "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
     "Roboto Slab", Garamond, "Times New Roman", "HGS明朝E", "ＭＳ Ｐ明朝",
