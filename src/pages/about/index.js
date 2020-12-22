@@ -25,7 +25,7 @@ const Farm = () => {
             <Pic>
               <img
                 src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2FS__34226187.jpg?alt=media&token=ba0969ec-8fcd-4e21-b83d-49af92cd320b"
-                alt="coverImg"
+                alt="山口農園について"
               ></img>
             </Pic>
           </Fade>
@@ -42,7 +42,7 @@ const Farm = () => {
             <Pic>
               <img
                 src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2FS__34226180.jpg?alt=media&token=6e97386b-9c3c-45c2-9440-6fcdbd9f469d"
-                alt="coverImg"
+                alt="ふくむらさき"
               ></img>
             </Pic>
           </Fade>
@@ -60,7 +60,7 @@ const Farm = () => {
             <Pic>
               <img
                 src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2Fpresident.jpg?alt=media&token=d6ae53e1-14ea-4430-8b2d-37be8bda81ea"
-                alt="coverImg"
+                alt="山口農園代表"
               ></img>
             </Pic>
           </Fade>

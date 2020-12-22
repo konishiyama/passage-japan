@@ -33,9 +33,18 @@ const TopCover = () => {
     <>
       {/* {!!firebase && ( */}
       <Fade {...fadeProperties}>
-        <CoverPic src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2Ftopcover%2Fcover1.jpg?alt=media&token=57febd65-0051-4583-84ab-1dc63c60cf5c" />
-        <CoverPic src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2Ftopcover%2Fcover2.jpg?alt=media&token=4422cd9f-c55e-43e7-889b-527812f363a8" />
-        <CoverPic src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2Ftopcover%2Fcover3.jpg?alt=media&token=a1e08059-5c28-4246-baf7-e0ddccf81d6a" />
+        <CoverPic
+          src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2Ftopcover%2Fcover1.jpg?alt=media&token=57febd65-0051-4583-84ab-1dc63c60cf5c"
+          alt="cover"
+        />
+        <CoverPic
+          src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2Ftopcover%2Fcover2.jpg?alt=media&token=4422cd9f-c55e-43e7-889b-527812f363a8"
+          alt="cover"
+        />
+        <CoverPic
+          src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2Ftopcover%2Fcover3.jpg?alt=media&token=a1e08059-5c28-4246-baf7-e0ddccf81d6a"
+          alt="cover"
+        />
       </Fade>
       {/* )} */}
       {/* <Scroll>SCROLL</Scroll>

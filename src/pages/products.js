@@ -27,7 +27,7 @@ const Products = () => {
             <Pic>
               <img
                 src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2Ffukumurasaki_nama.jpg?alt=media&token=19f7e7e7-f1b3-4470-8c79-d221dbfafa15"
-                alt="coverImg"
+                alt="ふくむらさき"
               ></img>
             </Pic>
           </Fade>
@@ -56,7 +56,7 @@ const Products = () => {
             <Pic>
               <img
                 src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2Fbeniharuka_nama.jpg?alt=media&token=e862813b-3a05-43af-aead-713a41300556"
-                alt="coverImg"
+                alt="べにはるか"
               ></img>
             </Pic>
           </Fade>
@@ -70,7 +70,7 @@ const Products = () => {
           <Pic>
             <img
               src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2Fpurplesweet.jpg?alt=media&token=1170dbf8-0b54-4a66-9c1a-9292350d66d2"
-              alt="coverImg"
+              alt="パープルスイートロード"
             ></img>
           </Pic>
           <Fade duration={2000}>
@@ -83,7 +83,7 @@ const Products = () => {
             <Pic>
               <img
                 src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2Fsilksweet.jpg?alt=media&token=e9fe43a7-7f68-43bb-a5dc-7495f6f67a9e"
-                alt="coverImg"
+                alt="シルクスイート"
               ></img>
             </Pic>
           </Fade>
