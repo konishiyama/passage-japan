@@ -6,6 +6,13 @@ const EachArticle = styled.li`
   margin: 0 auto 2rem;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
   width: 90%;
+  cursor: pointer;
+  &:hover {
+    h3 {
+      color: #800080;
+      transition: all 0.4s ease-in;
+    }
+  }
 `
 const A = styled.a`
   text-decoration: none;
@@ -40,23 +47,19 @@ const TextContainer = styled.div`
 
 const Title = styled.h3`
   padding-top: 0.5rem;
-  height: 3.4em
+  height: 3.4em;
   font-size: 18px;
   line-height: 1.6;
   width: 100%;
   text-decoration: none;
   font-size: 18px;
-  font-family:  "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
-  "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
-  "Roboto Slab", Garamond, "Times New Roman", "HGS明朝E", "ＭＳ Ｐ明朝",
-  "MS PMincho", serif;
+  font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
+    "Roboto Slab", Garamond, "Times New Roman", "HGS明朝E", "ＭＳ Ｐ明朝",
+    "MS PMincho", serif;
   color: #222;
   text-align: left;
   letter-spacing: normal;
-  &:hover{
-    color: #800080;
-    transition: all 0.4s ease-in;
-  }
 `
 
 const Date = styled.p`

@@ -1,10 +1,9 @@
-import Link from "next/link"
 import React, { useContext, useState } from "react"
 import styled from "styled-components"
-import { LoginImage, ProfileImage } from "./common"
+// import { LoginImage, ProfileImage } from "./common"
 import { FirebaseContext } from "./Firebase"
 import NavbarLinks from "./NavbarLinks"
-import ExitToAppRoundedIcon from "@material-ui/icons/ExitToAppRounded"
+// import ExitToAppRoundedIcon from "@material-ui/icons/ExitToAppRounded"
 
 const Toggle = styled.div`
   position: fixed;
@@ -57,7 +56,6 @@ const Hamburger = styled.div`
   ::after {
     width: 24px;
     height: 1.5px;
-    // background-color: ${props => (props.open ? "#111" : "#fff")};
     background-color: #111;
     content: "";
     position: absolute;
@@ -77,16 +75,16 @@ const Hamburger = styled.div`
   }
 `
 
-const LogIn = styled.div`
-  position: fixed;
-  z-index: 10;
-  top: 0;
-  right: 0;
-  width: 64px;
-  height: 64px;
-  padding: 20px;
-  cursor: pointer;
-`
+// const LogIn = styled.div`
+//   position: fixed;
+//   z-index: 10;
+//   top: 0;
+//   right: 0;
+//   width: 64px;
+//   height: 64px;
+//   padding: 20px;
+//   cursor: pointer;
+// `
 
 const Logo = styled.img`
   position: fixed;
@@ -109,7 +107,7 @@ const Logo = styled.img`
 
 const Header = () => {
   const [navbarOpen, setNavbarOpen] = useState(false)
-  const { user, firebase } = useContext(FirebaseContext)
+  const { firebase } = useContext(FirebaseContext)
 
   return (
     <>
