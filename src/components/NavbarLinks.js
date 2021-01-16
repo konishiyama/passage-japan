@@ -174,9 +174,9 @@ const NavbarLinks = () => {
       <a href="/products">
         <NavItem>商品情報</NavItem>
       </a>
-      <a href="/blog">
+      {/* <a href="/blog">
         <NavItem>ブログ</NavItem>
-      </a>
+      </a> */}
       {!user && (
         <a href="/login">
           <NavItem>ログイン</NavItem>

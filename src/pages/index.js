@@ -119,7 +119,7 @@ const IndexPage = () => {
             </div>
           )}
         </div> */}
-        <Fade bottom duration={2000}>
+        {/* <Fade bottom duration={2000}>
           <SubTitle>
             <span>ブログ</span>
           </SubTitle>
@@ -146,7 +146,7 @@ const IndexPage = () => {
               </Link>
             </Fade>
           </div>
-        </div>
+        </div> */}
         <Fade bottom duration={2000}>
           <SubTitleContact>
             <span>お問合せ・ご注文</span>

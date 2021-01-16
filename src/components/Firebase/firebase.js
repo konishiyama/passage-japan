@@ -54,7 +54,7 @@ class Firebase {
       email,
       password
     )
-    //createWith...はuser.uidという要素をもつオブジェクトをreturnする(lessson40らへん)。他方、このままだと一人のユーザーが紐づくpublicProfileをいくつも作成できてしまうが、その部分はlesson41以降のfirebasecloud functionsnに関する説明で解消する。
+    //createWith...はuser.uidという要素をもつオブジェクトをreturnする。他方、このままだと一人のユーザーが紐づくpublicProfileをいくつも作成できてしまうが、その部分はlesson41以降のfirebasecloud functionsnに関する説明で解消する。
     return this.db.collection("publicProfiles").doc(username).set({
       userId: newUser.user.uid,
       Email: newUser.user.email,
