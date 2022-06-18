@@ -1,5 +1,5 @@
 {
-  "name": "shohei-web-app-with-next",
+  "name": "passage-japan",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -16,7 +16,7 @@
     "axios": "^0.19.2",
     "babel-plugin-styled-components": "^1.10.7",
     "bootstrap": "^4.5.0",
-    "firebase": "^7.16.0",
+    "firebase": "^9.8.3",
     "next": "^10.0.0",
     "next-seo": "^4.17.0",
     "prop-types": "^15.7.2",

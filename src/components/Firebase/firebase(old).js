@@ -1,11 +1,12 @@
 // import { initializeApp } from "firebase/app"
 // import firebaseConfig from "./config"
-// import firebase from "firebase/compat/app"
-import "firebase/compat/auth"
-import "firebase/compat/firestore"
-import "firebase/compat/functions"
-import "firebase/compat/storage"
+// const app = initializeApp(firebaseConfig)
+// const auth = import("firebase/compat/auth")
+// const database = import("firebase/compat/firestore")
+// const functions = import("firebase/compat/functions")
+// const storage = import("firebase/compat/storage")
 
+// app.initializeApp(firebaseConfig)
 class Firebase {
   constructor(app) {
     if (!firebaseInstance) {
@@ -124,8 +125,9 @@ class Firebase {
 let firebaseInstance
 
 function getFirebaseInstance(app) {
-  if (!firebaseInstance) {
+  if (!firebaseInstance && app) {
     firebaseInstance = new Firebase(app)
+    //https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Operators/new 及びhttps://www.sejuku.net/blog/24383を参照
     return firebaseInstance
   } else if (firebaseInstance) {
     return firebaseInstance

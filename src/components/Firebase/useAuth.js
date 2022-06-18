@@ -1,6 +1,10 @@
 import { useEffect, useState } from "react"
 import getFirebaseInstance from "./firebase"
-import loadFirebaseDependencies from "./loadFirebaseDependencies"
+// import { initializeApp } from "firebase/app"
+import firebaseConfig from "./config"
+import firebase from "firebase/compat/app" //compatをpathに加える
+const app = firebase.initializeApp(firebaseConfig)
+// import loadFirebaseDependencies from "./loadFirebaseDependencies"
 
 //useAuthでは、ユーザーがログイン・アウトしたとき(onAuthStateChanged())に、当該ユーザーの情報(userResult/getUserProfile)を取得して、ユーザーのpublicProfileのdocumentを持ってきつつ、Stateとしてuserを設定している(この際にusername要素も定義(もってきたpPdocumentのid=document名をusernameとしてステートに設定)している。
 function useAuth() {
@@ -12,89 +16,49 @@ function useAuth() {
     let unsubscribe
     let publicProfileUnsubscribe
 
-    loadFirebaseDependencies.then(app => {
-      const firebaseInstance = getFirebaseInstance(app)
-      setFirebase(firebaseInstance)
-
-      unsubscribe = firebaseInstance.auth.onAuthStateChanged(userResult => {
-        if (userResult) {
-          // userResult.getIdTokenResult(true).then((result) => {
-          //     if(result.claims.admin === true){
-          //       console.log(result);
-          //         setUser({
-          //             ...user,
-          //             admin: true
-          //     });
-          //     }else{
-          //     }
-          // }) 下のsetUserと交錯してしまうのでいったんなし。
-          firebaseInstance
-            .getUserProfile({
-              userId: userResult.uid,
-            })
-            .then(r => {
-              //ここで持ってきているrはuserIdが一致するpublicProfilesの中のdocument
-              // console.log(r)
-              if (r.size === 0) {
-                return {
-                  ...user,
-                  username: null,
-                  photoURL: null,
-                }
+    const firebaseInstance = getFirebaseInstance(app)
+    setFirebase(firebaseInstance)
+    console.log(firebaseInstance)
+    unsubscribe = firebaseInstance.auth.onAuthStateChanged(userResult => {
+      if (userResult) {
+        // userResult.getIdTokenResult(true).then((result) => {
+        //     if(result.claims.admin === true){
+        //       console.log(result);
+        //         setUser({
+        //             ...user,
+        //             admin: true
+        //     });
+        //     }else{
+        //     }
+        // }) 下のsetUserと交錯してしまうのでいったんなし。
+        firebaseInstance
+          .getUserProfile({
+            userId: userResult.uid,
+          })
+          .then(r => {
+            //ここで持ってきているrはuserIdが一致するpublicProfilesの中のdocument
+            // console.log(r)
+            if (r.size === 0) {
+              return {
+                ...user,
+                username: null,
+                photoURL: null,
               }
+            }
 
-              const [snap] = r.docs
-              const data = snap.data()
-              setUser({
-                ...userResult,
-                username: r.docs[0].id,
-                photoURL: data ? data.photoURL : null,
-              })
+            const [snap] = r.docs
+            const data = snap.data()
+            setUser({
+              ...userResult,
+              username: r.docs[0].id,
+              photoURL: data ? data.photoURL : null,
             })
-          // get user custom claims
-          /*setLoading(true);
-                    Promise.all([
-                        firebaseInstance.getUserProfile({ userId: userResult.uid }),
-                        firebaseInstance.auth.currentUser.getIdTokenResult(true),
-                    ]).then((result) => {
-                        const publicProfileResult = result[0]
-                        const token = result[1]
+          })
+      } else {
+        setUser(null)
+      }
 
-                        if (publicProfileResult.empty) {
-                            publicProfileUnsubscribe = firebaseInstance.db
-                              .collection("publicProfiles")
-                              .where("userId", "==", userResult.uid)
-                              .onSnapshot((snapshot) => {
-                                  const publicProfileDoc = snapshot.docs[0]
-                                  if (publicProfileDoc && publicProfileDoc.id) {
-                                      setUser({
-                                          ...userResult,
-                                          admin: token.claims.admin,
-                                          username: publicProfileDoc.id,
-                                      })
-                                  }
-
-                                  setLoading(false)
-                              })
-                        } else {
-                            const publicProfileDoc = publicProfileResult.docs[0]
-                            if (publicProfileDoc && publicProfileDoc.id) {
-                                setUser({
-                                    ...userResult,
-                                    admin: token.claims.admin,
-                                    username: publicProfileDoc.id,
-                                })
-                            }
-
-                            setLoading(false)
-                        }
-                    })*/
-        } else {
-          setUser(null)
-        }
-
-        setLoading(false)
-      })
+      setLoading(false)
     })
 
     return () => {

@@ -10,7 +10,7 @@ const ArticleList = styled.ul`
   overflow-x: hidden;
   justify-content: space-between;
   // ul:after{
-  //   content:"";
+  // content:"";
   //   display:block;
   //   width: 160px;
   //   height:160px;
@@ -59,7 +59,7 @@ export const IndexArticles = ({ firebase }) => {
     }
   })
   const latestArticles = articlesOrdered.slice(0, 4)
-
+  console.log(articles)
   /*
   useEffect(() => {
     const unsubscribe = firebase.subscribeToArticles({
