@@ -9,12 +9,6 @@ const ArticleList = styled.ul`
   margin: 0;
   overflow-x: hidden;
   justify-content: space-between;
-  // ul:after{
-  // content:"";
-  //   display:block;
-  //   width: 160px;
-  //   height:160px;
-  // }
 `
 
 export const IndexArticles = ({ firebase }) => {

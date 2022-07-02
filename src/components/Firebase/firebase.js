@@ -1,6 +1,3 @@
-// import { initializeApp } from "firebase/app"
-// import firebaseConfig from "./config"
-// import firebase from "firebase/compat/app"
 import "firebase/compat/auth"
 import "firebase/compat/firestore"
 import "firebase/compat/functions"
@@ -15,15 +12,6 @@ class Firebase {
       this.storage = app.storage()
     }
   }
-  // async postArticle1({ title, content, cover, date, articleNum }) {
-  //   return await setDoc(doc(this.db, "articles"), {
-  //     title: title,
-  //     content: content,
-  //     thumnail: cover,
-  //     date: date,
-  //     articleNum: articleNum,
-  //   })
-  // }
 
   async postArticle({ title, content, cover, date, articleNum }) {
     return this.db.collection("articles").doc().set({

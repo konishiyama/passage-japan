@@ -34,7 +34,7 @@ export const PageTitle = styled.div`
     height: 1.8px;
     width: 65px;
     margin: 0.8rem auto 0;
-    background-color: #800080;
+    background-color: #39afca;
 
     @media (min-width: 768px) {
       width: 75px;

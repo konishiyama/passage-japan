@@ -17,10 +17,10 @@ export const SubTitle = styled.div`
   span:after {
     content: "";
     display: block;
-    height: 1px;
+    height: 2px;
     width: 65px;
     margin: 1.5rem auto 0;
-    background-color: #800080;
+    background-color: #39afca;
 
     @media (min-width: 768px) {
       width: 75px;

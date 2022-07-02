@@ -15,7 +15,7 @@ const EachPost = styled.div`
     transition: all 0.2s ease-in;
     p {
       text-decoration: underline;
-      color: #800080;
+      color: #39afca;
       transition: all 0.4s ease-in;
     }
   }

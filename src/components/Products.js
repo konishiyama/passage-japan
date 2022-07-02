@@ -88,7 +88,7 @@ const LI = styled.li`
       transition: all 0.2s ease-in;
     }
     p {
-      color: #800080;
+      color: #39afca;
       transition: all 0.2s ease-in;
     }
   }
@@ -126,7 +126,7 @@ const Title = styled.p`
     "Roboto Slab", Garamond, "Times New Roman", "HGS明朝E", "ＭＳ Ｐ明朝",
     "MS PMincho", serif;
   &:hover {
-    color: #800080;
+    color: #39afca;
     transition: all 0.2s ease-in;
     cursor: pointer;
   }
@@ -142,7 +142,7 @@ const Title2 = styled.p`
     "Roboto Slab", Garamond, "Times New Roman", "HGS明朝E", "ＭＳ Ｐ明朝",
     "MS PMincho", serif;
   &:hover {
-    color: #800080;
+    color: #39afca;
     transition: all 0.2s ease-in;
     cursor: pointer;
   }

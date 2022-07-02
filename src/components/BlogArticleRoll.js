@@ -9,7 +9,7 @@ const EachArticle = styled.li`
   cursor: pointer;
   &:hover {
     h3 {
-      color: #800080;
+      color: #39afca;
       transition: all 0.4s ease-in;
     }
   }
@@ -70,7 +70,7 @@ const Title = styled.h3`
   text-align: left;
   letter-spacing: normal;
   &:hover {
-    color: #800080;
+    color: #39afca;
     transition: all 0.4s ease-in;
   }
 `

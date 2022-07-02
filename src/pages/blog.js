@@ -33,7 +33,7 @@ const Blog = () => {
             <CreateIcon 
               style={{
                 color: `white`,
-                backgroundColor: `#800080`,
+                backgroundColor: `#39AFCA`,
                 borderRadius: `50%`,
                 padding: `0.5rem`,
                 height: `3rem`,

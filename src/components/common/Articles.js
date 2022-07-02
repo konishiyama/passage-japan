@@ -15,7 +15,7 @@ const SeeMore = styled.a`
   color: #808080;
   color: #808080;
   &:hover {
-    color: #800080;
+    color: #39afca;
     transition: all 0.4s ease-in;
   }
 `

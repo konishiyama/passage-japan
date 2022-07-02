@@ -24,6 +24,25 @@ const Toggle = styled.div`
   }
 `
 
+const Menubar = styled.div`
+  position: fixed;
+  z-index: 11;
+  top: 0;
+  left: 0;
+  width: 64px;
+  height: 64px;
+  padding: 20px;
+  cursor: pointer;
+  // z-index: ${props => (props.open ? "-1" : "11")};
+
+  @media (max-width: 768px) {
+    position: fixed;
+    width: 100%;
+    hight: 64px;
+    background-color: #fff;
+  }
+`
+
 const Navbox = styled.nav`
   display: flex;
   height: 100%;
@@ -44,7 +63,7 @@ const Navbox = styled.nav`
 `
 
 const Hamburger = styled.div`
-  background-color: #111;
+  background-color: #6c6c6c;
   width: 25px;
   height: 1.5px;
   transition: all 0.3s linear;
@@ -56,7 +75,7 @@ const Hamburger = styled.div`
   ::after {
     width: 24px;
     height: 1.5px;
-    background-color: #111;
+    background-color: #6c6c6c;
     content: "";
     position: absolute;
     transition: all 0.3s linear;
@@ -88,10 +107,9 @@ const Hamburger = styled.div`
 
 const Logo = styled.img`
   position: fixed;
-  z-index: 10;
-  top: 21px;
-  right: 20px;
-  height: 24px;
+  z-index: 15;
+  right: 5px;
+  height: 65px;
   object-fit: cover;
   cursor: pointer;
   margin: 0;
@@ -111,6 +129,7 @@ const Header = () => {
 
   return (
     <>
+      <Menubar></Menubar>
       <Toggle
         navbarOpen={navbarOpen}
         onClick={() => setNavbarOpen(!navbarOpen)}
@@ -124,7 +143,7 @@ const Header = () => {
       )}
       {!!firebase && (
         <a href="/">
-          <Logo src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2Flogo6.001.png?alt=media&token=31e40854-d873-4c8f-8cb0-aec4853c0651"></Logo>
+          <Logo src="https://firebasestorage.googleapis.com/v0/b/passage-76e68.appspot.com/o/%E6%97%A5%E5%95%93LOGO_horizontal-01.png?alt=media&token=9c6bbbf3-0c20-4789-8a9a-9124980defc2"></Logo>
         </a>
       )}
       {/* {!!user && !user.photoURL && (

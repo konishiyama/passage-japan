@@ -11,6 +11,6 @@ export const Input = styled.input`
   box-shadow: none;
 
   &: focus, &:active{
-    border: 1px solid #800080;
+    border: 1px solid #39AFCA;
   }
 `

@@ -29,7 +29,7 @@ const NavItemHome = styled.a`
     width: 0%;
     content: ".";
     color: transparent;
-    background: #800080;
+    background: #39afca;
     height: 1px;
     transition: all 0.4s ease-in;
   }
@@ -37,7 +37,7 @@ const NavItemHome = styled.a`
   :hover {
     cursor: pointer;
     text-decoration: none;
-    color: #800080;
+    color: #39afca;
     ::after {
       width: 100%;
     }
@@ -78,7 +78,7 @@ const NavItem = styled.a`
     width: 0%;
     content: ".";
     color: transparent;
-    background: #800080;
+    background: #39afca;
     height: 1px;
     transition: all 0.4s ease-in;
   }
@@ -86,7 +86,7 @@ const NavItem = styled.a`
   :hover {
     cursor: pointer;
     text-decoration: none;
-    color: #800080;
+    color: #39afca;
     ::after {
       width: 100%;
     }
@@ -130,13 +130,13 @@ const Logout = styled.span`
     width: 0%;
     content: ".";
     color: transparent;
-    background: #800080;
+    background: #39afca;
     height: 1px;
     transition: all 0.4s ease-in;
   }
 
   :hover {
-    color: #800080;
+    color: #39afca;
     ::after {
       width: 100%;
     }
