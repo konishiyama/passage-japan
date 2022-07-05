@@ -5,10 +5,8 @@ export const SubTitle = styled.div`
   text-align: center;
 
   span {
-    font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
-      "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
-      "Roboto Slab", Garamond, "Times New Roman", "HGS明朝E", "ＭＳ Ｐ明朝",
-      "MS PMincho", serif;
+    font-family: noto sans tc, helvetica neue, sans-serif;
+    font-weight: bold;
     letter-spacing: 0.03em;
     font-size: 20px;
     color: #222;

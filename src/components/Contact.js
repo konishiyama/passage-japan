@@ -5,10 +5,7 @@ import { Button, Form, Input, SubIndex } from "../components/common"
 // import { Editor } from '@tinymce/tinymce-react';
 
 const P = styled.p`
-  font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
-    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
-    "Roboto Slab", Garamond, "Times New Roman", "HGS明朝E", "ＭＳ Ｐ明朝",
-    "MS PMincho", serif;
+  font-family: noto sans tc, helvetica neue, sans-serif;
   color: #222;
   font-size: 15px;
 `
@@ -20,6 +17,7 @@ const TEXTAREA1 = styled.textarea`
   padding: 8px;
   font-size: 14px;
   margin-bottom: 12px;
+  border-radius: 4px;
   border: 1px solid #ddd;
   box-shadow: none;
 `
@@ -30,6 +28,7 @@ const TEXTAREA2 = styled.textarea`
   padding: 8px;
   font-size: 12px;
   margin-bottom: 6px;
+  border-radius: 4px;
   border: 1px solid #ddd;
   box-shadow: none;
 `
@@ -52,14 +51,10 @@ const Contact = () => {
         <input type="hidden" name="form-name" value="contact" />
         <SubIndex>お名前</SubIndex>
         <Input required placeholder="Name" type="text" name="name" />
-        <SubIndex>ご住所</SubIndex>
-        <Input placeholder="Address" type="text" name="address" />
         <SubIndex>メールアドレス</SubIndex>
         <Input required placeholder="Email" type="email" name="email" />
         <SubIndex>電話番号</SubIndex>
-        <Input required placeholder="Phone" type="tel" name="tel" />
-        <SubIndex>注文品種・分量</SubIndex>
-        <TEXTAREA1 placeholder="Order" type="text" name="order"></TEXTAREA1>
+        <Input placeholder="Phone" type="tel" name="tel" />
         <SubIndex>お問合せ内容</SubIndex>
         <TEXTAREA2
           required

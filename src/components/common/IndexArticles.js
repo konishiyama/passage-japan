@@ -53,7 +53,7 @@ export const IndexArticles = ({ firebase }) => {
     }
   })
   const latestArticles = articlesOrdered.slice(0, 4)
-  console.log(articles)
+  // console.log(articles)
   /*
   useEffect(() => {
     const unsubscribe = firebase.subscribeToArticles({

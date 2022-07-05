@@ -1,25 +1,24 @@
 import styled from "styled-components"
 
 export const SeeMore = styled.div`
-  width: 35%;
+  width: 30%;
   font-size: 15px;
-  color: #fff;
-  background-color: #000000;
+  color: #39afca;
+  background-color: #fff;
   display: block;
   text-align: center;
-  border: solid 1px #000000;
+  border: solid 1.5px #39afca;
+  border-radius: 4px;
   padding: 0.5em;
   line-height: 1.5;
   text-decoration: none;
   margin: 1em auto 0;
-  font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
-    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
-    "Roboto Slab", Garamond, "Times New Roman", "HGS明朝E", "ＭＳ Ｐ明朝",
-    "MS PMincho", serif;
+  font-family: noto sans tc, helvetica neue, sans-serif;
+  font-weight: bold;
   &:hover {
-    color: #000000;
-    background-color: #fff;
-    border: solid 1px #000000;
+    color: #fff;
+    background-color: #39afca;
+    border: solid 1.5px #fff;
     transition: all 0.2s ease-in;
     cursor: pointer;
   }

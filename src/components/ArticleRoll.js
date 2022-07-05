@@ -4,7 +4,8 @@ import styled from "styled-components"
 
 const EachArticle = styled.li`
   margin: 0 auto 2rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: rgb(212 217 214 / 50%) 1px 1px 16px;
+  border-radius: 8px;
   width: 90%;
   cursor: pointer;
   &:hover {
@@ -21,7 +22,7 @@ const A = styled.a`
 const Container = styled.div`
   width: 100%;
   text-align: center;
-
+  border-radius: 8px;
   p {
     text-align: left;
     color: #888;
@@ -32,11 +33,13 @@ const Container = styled.div`
 const ImgContainer = styled.div`
   width: 100%;
   margin: 0 auto;
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
 `
 
 const Thumnail = styled.img`
   width: 100%;
-  height: 10rem;
+  height: 8rem;
   object-fit: cover;
 `
 

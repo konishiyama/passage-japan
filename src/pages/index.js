@@ -26,7 +26,7 @@ const IndexPage = () => {
           style={{
             margin: `0 auto`,
             maxWidth: 650,
-            padding: `0rem 1.5rem 0rem`,
+            padding: `0rem 0.8rem 0rem`,
           }}
         >
           <Fade bottom duration={2000}>
@@ -41,7 +41,7 @@ const IndexPage = () => {
             style={{
               margin: `0 auto`,
               maxWidth: 960,
-              padding: `0 1.5rem 0`,
+              padding: `0 0.8rem 0`,
             }}
           >
             <div
@@ -52,7 +52,7 @@ const IndexPage = () => {
             >
               <Fade bottom duration={2000}>
                 <Link href="/about">
-                  <SeeMore>》更多職缺</SeeMore>
+                  <SeeMore>更多職缺</SeeMore>
                 </Link>
               </Fade>
             </div>
