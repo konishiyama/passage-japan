@@ -131,7 +131,7 @@ const Footer = () => {
           </ImgContainer>
         )} */}
         <CopyRight>
-          Copyright © 2020 Yamaguchi's Farm All Rights Reserved.
+          Copyright © 2022 Passage Japan All Rights Reserved.
         </CopyRight>
       </Container>
     </>

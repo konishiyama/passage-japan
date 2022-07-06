@@ -1,20 +1,21 @@
 import styled from "styled-components"
 
 export const TopLink = styled.a`
-  width: 35%;
-  font-size: 14px;
-  color: #39afca;
+  width: 40%;
+  font-size: 15px;
+  color: #fff;
   display: block;
   text-align: center;
-  border: solid 1px #39afca;
+  border: solid 1px #fff;
+  border-radius: 6px;
   padding: 0.5em;
   line-height: 1.5;
   text-decoration: none;
   margin-top: 3em;
   &:hover {
-    color: #fff;
-    background-color: #fdd000;
-    border: solid 1px #fdd000;
+    color: #39afca;
+    background-color: #fff;
+    border: solid 1px #fff;
     transition: all 0.2s ease-in;
   }
 

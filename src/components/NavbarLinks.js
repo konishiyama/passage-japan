@@ -8,10 +8,6 @@ const NavItemHome = styled.a`
   color: #222;
   font-size: 1rem;
   font-weight: bold;
-  font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
-    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
-    "Roboto Slab", Garamond, "Times New Roman", "HGS明朝E", "ＭＳ Ｐ明朝",
-    "MS PMincho", serif;
   padding: 20px 0;
   z-index: 6;
   display: inline-block;
@@ -58,10 +54,6 @@ const NavItemHome = styled.a`
 const NavItem = styled.a`
   color: #222;
   font-size: 1rem;
-  font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
-    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
-    "Roboto Slab", Garamond, "Times New Roman", "HGS明朝E", "ＭＳ Ｐ明朝",
-    "MS PMincho", serif;
   padding: 20px 0;
   z-index: 6;
   display: inline-block;
@@ -87,8 +79,10 @@ const NavItem = styled.a`
     cursor: pointer;
     text-decoration: none;
     color: #39afca;
+    font-weight: bold;
     ::after {
       width: 100%;
+      font-weight: bold;
     }
   }
 
@@ -110,10 +104,6 @@ const Logout = styled.span`
   color: #222;
   padding: 20px 0;
   font-size: 1rem;
-  font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
-    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
-    "Roboto Slab", Garamond, "Times New Roman", "HGS明朝E", "ＭＳ Ｐ明朝",
-    "MS PMincho", serif;
   z-index: 6;
   display: inline-block;
   white-space: nowrap;
@@ -121,7 +111,6 @@ const Logout = styled.span`
   transition: all 200ms ease-in;
   position: relative;
   cursor: pointer;
-
   :after {
     position: absolute;
     bottom: 10px;
@@ -133,10 +122,12 @@ const Logout = styled.span`
     background: #39afca;
     height: 1px;
     transition: all 0.4s ease-in;
+    font-weight: bold;
   }
 
   :hover {
     color: #39afca;
+    font-weight: bold;
     ::after {
       width: 100%;
     }
@@ -168,18 +159,18 @@ const NavbarLinks = () => {
       <a href="/">
         <NavItemHome>HOME</NavItemHome>
       </a>
-      <a href="/about">
-        <NavItem>農園について</NavItem>
+      <a href="/jobs">
+        <NavItem>熱門職缺</NavItem>
       </a>
-      <a href="/products">
-        <NavItem>商品情報</NavItem>
+      <a href="/articles">
+        <NavItem>精選專欄</NavItem>
       </a>
       {/* <a href="/blog">
         <NavItem>ブログ</NavItem>
       </a> */}
       {!user && (
         <a href="/login">
-          <NavItem>ログイン</NavItem>
+          <NavItem>登入</NavItem>
         </a>
       )}
       {/* {!!user && !!user.admin && (
@@ -192,7 +183,7 @@ const NavbarLinks = () => {
           <NavItem>会員掲示板</NavItem>
         </a>
       )} */}
-      {!!user && <Logout onClick={handleLogOutClick}>ログアウト</Logout>}
+      {!!user && <Logout onClick={handleLogOutClick}>LOGOUT</Logout>}
     </>
   )
 }

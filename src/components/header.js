@@ -105,14 +105,27 @@ const Hamburger = styled.div`
 //   cursor: pointer;
 // `
 
+const Link = styled.a`
+  // vertical-align: middle;
+  // position: fixed;
+  // z-index: 10;
+  // top: 0;
+  // right: 0;
+  // width: 64px;
+  // height: 64px;
+  // padding: 20px;
+  // cursor: pointer;
+`
+
 const Logo = styled.img`
   position: fixed;
   z-index: 15;
   right: 5px;
-  height: 65px;
+  height: 45px;
   object-fit: cover;
   cursor: pointer;
-  margin: 0;
+  // padding: 20px;
+  margin: 10px 0 0;
 
   @media (max-width: 768px) {
     display: flex;
@@ -142,9 +155,9 @@ const Header = () => {
         <Navbox open>{!!firebase && <NavbarLinks />}</Navbox>
       )}
       {!!firebase && (
-        <a href="/">
+        <Link href="/">
           <Logo src="https://firebasestorage.googleapis.com/v0/b/passage-76e68.appspot.com/o/%E6%97%A5%E5%95%93LOGO_horizontal-01.png?alt=media&token=9c6bbbf3-0c20-4789-8a9a-9124980defc2"></Logo>
-        </a>
+        </Link>
       )}
       {/* {!!user && !user.photoURL && (
         <LogIn>

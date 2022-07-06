@@ -51,7 +51,7 @@ const IndexPage = () => {
               }}
             >
               <Fade bottom duration={2000}>
-                <Link href="/about">
+                <Link href="/jobs">
                   <SeeMore>更多職缺</SeeMore>
                 </Link>
               </Fade>
@@ -82,7 +82,7 @@ const IndexPage = () => {
                 }}
               >
                 <Fade bottom duration={2000}>
-                  <Link href="/member">
+                  <Link href="/articles">
                     <SeeMore>更多專欄</SeeMore>
                   </Link>
                 </Fade>
