@@ -102,10 +102,7 @@ const Pic = styled.div`
 const Index = styled.p`
   font-size: 20px;
   color: #222;
-  font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
-    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
-    "Roboto Slab", Garamond, "Times New Roman", "HGS明朝E", "ＭＳ Ｐ明朝",
-    "MS PMincho", serif;
+
   line-height: 1.5;
   margin: 0 auto 1rem;
   text-align: center;
@@ -114,10 +111,7 @@ const Index = styled.p`
 const P = styled.p`
   font-size: 15px;
   color: #222;
-  font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
-    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
-    "Roboto Slab", Garamond, "Times New Roman", "HGS明朝E", "ＭＳ Ｐ明朝",
-    "MS PMincho", serif;
+
   line-height: 1.5;
   margin-bottom: 4rem;
 `
@@ -125,10 +119,7 @@ const P = styled.p`
 const P1 = styled.p`
   font-size: 15px;
   color: #222;
-  font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
-    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
-    "Roboto Slab", Garamond, "Times New Roman", "HGS明朝E", "ＭＳ Ｐ明朝",
-    "MS PMincho", serif;
+
   line-height: 1.5;
   margin-bottom: 1rem;
 `
@@ -136,10 +127,7 @@ const P1 = styled.p`
 const P2 = styled.p`
   font-size: 15px;
   color: #222;
-  font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
-    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
-    "Roboto Slab", Garamond, "Times New Roman", "HGS明朝E", "ＭＳ Ｐ明朝",
-    "MS PMincho", serif;
+
   line-height: 1.5;
   margin-top: 1rem;
   margin-bottom: 0;
@@ -148,10 +136,7 @@ const P2 = styled.p`
 const P3 = styled.p`
   font-size: 15px;
   color: #222;
-  font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
-    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
-    "Roboto Slab", Garamond, "Times New Roman", "HGS明朝E", "ＭＳ Ｐ明朝",
-    "MS PMincho", serif;
+
   line-height: 1.5;
 `
 

@@ -44,10 +44,7 @@ const Title = styled.p`
   margin: 0;
   color: #222;
   font-size: 22px;
-  font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
-    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
-    "Roboto Slab", Garamond, "Times New Roman", "HGS明朝E", "ＭＳ Ｐ明朝",
-    "MS PMincho", serif;
+
   margin-bottom: 1.5rem;
 `
 
@@ -56,10 +53,6 @@ const Para1 = styled.p`
   margin: 0 auto;
   color: #222;
   font-size: 15px;
-  font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
-    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
-    "Roboto Slab", Garamond, "Times New Roman", "HGS明朝E", "ＭＳ Ｐ明朝",
-    "MS PMincho", serif;
 `
 
 const ImgContainer = styled.div`

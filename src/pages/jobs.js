@@ -1,23 +1,19 @@
 import Link from "next/link"
 import React, { useContext } from "react"
-import {
-  BlogPageArticles,
-  PageCover,
-  BottomBar,
-  PageTitle,
-} from "../components/common"
+import { PageCover, BottomBar, PageTitle } from "../components/common"
+import { JobPageJobs } from "../components/common/JobPageJobs"
 import CreateIcon from "@material-ui/icons/Create"
 import { FirebaseContext } from "../components/Firebase"
 
-const Blog = () => {
+const Jobs = () => {
   const { user, firebase } = useContext(FirebaseContext)
 
   return (
     <>
       <section>
         <PageTitle>
-          <span>ブログ</span>
-          <p>Blog</p>
+          <span>熱門職缺</span>
+          <p>Jobs</p>
         </PageTitle>
         <div
           style={{
@@ -26,7 +22,7 @@ const Blog = () => {
             padding: `0 0.8rem`,
           }}
         >
-          {!!firebase && <BlogPageArticles firebase={firebase} />}
+          {!!firebase && <JobPageJobs firebase={firebase} />}
           {/* {!!user &&  !!user.admin &&
           <BottomBar>
           <Link href="/postarticle">
@@ -50,4 +46,4 @@ const Blog = () => {
   )
 }
 
-export default Blog
+export default Jobs

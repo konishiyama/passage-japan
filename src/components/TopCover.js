@@ -59,7 +59,7 @@ const CoverTitleContainer = styled.div`
 const CoverTitle = styled.h1`
   z-index: 10;
   line-height: 42px;
-  margin: 0 auto 15px;
+  margin: 0 auto 10px;
   color: #fff;
   font-size: 34px;
   @media (max-width: 768px) {

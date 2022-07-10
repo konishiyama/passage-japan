@@ -1,20 +1,29 @@
 import Link from "next/link"
 import React from "react"
 import styled from "styled-components"
+import Fade from "react-reveal/Fade"
 
-const EachArticle = styled.li`
-  margin: 0 auto 2rem;
-  box-shadow: rgb(212 217 214 / 50%) 1px 1px 16px;
-  border-radius: 8px;
-  width: 90%;
-  cursor: pointer;
+const EachPost = styled.div`
+  padding: 0.5em;
+  width: 100%;
+  text-decoration: none;
+  border-bottom: 1px solid #f4f4f4;
+  overflow-x: hidden;
   &:hover {
-    h3 {
+    cursor: pointer;
+    background-color: #f3f2f4;
+    transition: all 0.2s ease-in;
+    p {
+      text-decoration: underline;
       color: #39afca;
       transition: all 0.4s ease-in;
     }
   }
 `
+
+// const PostLink = styled.a`
+// `
+
 const A = styled.a`
   text-decoration: none;
 `
@@ -22,79 +31,80 @@ const A = styled.a`
 const Container = styled.div`
   width: 100%;
   text-align: center;
-  border-radius: 8px;
-  p {
+  margin: 0 auto;
+`
+
+const SubContainer = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin: 0 auto;
+  div {
     text-align: left;
     color: #888;
-    margin-bottom: 0.1rem;
+  }
+  span {
+    text-align: left;
+    color: #888;
+  }
+  span:before {
+    content: "|";
+    padding: 0 0.5em;
+    font-size: 0.8em;
+    color: #ccc;
   }
 `
 
-const ImgContainer = styled.div`
-  width: 100%;
-  margin: 0 auto;
-  overflow: hidden;
-  border-radius: 8px 8px 0 0;
-`
-
-const Thumnail = styled.img`
-  width: 100%;
-  height: 9rem;
-  object-fit: cover;
-`
-
-const TextContainer = styled.div`
-  width: 90%;
-  margin: 0.5rem auto;
-`
-
-const Title = styled.h3`
-  padding-top: 0.5rem;
-  height: 3.4em;
-  font-size: 18px;
-  line-height: 1.6;
+const Title = styled.p`
   width: 100%;
   text-decoration: none;
   font-size: 18px;
-  // font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
-  //   "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
-  //   "Roboto Slab", Garamond, "Times New Roman", "HGS明朝E", "ＭＳ Ｐ明朝",
-  //   "MS PMincho", serif;
-  color: #222;
+  font-weight: 800;
+  color: #02102e;
   text-align: left;
   letter-spacing: normal;
 `
 
-const Date = styled.p`
-  width: 100%;
-  // font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
-  //   "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
-  //   "Roboto Slab", Garamond, "Times New Roman", "HGS明朝E", "ＭＳ Ｐ明朝",
-  //   "MS PMincho", serif;
-  font-size: 15px;
-  text-decoration: none;
-  letter-spacing: normal;
-  padding-bottom: 0.7rem;
+const Image = styled.img`
+  width: 1.5em;
+  height: 1.5em;
+  text-align: left;
+  object-fit: cover;
+  border-radius: 50%;
+  border: solid 1px;
+  border-color: #eeeeee;
+  margin-bottom: 0;
+  margin-right: 0.2em;
 `
 
 const ArticleRoll = props => {
   return (
     <>
-      <EachArticle>
+      {/* <Fade right duration={800} delay={1000} distance="50px"> */}
+      <EachPost>
         <Link as={`/article/${props.id}`} href={"/article/[id]"}>
           <A>
             <Container>
-              <ImgContainer>
-                <Thumnail src={props.thumnail} alt="thumnail"></Thumnail>
-              </ImgContainer>
-              <TextContainer>
-                <Title>{props.title}</Title>
-                <Date>{props.date}</Date>
-              </TextContainer>
+              <Title>{props.title}</Title>
+              <SubContainer>
+                {!!props.writerPhoto && (
+                  <Image src={props.userPhoto} alt="profilepic"></Image>
+                )}
+                {!props.writerPhoto && (
+                  <Image
+                    src="https://firebasestorage.googleapis.com/v0/b/shohei-s-webapp-with-gatsby.appspot.com/o/site_default_images%2FuserDefaultPic.png?alt=media&token=2e1c678f-910a-4332-a6c5-6d3161aa16e6"
+                    alt="profilepic"
+                  ></Image>
+                )}
+                <div>{props.writer}</div>
+                <span>{props.date}</span>
+              </SubContainer>
             </Container>
           </A>
         </Link>
-      </EachArticle>
+      </EachPost>
+      {/* </Fade> */}
     </>
   )
 }

@@ -1,12 +1,7 @@
 import Link from "next/link"
 import React, { useEffect, useContext, useState } from "react"
 import styled from "styled-components"
-import {
-  PageCover,
-  BottomBar,
-  MemberPosts,
-  PageTitle,
-} from "../components/common"
+import { PageCover, BottomBar, Articles, PageTitle } from "../components/common"
 import { FirebaseContext } from "../components/Firebase"
 import CreateIcon from "@material-ui/icons/Create"
 
@@ -20,7 +15,7 @@ const Write = styled.a`
   }
 `
 
-const Member = ({ data }) => {
+const Article = ({ data }) => {
   const { user, firebase } = useContext(FirebaseContext)
 
   useEffect(() => {
@@ -30,8 +25,8 @@ const Member = ({ data }) => {
   return (
     <section>
       <PageTitle>
-        <span>会員掲示板</span>
-        <p>Community</p>
+        <span>精選專欄</span>
+        <p>Articles</p>
       </PageTitle>
       <div
         style={{
@@ -40,7 +35,7 @@ const Member = ({ data }) => {
           padding: `0 1.5rem 1.45rem`,
         }}
       >
-        {!!firebase && <MemberPosts firebase={firebase} />}
+        {!!firebase && <Articles firebase={firebase} />}
         {!!user && (
           <BottomBar>
             <Link href="/member-write">
@@ -63,4 +58,4 @@ const Member = ({ data }) => {
   )
 }
 
-export default Member
+export default Article

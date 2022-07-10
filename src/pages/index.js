@@ -6,12 +6,12 @@ import Products from "../components/Products"
 import Contact from "../components/Contact"
 import {
   IndexArticles,
-  IndexMemberPosts,
   SubTitle,
   SubTitleContact,
   SeeMore,
   SeeMore2,
 } from "../components/common"
+import { IndexJobs } from "../components/common/IndexJobs"
 import { FirebaseContext } from "../components/Firebase"
 import Fade from "react-reveal/Fade"
 
@@ -35,7 +35,7 @@ const IndexPage = () => {
             </SubTitle>
           </Fade>
           <Fade duration={2000}>
-            {!!firebase && <IndexArticles firebase={firebase} />}
+            {!!firebase && <IndexJobs firebase={firebase} />}
           </Fade>
           <div
             style={{
@@ -73,7 +73,7 @@ const IndexPage = () => {
                 </SubTitle>
               </Fade>
               <Fade duration={2500}>
-                {!!firebase && <IndexMemberPosts firebase={firebase} />}
+                {!!firebase && <IndexArticles firebase={firebase} />}
               </Fade>
               <div
                 style={{

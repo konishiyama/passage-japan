@@ -128,20 +128,13 @@ const Index = styled.p`
   line-height: 1.5;
   margin-bottom: 1rem;
   color: #222;
-  font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
-    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
-    "Roboto Slab", Garamond, "Times New Roman", "HGS明朝E", "ＭＳ Ｐ明朝",
-    "MS PMincho", serif;
 `
 
 const Price = styled.p`
   font-size: 15px;
   line-height: 1.5;
   color: #222;
-  font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
-    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
-    "Roboto Slab", Garamond, "Times New Roman", "HGS明朝E", "ＭＳ Ｐ明朝",
-    "MS PMincho", serif;
+
   margin: 3rem 0 2rem;
 `
 
@@ -149,10 +142,7 @@ const P = styled.p`
   font-size: 15px;
   line-height: 1.5;
   color: #222;
-  font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
-    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
-    "Roboto Slab", Garamond, "Times New Roman", "HGS明朝E", "ＭＳ Ｐ明朝",
-    "MS PMincho", serif;
+
   margin-bottom: 4rem;
 `
 
@@ -160,20 +150,12 @@ const P1 = styled.p`
   font-size: 15px;
   line-height: 1.5;
   color: #222;
-  font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
-    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
-    "Roboto Slab", Garamond, "Times New Roman", "HGS明朝E", "ＭＳ Ｐ明朝",
-    "MS PMincho", serif;
 `
 
 const P2 = styled.p`
   font-size: 13px;
   line-height: 1.5;
   color: #222;
-  font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
-    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
-    "Roboto Slab", Garamond, "Times New Roman", "HGS明朝E", "ＭＳ Ｐ明朝",
-    "MS PMincho", serif;
 `
 
 export default Products

@@ -85,10 +85,6 @@ const Cap = styled.span`
   margin: 0;
   color: #222;
   font-size: 30px;
-  font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
-    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
-    "Roboto Slab", Garamond, "Times New Roman", "HGS明朝E", "ＭＳ Ｐ明朝",
-    "MS PMincho", serif;
 `
 
 const Big = styled.span`
@@ -96,10 +92,6 @@ const Big = styled.span`
   margin: 0;
   color: #222;
   font-size: 25px;
-  font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
-    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
-    "Roboto Slab", Garamond, "Times New Roman", "HGS明朝E", "ＭＳ Ｐ明朝",
-    "MS PMincho", serif;
 `
 
 const Small = styled.p`
@@ -108,10 +100,6 @@ const Small = styled.p`
   color: #222;
   font-size: 15px;
   // font-weight: bold;
-  font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
-    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
-    "Roboto Slab", Garamond, "Times New Roman", "HGS明朝E", "ＭＳ Ｐ明朝",
-    "MS PMincho", serif;
 `
 
 const ImgContainer = styled.div`

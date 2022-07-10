@@ -15,19 +15,19 @@ import styled from "styled-components"
 import { BottomBar } from "../../components/common"
 import { FirebaseContext } from "../../components/Firebase"
 
-const ArticleTemplate = () => {
+const JobTemplate = () => {
   const router = useRouter()
 
   const { firebase } = useContext(FirebaseContext)
 
   const [pageContext = null] = useDocumentDataOnce(
     router.query.id && firebase
-      ? firebase.db.collection("articles").doc(router.query.id)
+      ? firebase.db.collection("jobs").doc(router.query.id)
       : null,
     { idField: "id" }
   )
 
-  const ArticleItem = styled.section`
+  const JobItem = styled.section`
     border-bottom: 1px solid #f4f4f4;
   `
 
@@ -44,7 +44,7 @@ const ArticleTemplate = () => {
           padding: `4rem 1.5rem 1.45rem`,
         }}
       >
-        <ArticleItem>
+        <JobItem>
           <Title>{pageContext.title}</Title>
           <Date>{pageContext.date}</Date>
           <img src={pageContext.thumnail} alt="CoverImage"></img>
@@ -55,7 +55,7 @@ const ArticleTemplate = () => {
           >
             {renderHTML(pageContext.content)}
           </P>
-        </ArticleItem>
+        </JobItem>
         <div
           style={{
             marginTop: `1.45em`,
@@ -63,7 +63,7 @@ const ArticleTemplate = () => {
         ></div>
         <BottomBar>
           <FacebookShareButton
-            url={`https://yamaguchi-farms.com/article/${pageContext.articleNum}`}
+            url={`https://yamaguchi-farms.com/job/${pageContext.jobNum}`}
             size={`2.3rem`}
             style={{
               display: `flex`,
@@ -77,7 +77,7 @@ const ArticleTemplate = () => {
             <FacebookIcon size={`2.3rem`} round style={{}} />
           </FacebookShareButton>
           <TwitterShareButton
-            url={`https://yamaguchi-farms.com/article/${pageContext.articleNum}`}
+            url={`https://yamaguchi-farms.com/job/${pageContext.jobNum}`}
             style={{
               display: `flex`,
               alignItems: `center`,
@@ -92,7 +92,7 @@ const ArticleTemplate = () => {
             />
           </TwitterShareButton>
           <LineShareButton
-            url={`https://yamaguchi-farms.com/article/${pageContext.articleNum}`}
+            url={`https://yamaguchi-farms.com/job/${pageContext.jobNum}`}
             style={{
               display: `flex`,
               alignItems: `center`,
@@ -113,10 +113,6 @@ const ArticleTemplate = () => {
 }
 
 const Title = styled.p`
-  // font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
-  // "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3",
-  // "Roboto Slab", Garamond, "Times New Roman", "HGS明朝E", "ＭＳ Ｐ明朝",
-  // "MS PMincho", serif;
   color: #222;
   font-size: 24px;
   margin-bottom: 1rem;
@@ -132,4 +128,4 @@ const P = styled.p`
   font-size: 15px;
 `
 
-export default ArticleTemplate
+export default JobTemplate
