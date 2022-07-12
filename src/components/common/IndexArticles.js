@@ -14,7 +14,7 @@ export const IndexArticles = ({ firebase }) => {
       return -1
     }
   })
-  const latestArticles = articlesOrdered.slice(0, 4)
+  const latestArticles = articlesOrdered.slice(0, 10)
   /*
   useEffect(() => {
     const unsubscribe = firebase.subscribeToMemberPosts({

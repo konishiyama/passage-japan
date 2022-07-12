@@ -89,7 +89,7 @@ const ArticleRoll = props => {
               <Title>{props.title}</Title>
               <SubContainer>
                 {!!props.writerPhoto && (
-                  <Image src={props.userPhoto} alt="profilepic"></Image>
+                  <Image src={props.writerPhoto} alt="profilepic"></Image>
                 )}
                 {!props.writerPhoto && (
                   <Image

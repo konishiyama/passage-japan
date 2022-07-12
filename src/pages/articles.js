@@ -1,21 +1,21 @@
 import Link from "next/link"
 import React, { useEffect, useContext, useState } from "react"
 import styled from "styled-components"
-import { PageCover, BottomBar, Articles, PageTitle } from "../components/common"
+import { BottomBar, Articles, PageTitle } from "../components/common"
 import { FirebaseContext } from "../components/Firebase"
 import CreateIcon from "@material-ui/icons/Create"
 
-const Write = styled.a`
-  text-decoration: none;
-  color: #808080;
-  color: #808080;
-  &:hover {
-    color: #39afca;
-    transition: all 0.4s ease-in;
-  }
-`
+// const Write = styled.a`
+//   text-decoration: none;
+//   color: #808080;
+//   color: #808080;
+//   &:hover {
+//     color: #39afca;
+//     transition: all 0.4s ease-in;
+//   }
+// `
 
-const Article = ({ data }) => {
+const Article = () => {
   const { user, firebase } = useContext(FirebaseContext)
 
   useEffect(() => {
@@ -38,7 +38,7 @@ const Article = ({ data }) => {
         {!!firebase && <Articles firebase={firebase} />}
         {!!user && (
           <BottomBar>
-            <Link href="/member-write">
+            <Link href="/postArticle">
               <CreateIcon
                 style={{
                   color: `white`,

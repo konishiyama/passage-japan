@@ -13,28 +13,60 @@ import {
 } from "../components/common"
 import { FirebaseContext } from "../components/Firebase"
 
-const PostArticle = () => {
+const PostArticleTest = () => {
   const [titleValues, setTitleValues] = useState({ title: "" })
   const [contentValues, setContentValues] = useState({ content: "" })
   const { firebase } = useContext(FirebaseContext)
   const [errorMessage, setErrorMessage] = useState("")
   const [fileErrorMessage, setFileErrorMessage] = useState("")
   const [fileUploaded, setFileUploaded] = useState("")
+  const [writerName, setWriterName] = useState("")
   const [image, setImage] = useState("")
-  const [imageUrl, setImageUrl] = useState("")
   const [timeStamp, setTimeStamp] = useState("")
   const [articleNumber, setArticleNumber] = useState("")
   const router = useRouter()
+  const profilePicPath =
+    "https://firebasestorage.googleapis.com/v0/b/passage-76e68.appspot.com/o/images%2Fprofile_pics%2FprofilePic-"
+  const yoshiPath =
+    "Yoshi.jpg?alt=media&token=cdf6057e-10cc-4fc7-9b97-64ba1b5c192a"
+  const liuPath = "Liu.jpg?alt=media&token=c9b3774f-fab2-465a-9dd5-74510c72ac8d"
+  const huangPath =
+    "Huang.jpg?alt=media&token=c9b3774f-fab2-465a-9dd5-74510c72ac8d"
+  const passagePath =
+    "Passage.jpg?alt=media&token=cecad4f3-1975-4971-94f4-22cb4fb0905a"
+  let writerPhoto = ""
+
+  function handleWriterInfo(e) {
+    const writerName = e.target.value
+    setWriterName(writerName)
+    setTimeStamp(new Date().toLocaleDateString())
+  }
 
   function handleSubmit(e) {
+    if (writerName == "Yoshi") {
+      writerPhoto = profilePicPath + yoshiPath
+    } else if (writerName == "Liu") {
+      writerPhoto = profilePicPath + liuPath
+    } else if (writerName == "Huang") {
+      writerPhoto = profilePicPath + huangPath
+    } else {
+      writerPhoto = profilePicPath + passagePath
+    }
     e.preventDefault()
     firebase
-      .postArticle({
-        title: titleValues.title,
-        content: contentValues.content,
-        cover: imageUrl,
-        date: timeStamp,
-        articleNum: articleNumber,
+      .setImage({
+        image: image,
+      })
+      .then(imageUrl => {
+        firebase.postArticle({
+          writerName: writerName,
+          writerPhoto: writerPhoto,
+          title: titleValues.title,
+          content: contentValues.content,
+          imageUrl: imageUrl,
+          date: timeStamp,
+          articleNum: articleNumber,
+        })
       })
       .then(() => router.push("/"))
       .catch(error => {
@@ -62,34 +94,10 @@ const PostArticle = () => {
     setTimeStamp(new Date().toLocaleDateString())
   }
 
-  function onSubmitFile(e) {
-    e.preventDefault()
-    if (image === "") {
-      setFileErrorMessage("Error File Uploading!")
-    }
-    firebase.storage
-      .ref(`/images/${image.name}`)
-      .put(image)
-      .then(complete, setFileErrorMessage(""), setFileUploaded("File Uploaded"))
-      .catch(error => {
-        setFileErrorMessage(error.message)
-      })
-  }
-
-  function complete() {
-    firebase.storage
-      .ref("images")
-      .child(image.name)
-      .getDownloadURL()
-      .then(fireBaseUrl => {
-        setImageUrl(fireBaseUrl)
-        setTimeStamp(new Date().toLocaleDateString())
-      })
-  }
-
   function handleImage(e) {
     const image = e.target.files[0]
     setImage(image)
+    console.log(image)
     setTimeStamp(new Date().toLocaleDateString())
   }
 
@@ -99,7 +107,21 @@ const PostArticle = () => {
         <span>投稿專欄</span>
         <p>Post Article</p>
       </PageTitle>
-      <Form required onSubmit={onSubmitFile}>
+      <Form onSubmit={handleSubmit}>
+        <select
+          name="writerName"
+          id="writerName"
+          onChange={handleWriterInfo}
+          value={writerName}
+          defaultValue={"-"}
+          placeholder="Select writer name"
+        >
+          <option value="-">-</option>
+          <option value="Yoshi">Yoshi</option>
+          <option value="Liu">Liu</option>
+          <option value="Huang">Huang</option>
+          <option value="Passage">Passage</option>
+        </select>
         <SubIndex>COVER IMAGE</SubIndex>
         <input
           type="file"
@@ -109,14 +131,6 @@ const PostArticle = () => {
           }}
         />
         <br></br>
-        <UploadButton>Upload</UploadButton>
-        {!!fileUploaded && <Message>Uploaded image properly!</Message>}
-        {!!fileErrorMessage && (
-          <ErrorMessage>You need to uploaded image!</ErrorMessage>
-        )}
-      </Form>
-      <br></br>
-      <Form onSubmit={handleSubmit}>
         <SubIndex>TITLE</SubIndex>
         <Input
           required
@@ -162,4 +176,4 @@ const PostArticle = () => {
   )
 }
 
-export default PostArticle
+export default PostArticleTest

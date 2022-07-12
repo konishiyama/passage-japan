@@ -13,14 +13,33 @@ class Firebase {
     }
   }
 
-  async postArticle({ title, content, cover, date, articleNum }) {
+  async postArticle({
+    writerName,
+    writerPhoto,
+    title,
+    content,
+    imageUrl,
+    date,
+    articleNum,
+  }) {
     return this.db.collection("articles").doc().set({
+      writerName: writerName,
+      writerPhoto: writerPhoto,
       title: title,
       content: content,
-      thumnail: cover,
+      thumnail: imageUrl,
       date: date,
       articleNum: articleNum,
     })
+  }
+
+  async setImage({ image }) {
+    await this.storage.ref(`/images/${image.name}`).put(image)
+    const imageUrl = this.storage
+      .ref("images")
+      .child(image.name)
+      .getDownloadURL()
+    return imageUrl
   }
 
   async memberWrite({ title, content, date, username, userPhoto, postNum }) {
