@@ -33,6 +33,16 @@ class Firebase {
     })
   }
 
+  async postJob({ title, content, imageUrl, date, articleNum }) {
+    return this.db.collection("jobs").doc().set({
+      title: title,
+      content: content,
+      thumnail: imageUrl,
+      date: date,
+      articleNum: articleNum,
+    })
+  }
+
   async setImage({ image }) {
     await this.storage.ref(`/images/${image.name}`).put(image)
     const imageUrl = this.storage
@@ -63,6 +73,10 @@ class Firebase {
 
   async getArticleNumbers() {
     return this.db.collection("articles").get()
+  }
+
+  async getJobNumbers() {
+    return this.db.collection("jobs").get()
   }
 
   async getMemberPostNumbers() {

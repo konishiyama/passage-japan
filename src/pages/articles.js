@@ -38,7 +38,7 @@ const Article = () => {
         {!!firebase && <Articles firebase={firebase} />}
         {!!user && (
           <BottomBar>
-            <Link href="/postArticle">
+            <Link href="/postarticle">
               <CreateIcon
                 style={{
                   color: `white`,

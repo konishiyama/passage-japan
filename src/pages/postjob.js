@@ -7,65 +7,33 @@ import {
   Form,
   Input,
   PageTitle,
-  Message,
   SubIndex,
-  UploadButton,
 } from "../components/common"
 import { FirebaseContext } from "../components/Firebase"
 
-const PostArticleTest = () => {
+const PostJob = () => {
   const [titleValues, setTitleValues] = useState({ title: "" })
   const [contentValues, setContentValues] = useState({ content: "" })
   const { firebase } = useContext(FirebaseContext)
   const [errorMessage, setErrorMessage] = useState("")
-  const [fileErrorMessage, setFileErrorMessage] = useState("")
-  const [fileUploaded, setFileUploaded] = useState("")
-  const [writerName, setWriterName] = useState("")
   const [image, setImage] = useState("")
   const [timeStamp, setTimeStamp] = useState("")
-  const [articleNumber, setArticleNumber] = useState("")
+  const [jobNumber, setJobNumber] = useState("")
   const router = useRouter()
-  const profilePicPath =
-    "https://firebasestorage.googleapis.com/v0/b/passage-76e68.appspot.com/o/images%2Fprofile_pics%2FprofilePic-"
-  const yoshiPath =
-    "Yoshi.jpg?alt=media&token=cdf6057e-10cc-4fc7-9b97-64ba1b5c192a"
-  const liuPath = "Liu.jpg?alt=media&token=c9b3774f-fab2-465a-9dd5-74510c72ac8d"
-  const huangPath =
-    "Huang.jpg?alt=media&token=c9b3774f-fab2-465a-9dd5-74510c72ac8d"
-  const passagePath =
-    "Passage.jpg?alt=media&token=cecad4f3-1975-4971-94f4-22cb4fb0905a"
-  let writerPhoto = ""
-
-  function handleWriterInfo(e) {
-    const writerName = e.target.value
-    setWriterName(writerName)
-    setTimeStamp(new Date().toLocaleDateString())
-  }
 
   function handleSubmit(e) {
-    if (writerName == "Yoshi") {
-      writerPhoto = profilePicPath + yoshiPath
-    } else if (writerName == "Liu") {
-      writerPhoto = profilePicPath + liuPath
-    } else if (writerName == "Huang") {
-      writerPhoto = profilePicPath + huangPath
-    } else {
-      writerPhoto = profilePicPath + passagePath
-    }
     e.preventDefault()
     firebase
       .setImage({
         image: image,
       })
       .then(imageUrl => {
-        firebase.postArticle({
-          writerName: writerName,
-          writerPhoto: writerPhoto,
+        firebase.postJob({
           title: titleValues.title,
           content: contentValues.content,
           imageUrl: imageUrl,
           date: timeStamp,
-          articleNum: articleNumber,
+          jobNum: jobNumber,
         })
       })
       .then(() => router.push("/"))
@@ -81,9 +49,8 @@ const PostArticleTest = () => {
       title: e.target.value,
     })
     setTimeStamp(new Date().toLocaleDateString())
-    firebase.getArticleNumbers().then(r => {
-      console.log(r)
-      setArticleNumber(r.docs.length + 1)
+    firebase.getJobNumbers().then(r => {
+      setJobNumber(r.docs.length + 1)
     })
   }
 
@@ -97,7 +64,6 @@ const PostArticleTest = () => {
   function handleImage(e) {
     const image = e.target.files[0]
     setImage(image)
-    console.log(image)
     setTimeStamp(new Date().toLocaleDateString())
   }
 
@@ -108,26 +74,13 @@ const PostArticleTest = () => {
         <p>Post Article</p>
       </PageTitle>
       <Form onSubmit={handleSubmit}>
-        <select
-          name="writerName"
-          id="writerName"
-          onChange={handleWriterInfo}
-          value={writerName}
-          defaultValue={"-"}
-          placeholder="Select writer name"
-        >
-          <option value="-">-</option>
-          <option value="Yoshi">Yoshi</option>
-          <option value="Liu">Liu</option>
-          <option value="Huang">Huang</option>
-          <option value="Passage">Passage</option>
-        </select>
         <SubIndex>COVER IMAGE</SubIndex>
         <input
+          required
           type="file"
           onChange={handleImage}
           style={{
-            marginBottom: `1vw`,
+            marginBottom: `4vw`,
           }}
         />
         <br></br>
@@ -162,7 +115,7 @@ const PostArticleTest = () => {
           />
         </div>
         {!!errorMessage && (
-          <ErrorMessage>Failed posting article properly</ErrorMessage>
+          <ErrorMessage>Failed posting job properly</ErrorMessage>
         )}
         <br></br>
         <Button type="submit" block>
@@ -176,4 +129,4 @@ const PostArticleTest = () => {
   )
 }
 
-export default PostArticleTest
+export default PostJob
